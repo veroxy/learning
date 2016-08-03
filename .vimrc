@@ -15,7 +15,7 @@ filetype on
 
 set nocompatible
 set number
-set mouse =a
+"set mouse =a /some pb for copy/paste
 syntax on
 
 
