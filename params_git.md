@@ -23,7 +23,7 @@ Il est possible d'assigner une clef SSH à un seul repo (Github ou Bitbucket) ma
 Il est possible de donner les droits via les settings du profil et aussi éviter de rentrer une passphrase à chaque fois.
 La méthode qui suit n'est pas l'unique solution.
 
-### créer une clef SSH pour #
+### créer une clef SSH pour le dossier local et le distant#
 Pour pouvoir communiquer entre le depo local et le dépot distant il est nécessaire de générer un une CLEF SSH. Bien être à la racine de l'ordinateur(là où il y a les dossiers utilisateurs)
 pour cela suivre lire le tuto pour crer votre binome de clefs
 <a http://www.linux-france.org/prj/edu/archinet/systeme/ch13s03.html ><strong>ici</strong></a><br />
