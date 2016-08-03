@@ -20,7 +20,7 @@ puis deux url, un pour github et un pour bitbucket <br/>
 ---
 ### clef SSH #
 Il est possible d'assigner une clef SSH à un seul repo (Github ou Bitbucket) mais il n'est pas possible d'assigne rune même clef à des repo différents que ce soit sur un même serveur(ex : bitbucket > monprojet1 & bitbucket > monprojet2) ou deux serveurs différents. <br />
-Il est possible de donner les droits via les settings du profil.
+Il est possible de donner les droits via les settings du profil et aussi éviter de rentrer une passphrase à chaque fois.
 La méthode qui suit n'est pas l'unique solution.
 
 ### créer une clef SSH pour #
