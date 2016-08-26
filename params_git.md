@@ -29,12 +29,12 @@ pour cela suivre lire le tuto pour crer votre binome de clefs
 <a http://www.linux-france.org/prj/edu/archinet/systeme/ch13s03.html ><strong>ici</strong></a><br />
 
 Lorsque que l'on a la clef id_rsa.pub de générée copier la. <br />
-#### Bitbucket #
+###### Bitbucket #
 Aller dans l'onglet profil et cliquer sur "Bitbucket  settings" sur les paramètres de sécurité et "clef ssh" <br />
 Ajouter une clef. <br />
 <strong>motif du chemin :  https://bitbucket.org/account/user/User_Name/ssh-keys/  </strong> <br />
 
-#### GIthub #
+###### Github #
 Dans le bouton profil atteindre "Settings" <br />
 Ajouter une clef "new ssh key".
 <strong>motif du chemin :
