@@ -57,17 +57,19 @@ switched on branche NOMBRANCHE
 
 renommer branch
 ```
-git branch -m ancienne_BRANCH NOUVEAU_NOM_BRANCH
+~$ git branch -m ancienne_BRANCH NOUVEAU_NOM_BRANCH
 ```
->> il faut 'ADD'
->> il faut toujours 'COMMIT'
->> il faut push:
+il faut 'ADD'
+il faut toujours 'COMMIT'
+il faut push:
+
 ```
-git push -u origin NOUVEAU_NOM_BRANCH
+~$ git push -u origin NOUVEAU_NOM_BRANCH
 ```
+
 Si renommé ou supprimé
 ```
-git push origin ancienne_BRANCH
+~$ git push origin ancienne_BRANCH
 ```
 
 
