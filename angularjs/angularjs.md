@@ -57,6 +57,10 @@
   ```html
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
   ```
+#### VUE
+La vue est la projection de ce que voit le visiteur sur son navigateur
+
+#### DIRECTIVES
 il permet d'étendre .HTML avec des directives ` ng-directives `
   * ` ng-app ` = définie une AngularJS application
   * ` ng-model ` permet de lier la valeur du controleur HTML (input, select, textarea ...), aus données d'application
@@ -67,6 +71,19 @@ il permet d'étendre .HTML avec des directives ` ng-directives `
  	<p ng-bind="name"></p>
   </div>
   ```
+
+#### EXPRESSION
+  la syntaxe des expressions AJS s'écrivent avec des doubles accolades **{{ bibi }}**.
+  ```html
+  <div ng-app="">
+ 	<p>My first expression: {{ 5 + 5 }}</p>
+  </div>
+  ```
+#### AJS APPLICATIONS
+  AJS comprend des **modules** pour définir l'AJS contextes et  des **controleurs** pour gérer ces application.  La directive **ng-app** définie le contexte, **ng-conttrolers** le controleur.
+  ```
+  ```
+
   ```
   ```
 
