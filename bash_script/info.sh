@@ -1,6 +1,6 @@
 #!/bin/sh
 # stocker ses infos
-name="moragne"
+name="Morgane"
 username="Senryu"
 
 echo "je m'appelle $name $username"
