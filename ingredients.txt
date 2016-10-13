@@ -1,3 +1,5 @@
+## pour requetes json/ajax/shell/PHP fichier de test
+
 pH5 Huile de Douche - EUCERIN
 http://www.eucerin.fr/nos-produits/eucerin-peau-sensible/ph5-huile-de-douche
 Glycine Soja Seed Oil, MIPA-Laureth Sulfate, Ricinus Communis Seed Oil, Laureth-4, Cocamide DEA, Poloxamer 101, Parfum, Panthénol, Bisabolol, Lanolin Alcohol (Eucerit®), Citric Acid, Diammonium Citrate, Aqua, Propyl Gallate, BHT, Benzyl Alcohol, Linalool, Butylphenyl Methylpropional, Alpha-Isomethyl Ionone, Hexyl Cinnamal, Limonene, Coumarin, Benzyl Salicylate

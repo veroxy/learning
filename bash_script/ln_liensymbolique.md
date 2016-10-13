@@ -1,7 +1,9 @@
-#commande shell/bash based
-# lien symbolique
+# ln --> lien symbolique
+
+----
 ln [-s >> fichier]
 EXEMPLES
+```shell
 $ ls -l (afficher les fichiers et les droits avec les fichier cachés)
 -------
 total 36
@@ -13,23 +15,27 @@ dr-x---r-- 2 vmllmv vmllmv 4096 juin   1  2015 test2
 -rw-r----x 1 vmllmv vmllmv    2 juin   1  2015 test4
 -r-----r-- 2 vmllmv vmllmv    1 juin   1  2015 test5
 lrwxrwxrwx 1 vmllmv vmllmv    5 juin   1  2015 test6 -> test0
-# test6 est un LIEN SYMBOLIQUE qui si on
+```
+**test6 est un LIEN SYMBOLIQUE** qui si on fait
+```shell
 touch test0/addfiletest.txt  va apparaître dans
 ls test6/ >> addfiletest.txt
+```
+où :
+  * test0 est la source
+  * test6 est la destination
 
-test0 est la source
-test6 est la destination
-**
-test0 == test6
+donc : **test0 == test6**
 
 -------
  CE QUE JE DOIS FAIRE
 ------
+EXAMPLE
 Liens vers le dossier des sources
-/opt/lamp/htdoc/www source
-/var/www destination
-**
-/opt/lamp/htdoc/www == /var/www
+  * `/opt/lamp/htdoc/www source`
+  * `/var/www destination`
+
+donc : `/opt/lamp/htdoc/www == /var/www`
 
 
 Si l'on n'indique qu'un seul nom de fichier, un lien vers ce fichier est créé dans le répertoire courant.
