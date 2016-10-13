@@ -1,7 +1,0 @@
-root      1070  0.0  0.7 325480 30400 ?        Ss   08:18   0:00 /usr/sbin/apache2 -k start
-www-data  3174  0.0  0.2 325504  8912 ?        S    08:22   0:00 /usr/sbin/apache2 -k start
-www-data  3175  0.0  0.2 325504  8912 ?        S    08:22   0:00 /usr/sbin/apache2 -k start
-www-data  3176  0.0  0.2 325504  8912 ?        S    08:22   0:00 /usr/sbin/apache2 -k start
-www-data  3177  0.0  0.2 325504  8912 ?        S    08:22   0:00 /usr/sbin/apache2 -k start
-www-data  3178  0.0  0.2 325504  8912 ?        S    08:22   0:00 /usr/sbin/apache2 -k start
-vmllmv    5161  0.0  0.0  21312  1024 pts/4    S+   08:30   0:00 grep --color=auto --exclude-dir=.bzr --exclude-dir=CVS --exclude-dir=.git --exclude-dir=.hg --exclude-dir=.svn apache2
