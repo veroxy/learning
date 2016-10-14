@@ -18,7 +18,7 @@ dir_PROJET/
 
 * les @import sass sont incorporer dans les autres MASTERS/STYLES. Le préprocesseur va incorporer directement les différentes parties dans le fichier STYLE.CSS
 
-```
+```css
 #!sass
 example : dans le fichier style.sass
 
@@ -31,7 +31,7 @@ example : dans le fichier style.sass
 * Indentation du code / code imbriqué
 * @mediaquery facilité
 
-```
+```css
 #!sass
 body.home {
   .media-unit {
@@ -46,7 +46,7 @@ body.home {
   }
 }
 
-//Imbrication de media query
+/*Imbrication de media query*/
 
 .container {
   width: 940px; // Si la largeur de l’écran est inférieure
@@ -61,7 +61,7 @@ body.home {
 * modifier le code plus facilement en réduisant les duplications.
 * de nommer la valeur d’une propriété, la couleur par exemple
 
-```
+```css
 #!sass
 $color: #ffffff;
 a{
@@ -73,7 +73,7 @@ a{
 * on créer un exemple de style @mixin que l'on nomme
 * on intégrègre le mixin dans une balise/class/id/ avec @include + nom de la mixin
 
-```
+```css
 #!sass
 //Exemple de mixin
 
@@ -89,7 +89,7 @@ $bkgdcolor: #ffa;
 }
 ```
 utilité àvec cross-browser:
-```
+```css
 #!sass
 @mixin rounded-corners {
   $rounded-corner-radius: 4px;
@@ -107,7 +107,7 @@ utilité àvec cross-browser:
 * procède de la même façon qu'un lorsque l'on parcour les propriétés d'un objet.
 * on demande la correspondance entre la liste et la classe dans ls html.
 
-```
+```css
 #!sass
   $list: (orange, purple, teal);
 
@@ -123,7 +123,7 @@ utilité àvec cross-browser:
 ```
 * ou encore créer un arc-en-ciel bien dégeulasse selon le nombre de divs <= 10
 
-```
+```css
 #!sass
 .ray {
   height: 30px;
@@ -138,7 +138,7 @@ utilité àvec cross-browser:
 ```
 ### condition
 
-```
+```css
 #!sass
 $total: 10; //Number of .ray divs in our html
 $step: 360deg / $total; //Used to compute the hue based on color-wheel
@@ -156,7 +156,7 @@ $step: 360deg / $total; //Used to compute the hue based on color-wheel
 ### extension
  \@extend permet de d'ajouter des propriété à d'autres definitions de style par exemple lorsque l'on veut appliquer une propriété à différentes balise/class/id en même temps sans les énumérer manuellement.
 
- ```
+ ```css
 #!sass
  .absolute {
    position: absolute;
