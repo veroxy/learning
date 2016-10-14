@@ -7,13 +7,13 @@ Faire une sortie Html des Markdown
 ### installation
 **10.12.2016**
 ```
-npm install markdown-to-html -g
+sudo npm install markdown-to-html -g
 ```
 
 ### USAGE
 utiliser pour un projet ou dans un projet Github.md
 ```
-npm install markdown-to-html --save
+sudo npm install markdown-to-html --save
 ```
 **sortie browser par défaut**
 ```
