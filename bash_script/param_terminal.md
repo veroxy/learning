@@ -1,10 +1,7 @@
-### SHELL SCRIPT
-
-
-[référence](http://abs.traduc.org/abs-fr/ch04.html'')
+# .ZSHRC & .BASHRC
 
 ----
-### .ZSHRC & .BASHRC
+### CUSTOM SH
 sont les fichers de paramètre du system Bash / Zsh == shell script. Ce sont les premiers scirpts que l'on modifie en général lorsque l'on est sous linux/mac.
 
 ### ALIAS
