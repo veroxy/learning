@@ -10,15 +10,18 @@ f_css.css == output
 En plus de toutes les raisons de bases que l'on choisi d'utiliser SASS
   * [Les sélécteurs css3](https://webdesign.tutsplus.com/tutorials/a-simple-responsive-grid-made-even-better-with-sass--cms-21540'souce')
   * [media queries base & mobile first](https://css-tricks.com/snippets/css/media-queries-for-standard-devices/'souce')
-
 2. #### avec SASS
     * [LESS vs SASS](https://blog.webnet.fr/less-versus-sass/'source')
     * [La cascade](https://la-cascade.io/se-lancer-dans-sass/'souce')
     * [les selecteurs avec sass](http://blog.teamtreehouse.com/sass-tip-double-ampersand-selector 'souce')
     * [principe des colonnes for mobile first](http://inspirationalpixels.com/tutorials/grid-system-with-sass'souce')
     * [media queries avec sass](https://webdesign.tutsplus.com/tutorials/a-simple-responsive-grid-made-even-better-with-sass--cms-21540'souce')
+    * [DOCUMENTATION OFFICIEL](http://sass-lang.com/documentation/file.SASS_REFERENCE.html 'officiel')
 3. #### Installation
-    * [koala free app Linux/Mac/Win ](http://koala-app.com/'souce')
+    1. [install RUBY via RBENV](https://github.com/rbenv/ruby-build 'source') et pas `apt-get`
+    2. [installation SASS](http://sass-lang.com/install'officiel')
+    3. [koala free app Linux/Mac/Win ](http://koala-app.com/'souce')
+
 
 
 
@@ -41,7 +44,7 @@ dir_PROJET/
 example : dans le fichier style.sass
 
 /** importer diff styles des autres pages **/
-@import '/scss/home';
+@import '/scss/home'
 @import '/scss/job';
 ```
 
@@ -154,7 +157,7 @@ utilité àvec cross-browser:
    }
 }
 ```
-### condition
+### conditionS
 
 ```css
 #!sass
