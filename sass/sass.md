@@ -196,6 +196,17 @@ $step: 360deg / $total; //Used to compute the hue based on color-wheel
   position: absolute;
 }
 ```
+----
+## 2-USAGES
+~~~css
+@each $asideSect in photo, contactMe, calendar {
+  .#{$asideSect}-a {
+    margin: 10px 0;
+    padding: 15px;
+  }
+}
+~~~
 
-## 2-COMMAND LINE
+----
+## 3-COMMAND LINE
 compiler INPUT > OUTPUT: `sass style.scss style.css`
