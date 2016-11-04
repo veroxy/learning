@@ -210,3 +210,14 @@ $step: 360deg / $total; //Used to compute the hue based on color-wheel
 ----
 ## 3-COMMAND LINE
 compiler INPUT > OUTPUT: `sass style.scss style.css`
+
+---
+
+## 4-INSTALLATION GEM
+// OVER FILES IMPORT
+// COMPASS  http://compass-style.org/reference/compass/css3/box_shadow/
+GEM files à installer
+~~~css
+@import "compass/css3/box-shadow";
+
+~~~
