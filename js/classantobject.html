@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Class & Objects</title>
+  </head>
+  <body>
+
+    <script type="text/javascript" src="./class_js.js">
+    //
+    class Blog{
+      constructor(noun, auteur){
+        //  appeler via 'this' cela se réfère à tout le cocnteu de "BLOG"
+        this.noun = noun;
+        this.auteur = auteur;
+        this.tabarticle = [];
+      }
+      prepare(){
+        this.aContent = document.createElement('section');
+        var tmp = this.noun.replace(' ', '');
+        this.aContent.id = tmp;
+        document.body.appendChild(this.aContent);
+      }
+    }
+
+    class Article {
+      constructor(titles, matter, blog){
+        this.titles = titles;
+        this.matter = matter;
+        this.blog = blog;
+      }
+      createArticle(){
+        this.principal = document.createElement('article');
+        this.principal.className = 'tarticle';
+
+        this.principalTitle = document.createElement('h3');
+        this.principalTitle.className = "atitle";
+        this.principalTitle.innerText = this.titles;
+
+        this.principalContent = document.createElement("div");
+        this.principalContent.className = "acontainer";
+        this.principalContent.innerText = this.matter;
+
+        this.principal.appendChild(this.principalTitle);
+        this.principal.appendChild(this.principalContent);
+        this.blog.aContent.appendChild(this.principal);
+      }
+    }
+
+    var a = new Blog('mobi','dick');
+    a.prepare();
+
+    </script>
+  </body>
+</html>

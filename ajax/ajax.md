@@ -5,12 +5,11 @@
 ---
 ### SOURCES
 [MDN XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest "mdn XML")<br />
-[openclassrooms ]("https://openclassrooms.com/courses/xajax-applications-ajax-faciles-avec-php-et-xajax")<br />
+/*[openclassrooms ]("https://openclassrooms.com/courses/xajax-applications-ajax-faciles-avec-php-et-xajax")<br />*/
 
 
 
 ### METHODES
-`xajax()`
 `rocessRequest()`
 `printJavascript()`
 Attention, il faut mettre cette fonction en début de page, avant d'avoir envoyé des informations au navigateur ! (Comme pour les headers, ou les session_start si vous voulez.)

@@ -44,7 +44,7 @@ dir_PROJET/
 example : dans le fichier style.sass
 
 /** importer diff styles des autres pages **/
-@import '/scss/home'
+@import '/scss/home';
 @import '/scss/job';
 ```
 
@@ -125,7 +125,7 @@ utilité àvec cross-browser:
 ```
 
 ### function utile
-* procède de la même façon qu'un lorsque l'on parcour les propriétés d'un objet.
+* procède de la même façon que lorsque l'on parcours les propriétés d'un objet.
 * on demande la correspondance entre la liste et la classe dans ls html.
 
 ```css
