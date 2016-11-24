@@ -18,6 +18,9 @@
   **AngularJS**
   on le met directement dans le .html
     - permet de voir directement que l'élément et dynamique
+    - sans changer le contenu
+    - employer un Framework permets de facilité la gestion des **singlepage**
+    - inclu directement du jquery allégé == jqlite.
 
   ```html
   <ul class="main-menu" dropdown-menu>
@@ -61,17 +64,19 @@
 La vue est la projection de ce que voit le visiteur sur son navigateur
 
 #### DIRECTIVES
-il permet d'étendre .HTML avec des directives ` ng-directives `
-  * ` ng-app ` = définie une AngularJS application
-  * ` ng-model ` permet de lier la valeur du controleur HTML (input, select, textarea ...), aus données d'application
-  * ` ng-bind ` lie les données d'application à la view HTML
+<p>il permet d'étendre le HTML avec des directives ` ng-directives `, pour de nouveaux comportements etc</p>
+  - ` ng-app ` = définie une AngularJS application
+  - ` ng-model ` permet de lier la valeur du controleur HTML (input, select, textarea ...), aus données d'application
+  - ` ng-bind ` lie les données d'application à la view HTML
   ```html
   <div ng-app="">
  	<p>Name: <input type="text" ng-model="name"></p>
  	<p ng-bind="name"></p>
   </div>
   ```
-
+#### FILTER
+  - `uppercase` /`lowerc`lowercase`ase`
+  -
 #### EXPRESSION
   la syntaxe des expressions AJS s'écrivent avec des doubles accolades **{{ bibi }}**.
   ```html
