@@ -7,7 +7,7 @@
     * [virmc](bash_script/vimrc_config.md)
    * [Man commande](bash_script/commande.md)
     * [ln - lien symbolique](bash_script/ln_liensymbolique.md)
-   * [script](bash_script/info)
+   * [script shell](bash_script/info.md)
 
 * GIT
   * [Fork & Merge](git/fork & merge)
