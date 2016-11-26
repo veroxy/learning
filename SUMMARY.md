@@ -7,5 +7,4 @@
        * [virmc](bash_script/vimrc_config)
    * [Man commande](bash_script/commande.md)
    * [script](bash_script/)
-* [SUMMARY](summary.md)
 
