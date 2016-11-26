@@ -1,12 +1,12 @@
 # Summary
 
 * [INTRO](README.md)
-* SHELL
+* [SHELL](shell.md)
    * [Paramètres Terminal](bash_script/param_terminal.md)
        * [ZSH](bash_script/param_zsh)
        * [virmc](bash_script/vimrc_config)
    * [Man commande](bash_script/commande.md)
    * [script](bash_script/)
-
 * SASS
-  * [sass](sass/sass.md)
+   * [sass](sass/sass.md)
+
