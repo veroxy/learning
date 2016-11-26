@@ -3,10 +3,11 @@
 * [INTRO](README.md)
 * SHELL
    * [Paramètres Terminal](bash_script/param_terminal.md)
-   * [ZSH](bash_script/param_zsh)
-   * [virmc](bash_script/vimrc_config)
+    * [ZSH](bash_script/param_zsh.md)
+    * [virmc](bash_script/vimrc_config.md)
    * [Man commande](bash_script/commande.md)
-   * [script](bash_script/)
+    * [ln - lien symbolique](bash_script/ln_liensymbolique.md)
+   * [script](bash_script/info)
 
 * GIT
   * [Fork & Merge](git/fork & merge)

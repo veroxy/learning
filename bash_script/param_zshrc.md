@@ -1,6 +1,6 @@
 # paramètre zshrc
 
-~~~bash
+~~~shell
   # Path to your oh-my-zsh installation.
     export ZSH=/home/veroxy/.oh-my-zsh
 
