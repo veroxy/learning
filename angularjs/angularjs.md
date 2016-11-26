@@ -86,7 +86,52 @@ La vue est la projection de ce que voit le visiteur sur son navigateur
   ```
 #### AJS APPLICATIONS
   AJS comprend des **modules** pour définir l'AJS contextes et  des **controleurs** pour gérer ces application.  La directive **ng-app** définie le contexte, **ng-conttrolers** le controleur.
+
+#### CONTROLER
+  - fait partie du syteme MVC ( )
+  - récupère une partie des données et va les envoyer à la vue (modele)
+
+#### SCOPE
+  - système qui fait la liaison entre le modele et la vue
+  - cela remplace le `ng-init`
+  **AVANT* AVEC NG-INIT**
   ```
+    <section class="dates-area" ng-init="events=[{date:'Mar. 5', month:'oct', nom:'literie matelats', lieux:'Bote', adr:'8 chat boté'}, {date:'Mar. 5', month:'nov', nom:'RWX', lieux:'Chmod', adr:'75 allée shell script'}, {date:'Mar. 7', month:'nov', nom:'Salope salope', lieux:'BML', adr:'8 rue des aveugles'}, {date:'Mar. 5', month:'dec', nom:'contenu bitch', lieux:'BML', adr:'255 cours des zizi'}]">
+  ```
+**APRÈS AVEC UN CONTROLLER**
+  ```
+  <section class="dates-area" ng-conttrolers="FtEventsController">
+  </script>
+  function FtEventsController($scope){
+    $scope.events =[
+    {
+      date:'Mar. 5',
+      month:'oct',
+      nom:'literie matelats',
+      lieux:'Bote',
+      adr:'8 chat boté'
+    },
+    {
+      date:'Mar. 5',
+      month:'nov',
+      nom:'RWX', lieux:'Chmod', adr:'75 allée shell script'
+    },
+    {
+      date:'Mar. 7',
+      month:'nov',
+      nom:'Salope salope',
+      lieux:'BML',
+      adr:'8 rue des aveugles'
+    },
+    {
+      date:'Mar. 5',
+      month:'dec',
+      nom:'contenu bitch',
+      lieux:'BML',
+      adr:'255 cours des zizi'
+    }];
+  }
+  </script>
   ```
 
   ```
