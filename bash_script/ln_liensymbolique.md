@@ -3,7 +3,7 @@
 ----
 ln [-s >> fichier]
 EXEMPLES
-```shell
+~~~shell
 $ ls -l (afficher les fichiers et les droits avec les fichier cachés)
 -------
 total 36
@@ -15,12 +15,12 @@ dr-x---r-- 2 veroxy veroxy 4096 juin   1  2015 test2
 -rw-r----x 1 veroxy veroxy    2 juin   1  2015 test4
 -r-----r-- 2 veroxy veroxy    1 juin   1  2015 test5
 lrwxrwxrwx 1 veroxy veroxy    5 juin   1  2015 test6 -> test0
-```
+~~~
 **test6 est un LIEN SYMBOLIQUE** qui si on fait
-```shell
+~~~shell
 touch test0/addfiletest.txt  va apparaître dans
 ls test6/ >> addfiletest.txt
-```
+~~~
 où :
   * test0 est la source
   * test6 est la destination

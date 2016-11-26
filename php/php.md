@@ -8,8 +8,8 @@
 
 250 millions de sites environ sont réalisés à travers le monde en PHP
 ---
-```
-```
+~~~
+~~~
 
 ### HISTOIRE : v1 & v2
   * d’abord Personal Home Pages puis HypertextPreProcessor.
@@ -54,9 +54,9 @@ De nombreux CMS (Content Management System) et Frameworks de développement Web 
 
 ### INSTALL
 avant nettoyer l'environnement (Ubuntu 16...) il rentre en conflit avec les composant d'installation voici comment les supprimer
-```
+~~~
 $ sudo apt-get purge mysql-server apache2 php (php7) php-mysql phpmyadmin
-```
+~~~
 |LAMP | INSTALLATION*|
 |----- |:--- |
 |Linux| Apache2|
@@ -66,12 +66,12 @@ $ sudo apt-get purge mysql-server apache2 php (php7) php-mysql phpmyadmin
 | |verifier php.ini|
 
 \*suivre les instruction sur la documention
-```
+~~~
 $ sudo apt-get install apache2 php mysql-server libapache2-mod-php php-mysql
 
 $ cat /opt/lampp/etc/php.ini
 
-```
+~~~
 ----
 ### SIMILARITÉ DES FONCTION EN C & PHP
 > **FUNCTION COUNT() vs SIZEOF** <br />

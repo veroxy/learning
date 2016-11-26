@@ -27,32 +27,32 @@ En plus de toutes les raisons de bases que l'on choisi d'utiliser SASS
 
 ## 1-KEZAKO ?
 ### TREE
-```
+~~~
 dir_PROJET/
   CSS/
     SCSS/
     style.scss
     _mixins.scss
     _colors.scss
-```
+~~~
 * les fichier commençant par "\_fichier" sont des PARTIES. >> @import dans le fichier PRINCIPAL "style".
 
 * les @import sass sont incorporer dans les autres MASTERS/STYLES. Le préprocesseur va incorporer directement les différentes parties dans le fichier STYLE.CSS
 
-```css
+~~~css
 #!sass
 example : dans le fichier style.sass
 
 /** importer diff styles des autres pages **/
 @import '/scss/home';
 @import '/scss/job';
-```
+~~~
 
 ### Imbrication
 * Indentation du code / code imbriqué
 * @mediaquery facilité
 
-```css
+~~~css
 #!sass
 body.home {
   .media-unit {
@@ -76,25 +76,25 @@ body.home {
     width: auto; }
   }
 }
-```
+~~~
 
 ### variables
 * modifier le code plus facilement en réduisant les duplications.
 * de nommer la valeur d’une propriété, la couleur par exemple
 
-```css
+~~~css
 #!sass
 $color: #ffffff;
 a{
   color: $color;
 }
-```
+~~~
 
 ### @mixins && @include
 * on créer un exemple de style @mixin que l'on nomme
 * on intégrègre le mixin dans une balise/class/id/ avec @include + nom de la mixin
 
-```css
+~~~css
 #!sass
 //Exemple de mixin
 
@@ -108,9 +108,9 @@ $bkgdcolor: #ffa;
     @include texte-surligne-gras;
   }
 }
-```
+~~~
 utilité àvec cross-browser:
-```css
+~~~css
 #!sass
 @mixin rounded-corners {
   $rounded-corner-radius: 4px;
@@ -122,13 +122,13 @@ utilité àvec cross-browser:
 .button {
 @include rounded-corners;
 }
-```
+~~~
 
 ### function utile
 * procède de la même façon que lorsque l'on parcours les propriétés d'un objet.
 * on demande la correspondance entre la liste et la classe dans ls html.
 
-```css
+~~~css
 #!sass
   $list: (orange, purple, teal);
 
@@ -141,10 +141,10 @@ utilité àvec cross-browser:
 <div class="orange">orange</div>
 <div class="purple">purple</div>
 <div class="teal">teal</div>
-```
+~~~
 * ou encore créer un arc-en-ciel bien dégeulasse selon le nombre de divs <= 10
 
-```css
+~~~css
 #!sass
 .ray {
   height: 30px;
@@ -156,10 +156,10 @@ utilité àvec cross-browser:
     background: adjust-hue(blue, $i * $step);
    }
 }
-```
+~~~
 ### conditionS
 
-```css
+~~~css
 #!sass
 $total: 10; //Number of .ray divs in our html
 $step: 360deg / $total; //Used to compute the hue based on color-wheel
@@ -173,11 +173,11 @@ $step: 360deg / $total; //Used to compute the hue based on color-wheel
 	margin-left: if($i % 2 == 0, 0px, 50px);
    }
 }
-```
+~~~
 ### extension
  \@extend permet de d'ajouter des propriété à d'autres definitions de style par exemple lorsque l'on veut appliquer une propriété à différentes balise/class/id en même temps sans les énumérer manuellement.
 
- ```css
+ ~~~css
 #!sass
  .absolute {
    position: absolute;
@@ -195,7 +195,7 @@ $step: 360deg / $total; //Used to compute the hue based on color-wheel
 .absolute, .caca, .capa p{
   position: absolute;
 }
-```
+~~~
 ----
 ## 2-USAGES
 ~~~css
