@@ -22,7 +22,8 @@
 7. AJAX
 8. PHP
   * [sql](php/sql.md)
-  * [pdo]()
+  * [pdo](php/pdo.md)
+  * [traiter un fichier json]('php/jsonfile.md')
 9. POO
   * [la poo](poo/poo.md)
 
