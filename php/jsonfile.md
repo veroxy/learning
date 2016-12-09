@@ -5,6 +5,7 @@ oui on peut traiter des fichiers de données de type objets javascript dans php 
 
 
 ### JSON KEZAKO ?
+Un fichier Json peut servir de BDD ou juste apporter des éléments à traiter comme du php
 * [outils pour générer un json à partir de SQL]('http://www.csvjson.com/sql2json')
 * [formater au format json]('http://www.csvjson.com/json_beautifier')
 
