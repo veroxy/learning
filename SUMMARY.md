@@ -1,5 +1,6 @@
 # Summary
 
+### LANGAGE
 * [INTRO](README.md)
 1. SHELL
   * [Paramètres Terminal](bash_script/param_terminal.md)
@@ -19,7 +20,10 @@
 5. JAVASCRIPT
 6. JQUERY
 7. AJAX
-8. MysQl PDO::
-9. PHP
-10. POO
+8. PHP
+  * [sql](php/sql.md)
+  * [pdo]()
+9. POO
   * [la poo](poo/poo.md)
+
+### OUTILS

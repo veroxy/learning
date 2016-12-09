@@ -1,4 +1,5 @@
-# ajax Asynchrone Javascript And XML
+# AJAX - JQUERY
+##### Asynchrone Javascript And XML
 
 > À chaque fois que vous utilisez xAjax, il faut créer votre objet xajax(), et appeler les méthodes nécessaires (processRequest() et printJavascript()). Retenez bien cela, c'est indispensable !
 
@@ -6,7 +7,6 @@
 ### SOURCES
 [MDN XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest "mdn XML")<br />
 /*[openclassrooms ]("https://openclassrooms.com/courses/xajax-applications-ajax-faciles-avec-php-et-xajax")<br />*/
-
 
 
 ### METHODES
