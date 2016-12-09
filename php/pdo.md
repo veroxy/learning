@@ -39,7 +39,7 @@ il faut créer une condition pour vérifier le contenu rempli/ou non(ici formula
   ?>
 ~~~
 
-2. je requete via dans ma bdd:
+. je requete via dans ma bdd:
 ~~~php
 <?php
   $requete = "SELECT * FROM users "
