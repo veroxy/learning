@@ -23,7 +23,7 @@
 8. PHP
   * [sql](php/sql.md)
   * [pdo](php/pdo.md)
-  * [traiter un fichier json](php/jsonfile.md)
+  * [fichier json](php/jsonfile.md)
 9. POO
   * [la poo](poo/poo.md)
 
