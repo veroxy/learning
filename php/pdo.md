@@ -33,9 +33,8 @@ il faut créer une condition pour vérifier le contenu rempli/ou non(ici formula
       $email = $_POST['email'];
       $age = $_POST['age'];
       $datesuscribe = $_POST['datesuscribe'];
-
       $qInsertion = "INSERT INTO users (username, firstname, lastname, email, age, datesuscribe)";
-      $rq = $connexion->prepare
+      $rq = $connexion->prepare;
     };
   ?>
 ~~~

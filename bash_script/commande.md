@@ -4,10 +4,11 @@
 ----
 > quand on ne sait pas on cherche. Si on a pas la réponse c'est qu'lon pas assez chercher !!
 
-1. ### pwd
+### fichiers / directory
+- pwd
 permet de voire où l'on ce situe dans l'ordinateur:  dans quel dossier.
 
-2. ### ls
+- ls
 permet de lister les éléments de mon dossier
   * `ls` > lister simplement
   * `ls -l` > lister dans l'ordre de création [plus récent > plus vieux](timestamp)
@@ -16,3 +17,6 @@ permet de lister les éléments de mon dossier
   * `ls -lRa` > lister le répertoire courant et tous ses sous-répertoires
   * `ls -lD` > lister les uniquement les Dossiers
   * `ls -` >
+
+- chmod (RWX)
+  * 'Read Write Execute'
