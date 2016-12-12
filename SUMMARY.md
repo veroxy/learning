@@ -20,6 +20,8 @@
 5. JAVASCRIPT
 6. JQUERY
 7. AJAX
+  * [ajax](ajax/ajax.md)
+  * [ajax Jquery](ajax/jqueryajax.md)
 8. PHP
   * [sql](php/sql.md)
   * [pdo](php/pdo.md)
