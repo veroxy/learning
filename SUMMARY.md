@@ -14,19 +14,22 @@
   * [paramss_git](git/params_git.md)
   * [Fork & Merge](git/fork_merge.md)
   * [Branche](git/branch.md)
-3. SASS
+3. HTLM5
+  * [balises & sémantiques](html5/balises.md)
+  * [les attributs utiles](html5/attributes.md)
+4. CSS3
+5. SASS
   * [sass](sass/sass.md)
-4. HTLM5
-5. JAVASCRIPT
-6. JQUERY
-7. AJAX
+6. JAVASCRIPT
+7. JQUERY
+8. AJAX
   * [ajax](ajax/ajax.md)
   * [ajax Jquery](ajax/jqueryajax.md)
-8. PHP
+9. PHP
   * [sql](php/sql.md)
   * [pdo](php/pdo.md)
   * [fichier json](php/jsonfile.md)
-9. POO
+10. POO
   * [la poo](poo/poo.md)
 
 ### OUTILS
