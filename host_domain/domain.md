@@ -5,5 +5,5 @@
 ---
 
 ### OVH, 1&1
-  [dot tk](dot.tk) est un site permettant de créer un nom de domaine gratuit sous **l'extension '.fr'**
+  [dot tk](dot.tk) est un site permettant de créer un nom de domaine gratuit sous **l'extension '.tk'**
 ### Redirection
