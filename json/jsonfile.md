@@ -40,3 +40,9 @@ PHP peut décoder un fichier.json et encoder vers un fichier.json.
     $decodeJson = json_decode($fileJson);
 
   ~~~
+  * on peut désormais le parcourir avec une boucle for / foreach
+   ~~~
+    foreach ($decodeJson as $value){
+        echo $value
+    }
+   ~~~
