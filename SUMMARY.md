@@ -2,6 +2,12 @@
 
 ### LANGAGE
 * [INTRO](README.md)
+
+0. IDE & EDITEUR DE TEXTE
+    * [terminal](text_editor_ide/terminal.md)
+    * [IDE](text_editor_ide) 
+        * [phpstorm](text_editor_ide/ide_phpstorm.md)
+        * [atom](text_editor_ide)
 1. SHELL
   * [Paramètres Terminal](bash_script/param_terminal.md)
     * [ZSH](bash_script/param_zshrc.md)
