@@ -1,4 +1,4 @@
---  requete DML - Création tabale classe dans hoc --
+-- Création tabale classe dans hoc --
 CREATE TABLE classe(
   id_classe INT PRIMARY KEY  AUTO_INCREMENT,
   nom_classe VARCHAR(100) NOT NULL , /*on veut fournir un nom*/
@@ -6,6 +6,7 @@ CREATE TABLE classe(
   niveau VARCHAR(50) NULL,
   nom_prof_principal VARCHAR(150)  NOT NULL
 );
+
 CREATE TABLE etudiant(
   id_etudiant INT PRIMARY KEY AUTO_INCREMENT,
   nom VARCHAR(200) NOT NULL,
@@ -73,3 +74,66 @@ SELECT nom,prenom FROM professeur ; /* retourne uniquement les colonnes nom et p
 SELECT nom AS nom_professeur FROM professeur;
 SELECT CONCAT(nom,' ', prenom) AS nom_prenom FROM professeur; /*retourne la fusion de nom + ' ' + prenom dans une table nom_prenom*/
 SELECT * FROM etudiant WHERE etudiant.telephone  IS NULL ; /* renvoie toutes les occurences d'étudiants qui n'on pas de telephone*/
+
+SELECT * FROM professeur WHERE id_professeur=2;
+SELECT * FROM professeur WHERE matiere = 'sport' AND civilite = 'm';
+SELECT * FROM professeur WHERE matiere = 'sport' OR civilite = 'm';
+SELECT * FROM professeur WHERE civilite = 'mme';
+SELECT * FROM professeur WHERE matiere <> 'gestion';
+SELECT * FROM professeur WHERE matiere IN ('gestion','telecom');
+SELECT * FROM professeur WHERE id_classe_j NOT IN (2,3);
+SELECT * FROM professeur WHERE matiere LIKE 'S%';
+SELECT DISTINCT civilite FROM professeur LIKE 'S%';
+SELECT * FROM professeur ORDER BY nom, prenom DESC;
+-- on compte le nompbre de professeurs dont la matère est sport"
+SELECT COUNT(*)AS nb_professeurs FROM professeur WHERE matiere = 'sport';
+
+
+
+INSERT INTO professeur (nom, prenom, civilite, matiere, id_classe_j)
+VALUES
+  ('Jwes','Eli','m','sport',3),
+  ('Benarfa','Aliesse','mme','sport',2),
+  ('Barjo','Steve','mme','algorithmie',1);
+
+INSERT INTO classe (nom_classe, nb_places, niveau, id_professeurprincipal_j)
+VALUES
+  ('dg_2020',25,'bts',3),
+  ('fcil_2020',12,'bac',5),
+  ('este_2019',15,'bac',2);
+
+SELECT COUNT(*) FROM classe WHERE classe.id_professeurprincipal_j = 3;
+
+-- EXO --
+SELECT * FROM etudiant WHERE etudiant.id_classe_j = 1;
+SELECT * FROM etudiant WHERE nom LIKE 'D%';
+SELECT nom,prenom,email FROM etudiant WHERE  etudiant.id_classe_j = 2;
+SELECT nom FROM etudiant WHERE etudiant.id_classe_j <> (2) AND nom LIKE '%f';
+SELECT emaiL AS email_in_class1or2 FROM etudiant WHERE etudiant.id_classe_j = (1,2);
+SELECT COUNT(*) FROM etudiant WHERE etudiant.id_classe_j = 3;
+SELECT count(*) FROM etudiant WHERE etudiant.id_classe_j = (4,5);
+
+-- TOLEARN JOINCTION
+-- INNER JOIN == intersection des deux tables
+-- LEFT JOIN == la classe de gauche selectionne la classe à joindre
+
+SELECT *
+FROM classe
+  INNER JOIN professeur
+    ON classe.id_professeurprincipal_j = professeur.id_professeur;
+
+
+-- TOLEARN  on peut donner des "ALIAS" au nom de la table lors de la requette ici classe = cl et professeur = pr
+SELECT cl.id_classe AS "ID classe", CONCAT(nom,' ',prenom) AS prof_principale, pr.id_classe_j AS  "ID prof"
+FROM classe cl
+  INNER JOIN professeur pr
+    ON cl.id_professeurprincipal_j = pr.id_professeur;
+
+SELECT CONCAT(e.nom,' ',e.prenom) AS 'nom prenom' ,nom_classe AS 'Classe', CONCAT(p.nom, ' ', p.nom) AS 'prof_principal'
+FROM etudiant e
+  INNER JOIN classe cl
+    ON e.id_classe_j =  cl.id_classe
+  INNER JOIN professeur p
+    ON cl.id_professeurprincipal_j = p.id_professeur;
+
+
