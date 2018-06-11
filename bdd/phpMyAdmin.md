@@ -58,7 +58,7 @@
 permet de rendre la colonne optionnel CONTRAIRE contrainte **NOT NULL**
 #### index 
 permet de donner l'ordre / dictionnaire ordonné
-- primarye (primary key)
+- primary (primary key == clef primaire)
 - UNIQUE sur une table, vous ne mettez pas seulement un index, vous ajoutez surtout une contrainte.
 
 - index
@@ -69,5 +69,8 @@ permet de donner l'ordre / dictionnaire ordonné
 #### 
 myIsam ne fait pas :
 integrite entre les tables
- 
- fulltext a été intégré à innoDB
+fulltext a été intégré à innoDB
+
+#### console SQL
+DML - voir le fichier [createClasseHoc.sql]('createClasseHoc.sql');
+
