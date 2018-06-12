@@ -7,6 +7,7 @@ CREATE TABLE classe(
   nom_prof_principal VARCHAR(150)  NOT NULL
 );
 
+-- -------------------------------------------------------------------
 CREATE TABLE etudiant(
   id_etudiant INT PRIMARY KEY AUTO_INCREMENT,
   nom VARCHAR(200) NOT NULL,
@@ -14,10 +15,13 @@ CREATE TABLE etudiant(
   telephone VARCHAR(10) NULL,
   email VARCHAR(80) NOT NULL
 );
+
+-- -------------------------------------------------------------------
 ALTER TABLE classe ENGINE=INNODB;
 
 INSERT INTO classe (nom_classe, nb_places, niveau, nom_prof_principal) VALUES ('hoc_2018',25,'3ème','Mme Bénédicte Crepet');
 
+-- -------------------------------------------------------------------
 
 -- INSERTION DE DONNEES --
 INSERT INTO etudiant (nom, prenom, telephone, email) VALUES ('Longdubb','Moran','0607080910','lm@avalon.kg');
@@ -26,6 +30,7 @@ INSERT INTO etudiant (nom, prenom, telephone, email) VALUES ('Edinbarth','Nolan'
 INSERT INTO classe (nom_classe, nb_places, niveau, nom_prof_principal) VALUES ('simplon_2018',30,'1ère','Mlle Cogno Corones');
 
 
+-- -------------------------------------------------------------------
 -- DDL - persistance des données == stocker des données JOINTURE : 1-N -> un etudiant a une seule classe _j pour joinction --
 
 ALTER TABLE etudiant ADD COLUMN id_classe_j INT NOT NULL;
@@ -33,6 +38,7 @@ ALTER TABLE etudiant ADD COLUMN id_classe_j INT NOT NULL;
 ALTER TABLE etudiant ADD CONSTRAINT fk_etudiant_classe FOREIGN KEY (id_classe_j) REFERENCES classe(id_classe);
 
 
+-- -------------------------------------------------------------------
 -- on inert des nouvelle données avec la valeur de la clef étrangère --
 INSERT INTO etudiant (nom, prenom, telephone, email,id_classe_j) VALUES ('Marouf', 'Mirou', '0620385074', 'lalamirou@mater.kg',1);
 
@@ -41,6 +47,7 @@ INSERT INTO etudiant (nom, prenom, telephone, email, .etudiant.id_classe_j) VALU
   ('Mao', 'Mahiti',NULL, 'boychild@gay.gl',1),
   ('Poscripter', 'Basil',NULL, 'base@italian.fr',3);
 
+-- -------------------------------------------------------------------
 -- on peut insérrer une CONTRAINTE DIRECTEMENT A LA CREATION DE LA TABLE --
 CREATE TABLE professeur (
   id_professeur INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
@@ -48,7 +55,9 @@ CREATE TABLE professeur (
   prenom VARCHAR(200) NOT NULL ,
   civilite VARCHAR(15) NOT NULL,
   matiere VARCHAR(50) NOT NULL,
-  id_classe_j INT NULL,
+
+  id_classe_j INT NULL, /*d*/
+
   CONSTRAINT fk_professeur_classe FOREIGN KEY (id_classe_j) REFERENCES classe(id_classe)
 )ENGINE=INNODB;
 
@@ -59,6 +68,9 @@ VALUES
   ('Niel','Xavier','m.','telecom',2),
   ('Cogno','Corones','mlle','design graphique',2);
 
+
+-- -------------------------------------------------------------------
+
 ALTER TABLE classe
   ADD COLUMN id_professeurprincipal_j INT NOT NULL;
 
@@ -68,6 +80,8 @@ SET   id_professeurprincipal_j=1;
 ALTER TABLE classe
   ADD CONSTRAINT fk_professeurprincipal_professeur FOREIGN KEY (id_professeurprincipal_j)REFERENCES professeur(id_professeur);
 
+
+-- -------------------------------------------------------------------
 
 SELECT * FROM professeur; /* retourne toute la table professeur*/
 SELECT nom,prenom FROM professeur ; /* retourne uniquement les colonnes nom et prénom de la table professeur sans les autres sous le NOMPROFESSEUR*/
@@ -89,6 +103,7 @@ SELECT * FROM professeur ORDER BY nom, prenom DESC;
 SELECT COUNT(*)AS nb_professeurs FROM professeur WHERE matiere = 'sport';
 
 
+-- -------------------------------------------------------------------
 
 INSERT INTO professeur (nom, prenom, civilite, matiere, id_classe_j)
 VALUES
@@ -102,6 +117,7 @@ VALUES
   ('fcil_2020',12,'bac',5),
   ('este_2019',15,'bac',2);
 
+-- -------------------------------------------------------------------
 SELECT COUNT(*) FROM classe WHERE classe.id_professeurprincipal_j = 3;
 
 -- EXO --
@@ -113,6 +129,7 @@ SELECT emaiL AS email_in_class1or2 FROM etudiant WHERE etudiant.id_classe_j = (1
 SELECT COUNT(*) FROM etudiant WHERE etudiant.id_classe_j = 3;
 SELECT count(*) FROM etudiant WHERE etudiant.id_classe_j = (4,5);
 
+-- -------------------------------------------------------------------
 -- TOLEARN JOINCTION
 -- INNER JOIN == intersection des deux tables
 -- LEFT JOIN == la classe de gauche selectionne la classe à joindre
@@ -137,3 +154,35 @@ FROM etudiant e
     ON cl.id_professeurprincipal_j = p.id_professeur;
 
 
+-- -------------------------------------------------------------------
+-- dans une une jointure interne ob ne renvois que les elements (classe) qui contiennent pas l'élément rechercheé (nombre d'élève)
+SELECT nom_classe, count(id_etudiant) "nb etudants"
+FROM classe
+  INNER JOIN etudiant ON classe.id_classe = etudiant.id_classe_j
+GROUP BY classe.id_classe; /*Agréger des donnees par donnes*/
+
+--  Alors que left join va quand même renvoyer les élements (classe) ou il n'y a rien (pas d'élève)
+SELECT nom_classe, count(id_etudiant) "nb etudants"
+FROM classe
+  LEFT JOIN etudiant ON classe.id_classe = etudiant.id_classe_j
+GROUP BY classe.id_classe; /*Agréger des donnees par donnes*/
+
+-- ---------------------------------------------------
+SELECT concat(e.nom,' ',e.prenom) AS 'etudiant', classe.nom_classe AS classe
+FROM etudiant e -- pour la jointure se fait dans la table contenant la clef etrangère
+  INNER JOIN classe ON classe.id_classe + e.id_classe_j
+GROUP BY classe.id_classe;
+
+
+SELECT concat(c.nom_classe, ' - ', c.nb_places) AS 'effectif classe',concat(p.nom, ' ', p.prenom) AS 'professeur principal'
+FROM classe c
+  INNER JOIN professeur p ON c.id_professeurprincipal_j = p.id_professeur ;
+-- on recupère le point de jointure ctd dans la table d'origine(classe) vers la table pointée
+
+-- ---------------------------------------------------------
+-- EQUIVALENT D"UN INNER JOIN avec la prise de deux table et l'envois vers WHERE:
+SELECT concat(etudiant.nom, ' ', etudiant.prenom)as 'etudiants', nom_classe as 'Classe'
+FROM etudiant, classe
+WHERE etudiant.id_classe_j = classe.id_classe;
+
+-- ---------------------------------------------------------

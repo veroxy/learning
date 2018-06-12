@@ -71,6 +71,15 @@ myIsam ne fait pas :
 integrite entre les tables
 fulltext a été intégré à innoDB
 
+#### CREER un utilisateur
+donner les droits à un utilisateur :
+~~~
+    CREATE USER monomuser IDENTIFIED BY caca; 
+    
+    CREATE DATABASE database_name; IDENT
+    GRANT ALL PRIVILEGES ON database_name.* TO 'username@localhost';
+~~~
+
 #### console SQL
 DML - voir le fichier [createClasseHoc.sql]('createClasseHoc.sql');
 
