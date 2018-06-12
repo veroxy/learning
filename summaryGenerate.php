@@ -6,6 +6,7 @@
  * Time: 09:41
  */
 
+
 $indexDefault = [
     'index.htm',
     'index.html',
@@ -32,22 +33,24 @@ $fileImport = [
 function recursiveScan($dir,$indexDefault) {
     $tree = glob(rtrim($dir, '/') . '/*');
     if (is_array($tree)) {
+        $i = 1;
         foreach($tree as $file) {
             if (is_dir($file)) {
                 //echo $file . '<br/>';
                 recursiveScan($file,$indexDefault);
             } elseif (is_file($file)) {
                 if (preg_match('/.php$/',$file,$matches)){
-                    echo  "<a href='" .$file ."'> ". filePathIndex(extractFileName($file),$indexDefault) ."</a> <br/>";
+                    ?>
+                       <li> <a href=" <?=  $file ?>" target="_blank"> <?= filePathIndex(extractFileName($file),$indexDefault) ?></a> </li>
+                    <?php
                 }
-               // echo preg_match('/$.sql/',$file);
-                //echo $file . '<br/>';
             }
+            $i++;
         }
     }
 }
 
-recursiveScan("./",$indexDefault);
+
 /*
  * @param $val est le fichier retourné par extractfile
  * @param $arrExte
@@ -56,8 +59,6 @@ function filePathIndex($val,array $arrExte){
     if(in_array($val, $arrExte)){
         //echo $val;
         return $val;
-    }else{
-        return "ERROR" . __FILE__;
     }
 };
 
@@ -77,3 +78,22 @@ function extractFileName($url){
 
 
 //extractLinkName("./DOCUMENTATION/markdowntohtml.md");
+?>
+
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Titre de la page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<h1>Sommaire</h1>
+    <ul>
+        <?php
+        recursiveScan("./",$indexDefault);
+        ?>
+    </ul>
+</body>
+</html>
