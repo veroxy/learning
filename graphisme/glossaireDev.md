@@ -14,13 +14,13 @@ REF blog du moderateur
 
 * **Balises** : partie de code de programmation destinée à la création et à la structure d’une page internet, ou utilisée par les moteurs de recherche afin de mieux analyser un élément.
 
-* **Base de données** : ensemble de données propres à un domaine déterminé, et organisées de manière à pouvoir être facilement retrouvées et mises à jour. Quand elle est informatisée, la base de données se matérialise par un ou plusieurs fichiers, qui sont gérés par un logiciel spécialisé.
+* **Base de données - [bdd](./bdd/bddNotions.md)** : ensemble de données propres à un domaine déterminé, et organisées de manière à pouvoir être facilement retrouvées et mises à jour. Quand elle est informatisée, la base de données se matérialise par un ou plusieurs fichiers, qui sont gérés par un logiciel spécialisé.
 
 * **Blog** : site Web caractérisé par la publication régulière de billets ou de « post », à l’image d’un journal de bord. Le blogueur (rédacteur qui tient le blog) y rédige un contenu souvent textuel, enrichi d’hyperliens et d’éléments multimédias, sous lequel chaque lecteur peut généralement apporter des commentaires.
 
 * **CDC** : Cahier des charges. Les professionnels évoluant en méthodes agiles y ont moins recours, mais le CDC reste encore aujourd’hui une pratique courante.
 
-* **CMS** : 
+* **CMS** : [cms wp]()
 
 * **Codage** : action réalisée par un programmeur qui écrit le code source d’un programme et le compile.
 
@@ -38,7 +38,7 @@ REF blog du moderateur
 
 Gamification: est l'utilisation de la manière de penser et de concevoir un jeu afin que le produit final soit amusant mais puisse aussi devenir une connaissance acquise.
 
-* **IDE** : Logiciel de développement utilisé pour réaliser le code source, compiler, lancer des tests… C’est l’outil principal qu’utilise tous les jours un développeur.
+* **[IDE]('text_editor_ide/ide_phpstorm.md)** : Logiciel de développement utilisé pour réaliser le code source, compiler, lancer des tests… C’est l’outil principal qu’utilise tous les jours un développeur.
 
 * **Intégration** : consiste à réunir au sein d’un même système d’information, des parties développées de façon séparées. L’intégration peut également consister à la tâche effectuée par le développeur Front-End (aussi appelé intégrateur).
 
