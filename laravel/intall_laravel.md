@@ -1,0 +1,52 @@
+# laravel install
+
+### ENVIRONNMENT LARAVEL
+   1. [COMPOSER.exe]('https://getcomposer.org/Composer-Setup.exe')
+   2. env wamp/mamp server 
+   3. verification de la version de php `php - v` > ici c'ests la version 5.4
+   4. le repertoire source `httpdoc` 
+       ~~~
+        composer create-project --prefer-dist laravel/laravel nom_mon_projet "5.4.*" 
+       ~~~
+   5. **virtual host**  > dans wamp/mamp à `localhost/` créer `Ajouter un Virtual Host`
+   6. indiquer
+        - le nom du virtual host `http://goodfoodncookbook.projet/`
+        - le root path vers lequel celui-ci doit pointer `http://localhost/vagrant/httpdoc/goodfoodncookbook` 
+   7. dans les **outils** de wamp/mamp `redemarer le serveur DNS`
+   
+   
+###STRUCTURE DU PROJET
+- **App** => ce qui fait fonctionner l’application
+	- Dossier http => celui ou l’on va trouver les controleurs, les middlewares. 
+	> Dans la V5.3 de Laravel on trouve les modeles ici (seulement pr la 5.3)
+	- Dossier Providers => contient des outils qui va nous simplifier notre syntaxe
+- **Bootstrap** => Ce qui va permettre de generer tous les fichier de performance et d’optimisation de notre application (peu utilisé)
+- Config => Contient toutes les variables de notre application. Point sensible de notre application. A configurer au debut du projet.
+- **Database** => Particulièrement important. Laravel utilise un système de migration, on va créer toutes nos database avec Laravel mais en PHP. Pour passer notre code vers le SQL on fait une migration.
+    - Factories =>     
+-  Public => Là où l’on a notre css, notre js, notre font, ect.. Ce dossier contient tout ce qui peux être modifié par le client. 
+- **Ressources** => 
+    - Assets : On place ici nos fichiers compilables, comme nos fichiers SASS, ect…
+    - Lang : On placera ici toutes nos traductions
+    - Views : On place ici toutes nos vues, cad tous nos fichiers HTML.
+    - Routes : URL par lesquels on accède aux pages. Le routeur va nous amener vers une vue. Important pour la SEO !!! 
+   > Par défaut on place tout dans Web, lorsque l’on communique avec des API on place nos fichier dans le fichier API.
+- **Storage** : là où tous nos fichiers de cache sont stockés .
+	- Logs : on récupère des 
+- **Test** : Pour tous les tests automatisés, pas utilisé pr nous.
+- **Vendor** : Contient toutes les dépendances qui font fonctionner l’application laravel.
+- **.env** : contient toutes les infos sensible de d'environnement bdd il faut indiquer le nm de la bdd / utilisateur /mp
+    ~~~
+        DB_CONNECTION=mysql
+        DB_HOST=127.0.0.1
+        DB_PORT=3306
+        DB_DATABASE=bdd_name
+        DB_USERNAME=user_name
+        DB_PASSWORD=mp
+    ~~~
+
+- **artisan**    
+- **Package.json** : ce qui nous permet de compiler nos fichier
+ 
+- **Server.php** : Simuler le fonctionnement d’un serveur local.
+- **Webpack** : Permet de compiler nos fichier SASS en fichier lisible par le client
