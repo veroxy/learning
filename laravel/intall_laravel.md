@@ -44,7 +44,12 @@
         DB_USERNAME=user_name
         DB_PASSWORD=mp
     ~~~
-
+- **database.php**
+changer les paramètres d'encodage pour ne pas avoir d'"rreur
+    ~~~
+         'charset' => 'utf8',
+         :'collation' => 'utf8_unicode_ci',
+    ~~~
 - **artisan**    
 - **Package.json** : ce qui nous permet de compiler nos fichier
  
