@@ -21,7 +21,6 @@
 
 Les points d'interrogation permettent de dire que l'on renseignera les données plus tard :  Ici ce sont des champs texte et un id utilisateur qui sont attendu.
 
-
 les ORM 
 ~~~
     
