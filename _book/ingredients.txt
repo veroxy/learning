@@ -1,0 +1,26 @@
+## pour requetes json/ajax/shell/PHP fichier de test
+
+pH5 Huile de Douche - EUCERIN
+http://www.eucerin.fr/nos-produits/eucerin-peau-sensible/ph5-huile-de-douche
+Glycine Soja Seed Oil, MIPA-Laureth Sulfate, Ricinus Communis Seed Oil, Laureth-4, Cocamide DEA, Poloxamer 101, Parfum, Panthénol, Bisabolol, Lanolin Alcohol (Eucerit®), Citric Acid, Diammonium Citrate, Aqua, Propyl Gallate, BHT, Benzyl Alcohol, Linalool, Butylphenyl Methylpropional, Alpha-Isomethyl Ionone, Hexyl Cinnamal, Limonene, Coumarin, Benzyl Salicylate
+
+ISO-UREA MD BAUME PSORIASIS - LAROCHE POSAY
+http://www.laroche-posay.fr/produits-soins/iso-urea-pso/iso-ureamd-baume-psoriasis-p8582.aspx
+AQUA / WATER, UREA, BUTYROSPERMUM PARKII BUTTER / SHEA BUTTER, GLYCERIN, DIMETHICONE, PROPYLENE GLYCOL, CETEARYL ALCOHOL, PARAFFINUM LIQUIDUM / MINERAL OIL, PENTYLENE GLYCOL, GLYCINE, PEG-100 STEARATE, GLYCERYL STEARATE, CERA MICROCRISTALLINA / MICROCRYSTALLINE WAX, 2-OLEAMIDO-1,3-OCTADECANEDIOL, PARAFFIN, SODIUM HYDROXIDE, SODIUM LACTATE
+DISODIUM EDTA, HYDROXYETHYLPIPERAZINE ETHANE SULFONIC ACID, CAPRYLOYL GLYCINE, XANTHAN GUM, ACRYLATES/C10-30 ALKYL ACRYLATE CROSSPOLYMER, PENTAERYTHRITYL TETRA-DI-T-BUTYL HYDROXYHYDROCINNAMATE, PHENOXYETHANOL, CHLORPHENESIN, CITRIC ACID,
+
+
+Baume au Monoï Appellation d'Origine : 49% - HEI POA
+http://www.heipoa.fr/
+COCOS NUCIFERA (COCONUT) OIL, BUTYROSPERMUM PARKII (SHEA) BUTTER, CERA ALBA (BEESWAX), PARFUM (FRAGRANCE), GLYCERYL DIBEHENATE, TRIBEHENIN, GARDENIA TAHITENSIS FLOWER EXTRACT, TOCOPHERYLACETATE, GLYCERYL BEHENATE, TOCOPHEROL, BENZYL SALICYLATE, AMYL CINNAMAL, LINALOOL, GERANIOL, CITRONELLOL, BENZYL BENZOATE, LIMONENE, FARNESOL, BENZYLALCOHOL.
+
+Huile Prodigieuse® - NUXE
+https://fr.nuxe.com/huile-prodigieuse-huile-seche/huile-prodigieuse-huile-seche-multi-fonctions-vaporisateur-100-ml
+COCO-CAPRYLATE/CAPRATE, MACADAMIA INTEGRIFOLIA SEED OIL, DICAPRYLYL ETHER, CAPRYLIC/CAPRIC TRIGLYCERIDE, PRUNUS AMYGDALUS DULCIS (SWEET ALMOND) OIL, CORYLUS AVELLANA (HAZEL) SEED OIL, CAMELLIA OLEIFERA SEED OIL, PARFUM/FRAGRANCE, CAMELLIA JAPONICA SEED OIL, TOCOPHEROL, ARGANIA SPINOSA KERNEL OIL, BORAGO OFFICINALIS SEED OIL, TOCOPHERYL ACETATE, HELIANTHUS ANNUUS (SUNFLOWER) SEED OIL, ROSMARINUS OFFICINALIS (ROSEMARY) LEAF EXTRACT, POLYGLYCERYL-3 DIISOSTEARATE, ASCORBIC ACID, SOLANUM LYCOPERSICUM (TOMATO) FRUIT EXTRACT, BENZYL SALICYLATE, LINALOOL, LIMONENE, CITRONELLOL, GERANIOL, BENZYL ALCOHOL [N2212/A]
+
+Noreva Psoriane Crème Apaisante Hydratante Thermale 40
+Saint Gervais Aqua, Peg-6 Stearate, Butyrospermum Parkii (Shea) Butter, DI 12-13 Alkyl Malate, Glycerin, Hydrolyzed Soy Protein, Peg-32 Stearate, Paraffin Liquidum (Mineral Oil), Aqua, Stearic Acid, Palmitic Acid, Bisabolol, Polyglyceryl-10 Pentaoleate, Polyacrylamide, C13-14 Isoparaffin, Tromethamine, Acrylates/C10-30 Alkyl Acrylate, Crosspolymer, Fagus Sylvatica Extract, Ceramide III, Xanthan Gum, Laureth-7, Tocopherol, Bht, Phenoxyethanol, Imidazolidinyl Urea, Chlorphenesin, Methylparaben, Ethylparaben, Propylparaben, Butylparaben, Isobutylparaben, Parfum, Helianthus Annuus (Sunflower) Seed Oil, Farnesol, Alpha-Isomethyl Ionone, Butylphenyl Methylpropional, Limonene, Linalool, Citronellol, Benzyl Salicylate, Hydroxyisohexyl 3-Cylohexene Carboxaldehyde, Geraniol, Citral, Benzyl Alcohol, Sorbic Acid, Citric Acid.
+
+
+EUCERIN Gel Nettoyant 5% d'Urée
+Aqua, Sorbitol, Glycérine, Sodium Myreth Sulfate, Sodium Lactate, Urée, Sodium Cocoamphoacetate, Lauryl Glucoside, Lactic Acid, PEG-40, Hydrogenated Castor Oil, Polyquaternium-10
