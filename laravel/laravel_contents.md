@@ -13,7 +13,17 @@
  ~~~
 
 3. les routes
+~~~shell
+    php artisan route:list  
+    +--------+----------+----------+------+---------+--------------+
+    | Domain | Method   | URI      | Name | Action  | Middleware   |
+    +--------+----------+----------+------+---------+--------------+
+    |        | GET|HEAD | /        |      | Closure | web          |
+    |        | GET|HEAD | api/user |      | Closure | api,auth:api |
+    +--------+----------+----------+------+---------+--------------+
+
 ~~~
+~~~php
    Route::get('/insert',function(){
        DB::insert("INSERT INT posts(title,content) VALUES (?,?,?)",["php avec laravel", "Laravel est plutôt facile",1]);
    });

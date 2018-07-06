@@ -1,127 +1,158 @@
---  Sample employee database 
---  See changelog table for details
---  Copyright (C) 2007,2008, MySQL AB
---  
---  Original data created by Fusheng Wang and Carlo Zaniolo
---  http://www.cs.aau.dk/TimeCenter/software.htm
---  http://www.cs.aau.dk/TimeCenter/Data/employeeTemporalDataSet.zip
--- 
---  Current schema by Giuseppe Maxia 
---  Data conversion from XML to relational by Patrick Crews
--- 
--- This work is licensed under the 
--- Creative Commons Attribution-Share Alike 3.0 Unported License. 
--- To view a copy of this license, visit 
--- http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to 
--- Creative Commons, 171 Second Street, Suite 300, San Francisco, 
--- California, 94105, USA.
--- 
---  DISCLAIMER
---  To the best of our knowledge, this data is fabricated, and
---  it does not correspond to real people. 
---  Any similarity to existing people is purely coincidental.
--- 
 
-DROP DATABASE IF EXISTS employees;
-CREATE DATABASE IF NOT EXISTS employees;
-USE employees;
 
-SELECT 'CREATING DATABASE STRUCTURE' as 'INFO';
 
-DROP TABLE IF EXISTS dept_emp,
-                     dept_manager,
-                     titles,
-                     salaries, 
-                     employees, 
-                     departments;
+DROP DATABASE IF EXISTS hoclassroom;
+CREATE DATABASE IF NOT EXISTS hoclassroom;
+USE hoclassroom;
+
+SELECT 'CREATING DATABASE STRUCTURE' as 'INFOS';
 
 /*!50503 set default_storage_engine = InnoDB */;
-/*!50503 select CONCAT('storage engine: ', @@default_storage_engine) as INFO */;
+/*!50503 select CONCAT('storage engine: ',
+                       @@default_storage_engine) as INFO */;
 
-CREATE TABLE employees (
-    emp_no      INT             NOT NULL,
-    birth_date  DATE            NOT NULL,
-    first_name  VARCHAR(14)     NOT NULL,
-    last_name   VARCHAR(16)     NOT NULL,
-    gender      ENUM ('M','F')  NOT NULL,    
-    hire_date   DATE            NOT NULL,
-    PRIMARY KEY (emp_no)
+CREATE TABLE role(
+  id INT NOT NULL AUTO_INCREMENT,
+  name VARCHAR(255) NOT NULL ,
+  PRIMARY KEY (id)
 );
 
-CREATE TABLE departments (
-    dept_no     CHAR(4)         NOT NULL,
-    dept_name   VARCHAR(40)     NOT NULL,
-    PRIMARY KEY (dept_no),
-    UNIQUE  KEY (dept_name)
+CREATE TABLE users(
+  id INT NOT NULL AUTO_INCREMENT,
+  login VARCHAR(255) NOT NULL UNIQUE,
+  first_name VARCHAR(255) NOT NULL ,
+  last_name VARCHAR(255) NOT NULL ,
+  email VARCHAR(255) NOT NULL UNIQUE,
+  password VARCHAR(255) NOT NULL ,
+  salt VARCHAR(255) NOT NULL ,
+  is_active TINYINT,
+   role_id INT NOT NULL,
+
+  CONSTRAINT fk_role_id FOREIGN KEY (role_id) REFERENCES role(id)
+    ON DELETE CASCADE,
+  PRIMARY KEY (id)
+
+);
+CREATE TABLE  password_reset(
+  id INT NOT NULL AUTO_INCREMENT,
+  email VARCHAR(255) NOT NULL UNIQUE,
+  token VARCHAR(255) NOT NULL UNIQUE,
+
+  PRIMARY KEY (id)
 );
 
-CREATE TABLE dept_manager (
-   emp_no       INT             NOT NULL,
-   dept_no      CHAR(4)         NOT NULL,
-   from_date    DATE            NOT NULL,
-   to_date      DATE            NOT NULL,
-   FOREIGN KEY (emp_no)  REFERENCES employees (emp_no)    ON DELETE CASCADE,
-   FOREIGN KEY (dept_no) REFERENCES departments (dept_no) ON DELETE CASCADE,
-   PRIMARY KEY (emp_no,dept_no)
-); 
+CREATE TABLE media (
+  id INT NOT NULL AUTO_INCREMENT,
+  path VARCHAR(255) NOT NULL ,
+  extension VARCHAR(20),
+  user_id INT NOT NULL,
 
-CREATE TABLE dept_emp (
-    emp_no      INT             NOT NULL,
-    dept_no     CHAR(4)         NOT NULL,
-    from_date   DATE            NOT NULL,
-    to_date     DATE            NOT NULL,
-    FOREIGN KEY (emp_no)  REFERENCES employees   (emp_no)  ON DELETE CASCADE,
-    FOREIGN KEY (dept_no) REFERENCES departments (dept_no) ON DELETE CASCADE,
-    PRIMARY KEY (emp_no,dept_no)
+  CONSTRAINT fk_user_id FOREIGN KEY (user_id) REFERENCES users(id)
+    ON DELETE CASCADE,
+  PRIMARY KEY (id)
+
+);
+CREATE TABLE article(
+  id INT NOT NULL AUTO_INCREMENT,
+  title VARCHAR(255) NOT NULL ,
+  content LONGTEXT,
+  date_creation TIMESTAMP NOT NULL ,
+  is_active TINYINT,
+  author_id INT NOT NULL ,
+  media_header INT NOT NULL,
+
+  CONSTRAINT fk_author_id FOREIGN KEY (author_id) REFERENCES users(id)
+    ON DELETE CASCADE,
+  CONSTRAINT fk_media_header FOREIGN KEY (media_header) REFERENCES media(id)
+    ON DELETE CASCADE,
+  PRIMARY KEY (id)
+
 );
 
-CREATE TABLE titles (
-    emp_no      INT             NOT NULL,
-    title       VARCHAR(50)     NOT NULL,
-    from_date   DATE            NOT NULL,
-    to_date     DATE,
-    FOREIGN KEY (emp_no) REFERENCES employees (emp_no) ON DELETE CASCADE,
-    PRIMARY KEY (emp_no,title, from_date)
-) 
-; 
+CREATE TABLE article_media(
+  id INT NOT NULL AUTO_INCREMENT,
+  media_id INT NOT NULL ,
+  article_id INT NOT NULL,
 
-CREATE TABLE salaries (
-    emp_no      INT             NOT NULL,
-    salary      INT             NOT NULL,
-    from_date   DATE            NOT NULL,
-    to_date     DATE            NOT NULL,
-    FOREIGN KEY (emp_no) REFERENCES employees (emp_no) ON DELETE CASCADE,
-    PRIMARY KEY (emp_no, from_date)
-) 
-; 
+  CONSTRAINT fk_media_id FOREIGN KEY (media_id) REFERENCES media(id)
+    ON DELETE CASCADE,
+  CONSTRAINT fk_article_id FOREIGN KEY (article_id) REFERENCES article(id)
+    ON DELETE CASCADE,
+  PRIMARY KEY (id)
 
-CREATE OR REPLACE VIEW dept_emp_latest_date AS
-    SELECT emp_no, MAX(from_date) AS from_date, MAX(to_date) AS to_date
-    FROM dept_emp
-    GROUP BY emp_no;
+);
 
-# shows only the current department for each employee
-CREATE OR REPLACE VIEW current_dept_emp AS
-    SELECT l.emp_no, dept_no, l.from_date, l.to_date
-    FROM dept_emp d
-        INNER JOIN dept_emp_latest_date l
-        ON d.emp_no=l.emp_no AND d.from_date=l.from_date AND l.to_date = d.to_date;
+CREATE TABLE course(
+  id INT NOT NULL AUTO_INCREMENT,
+  name VARCHAR(255) NOT NULL ,
+  PRIMARY KEY (id)
+);
 
-flush /*!50503 binary */ logs;
+CREATE TABLE article_course(
+  id INT NOT NULL AUTO_INCREMENT,
 
-SELECT 'LOADING departments' as 'INFO';
-source load_departments.dump ;
-SELECT 'LOADING employees' as 'INFO';
-source load_employees.dump ;
-SELECT 'LOADING dept_emp' as 'INFO';
-source load_dept_emp.dump ;
-SELECT 'LOADING dept_manager' as 'INFO';
-source load_dept_manager.dump ;
-SELECT 'LOADING titles' as 'INFO';
-source load_titles.dump ;
-SELECT 'LOADING salaries' as 'INFO';
-source load_salaries1.dump ;
-source load_salaries2.dump ;
-source load_salaries3.dump ;
+  article_id INT NOT NULL,
+  course_id INT NOT NULL,
 
-source show_elapsed.sql ;
+  CONSTRAINT fk_article_course_id FOREIGN KEY (article_id) REFERENCES article(id)
+    ON DELETE CASCADE,
+
+    CONSTRAINT fk_course_id FOREIGN KEY (course_id) REFERENCES course(id)
+    ON DELETE CASCADE,
+  PRIMARY KEY (id)
+
+);
+
+CREATE TABLE comment(
+  id INT NOT NULL AUTO_INCREMENT,
+
+  content LONGTEXT NOT NULL ,
+  date_creation TIMESTAMP NOT NULL ,
+  is_active TINYINT NOT NULL ,
+
+  user_id INT NOT NULL ,
+  article_id INT NOT NULL ,
+
+  CONSTRAINT fk_user_comment_id FOREIGN KEY (user_id) REFERENCES users(id)
+    ON DELETE CASCADE,
+  CONSTRAINT fk_article_comment_id FOREIGN KEY (article_id) REFERENCES article(id)
+    ON DELETE CASCADE,
+  PRIMARY KEY (id)
+
+);
+
+CREATE TABLE log(
+  id INT NOT NULL AUTO_INCREMENT,
+  date_modif TIMESTAMP,
+
+  user_id INT NOT NULL ,
+  article_id INT NOT NULL ,
+
+CONSTRAINT fk_user_log_id FOREIGN KEY (user_id) REFERENCES users(id)
+    ON DELETE CASCADE,
+  CONSTRAINT fk_article_log_id FOREIGN KEY (article_id) REFERENCES article(id)
+    ON DELETE CASCADE,
+  PRIMARY KEY (id)
+
+
+);
+
+
+CREATE TABLE message(
+  id INT NOT NULL AUTO_INCREMENT,
+  subject VARCHAR(255) NOT NULL ,
+  content LONGTEXT NOT NULL ,
+  date_send TIMESTAMP NOT NULL ,
+  date_receive TIMESTAMP NOT NULL ,
+  is_read TINYINT NOT NULL , # the message was read or not
+  user_sender_id INT NOT NULL ,
+  user_receiver_id INT NOT NULL ,
+
+  CONSTRAINT fk_user_sender_id FOREIGN KEY (user_sender_id) REFERENCES users(id)
+    ON DELETE CASCADE,
+  CONSTRAINT fk_user_receiver_id FOREIGN KEY (user_receiver_id) REFERENCES users(id)
+    ON DELETE CASCADE,
+    PRIMARY KEY (id)
+
+);
+
