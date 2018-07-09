@@ -96,11 +96,5 @@ expériences émotionnels laisse une experiences
  c'est le temps qui est requis pour atteindre une CIBLE en ft de la DISTANCE et de sa TAILLE: plus la cible est éloignée de et petite plus il sera difficile de les atteindre (click sur bouton: un btn ou menu sera mis sur des coin coté de l'écran ) 
 - Loi de HICK 
 le tps de prendre une decisionsen ft du nb à sa disposition plus l'utilisateur mettra du temps à choisir
-- concept d'aaffordance c'est une façon de donner une valeur qui sera une valeur commune à tous. C'est aussi une optimisation des élément pour qu'il puisse être utilisé de façon optimal sans erreur
+- le concept d'affordance c'est une façon de donner une valeur qui sera une valeur commune à tous. C'est aussi une optimisation des élément pour qu'il puisse être utilisé de façon optimal sans erreur
 
-CONCEPTS A CONNAITRE pour pouvoir bien trouver le conseil
-
-
------
-
-endd
