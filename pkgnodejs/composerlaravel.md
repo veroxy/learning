@@ -1,9 +1,24 @@
-Installation de COMPOSER
+----
+# Installation de COMPOSER sur DEBIAN/UBUNTU
+----
+0. verifier si nodejs et npm sont installées `nodejs -v` et `npm -v`
+sinon les installer et créer les liens symbolique vers le local/bin:
 
-DEBIAN/UBUNTU
+~~~
+sudo apt-get update
+sudo apt-get install nodejs npm
+sudo ln -s /usr/bin/nodejs /usr/local/bin/node
+sudo ln -s /usr/bin/npm /usr/local/bin/npm
+~~~
+ou 
+~~~
+sudo apt install nodejs-legacy
+~~~
+
 > si ca ne fonctionne sinon ignorer cette étape si **sudo** appeler
+~~~
 user@server:~$ sudo curl -sS https://getcomposer.org/installer | php
-
+~~~
 1. (sudo) télécarger le dossier d'installation de composer dans /temp/ 
 ~$ php -r "copy('https://getcomposer.org/installer', '/tmp/composer-setup.php');"
 
@@ -33,7 +48,7 @@ on peut maintenant lancer la cmd `composer -version`
 
 ----
 
-LARAVEL
+# LARAVEL
 
 on peut maintenant créer un nouveau projet composer Laravel
 
