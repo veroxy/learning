@@ -1,24 +1,3 @@
-<<<<<<< HEAD
-- DMZ <> FIREWALLL
-   le dmz est exposé publiquement > c'est unemachine interne. ILes communications avec le firewall pour eviteer d'exposé.
-
-- Cloud
-    - On abstrait: sisole du/services.
-au lieu d'avoir du materiel > on va le mettre en réseau de façon virtuel 
-    - stockage de données (dropbox, google drive)
-    
-----
-1. ### IBM CLOUD
-catalog > virtual server (0,038€)
-- CDN c'est des serveur de caches (tps de rep client). Être dans le serveur de proximité du client au niveau INTERNATONALE
-- bande passante est la chose la plus cher
-    - avantage du cloud : on peu gérer ponctuellement la bande passante (ft events), si on sait que l'on aura beaucoup d'audience sur une periode on peut variabiliser ce derner contrairement un serveur dédier qui lui possède une bande passante fixe.
-    
-    
-2. ### CONNEXION SSH HOC
-
-sh root@158.177.99.180
-=======
 - DMZ <> FIREWALLL
    le dmz est exposé publiquement > c'est unemachine interne. ILes communications avec le firewall pour eviteer d'exposé.
 
@@ -137,7 +116,7 @@ server{
 
         location ~ \.php$ {
                 fastcgi_index index.php;
-                fastcgi_pass unix:/run/php/php7.0-fpm.sock;
+                fastcgi_pass unix:/run/php/php7.1-fpm.sock;
                 include fastcgi_params;
                 fastcgi_param SCRIPT_FILENAME $realpath_root$fastcgi_script_name;
         }
@@ -147,5 +126,5 @@ server{
 
     - `server_name` > est le vers lquel va pointer l'adresse
     - `root` de poiinter vers le dossier local où se trouve la racine du site
-    
->>>>>>> 8322760128bc56df74c3538439ae98006d4add24
+   
+
