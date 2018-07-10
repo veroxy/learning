@@ -19,6 +19,11 @@
     * [paramss_git](git/params_git.md)
     * [Fork & Merge](git/fork_merge.md)
     * [Branche](git/branch.md)
+    * [gitbook](gitbookDoc/gitbook.md)
+* GRAPHISME
+    * [ergonomie](graphisme/ergonomie.md)
+    * [métier du graphiste](graphisme/metierGraphiste.md)
+    * [glossaire du dev](graphisme/glossaireDev.md)
 * HTLM5
     * [balises & sémantiques](html5/balises.md)
     * [les attributs utiles](html5/attributes.md)
