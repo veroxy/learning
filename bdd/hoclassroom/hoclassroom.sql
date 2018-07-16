@@ -235,9 +235,8 @@ VALUES (1, 1, 1),
 -- déclencheur qui pet
 CREATE TRIGGER trigger_article_update AFTER UPDATE ON article FOR EACH ROW
 INSERT INTO log (article_id,date_modif,user_id)
-VALUES (OLD,id,NOW(),1);
-
-
+VALUES (OLD.id,NOW(),1);
+-- [via mysql]('trigger.png')
 
 CREATE TABLE article_title_version(
   id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
@@ -251,3 +250,4 @@ CREATE TABLE article_title_version(
 CREATE TRIGGER trigger_title_version_insert AFTER UPDATE ON article FOR EACH ROW
   INSERT INTO article_title_version(article_id,title,date_version)
   VALUES (NEW.id,NEW.title,NOW());
+-- [via mysql]('trigger_titremaj.png')
