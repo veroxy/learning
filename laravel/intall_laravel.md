@@ -55,3 +55,8 @@ changer les paramètres d'encodage pour ne pas avoir d'"rreur
  
 - **Server.php** : Simuler le fonctionnement d’un serveur local.
 - **Webpack** : Permet de compiler nos fichier SASS en fichier lisible par le client
+
+----
+## DIFFICULTES
+voir [tuto](https://www.rosehosting.com/blog/install-laravel-on-ubuntu-16-04/)
+
