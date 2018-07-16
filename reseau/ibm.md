@@ -69,8 +69,8 @@ tcp6       0      0 [::]:http               [::]:*                  LISTEN      
    - l :
    - all :
    - program :
-   -
-    
+   - u
+   - 
 ~~~
 root@hoc:~# ip a
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1
@@ -95,12 +95,12 @@ root@hoc:~# ip a
 ~~~~
 
 
-- On creer un nouveau repertoir soit dans /srv/mon_dossier_enligne soit dans /var/www./mon_dossier_enligne
+- On creer un nouveau repertoir soit dans **/srv/mon_dossier_enligne** soit dans **/var/www/mon_dossier_enligne**
 
 - on cré un fichier index.php avec qui contientt <?php php_info();?>
 
 
-- Dans le dossier de /etc/nginx/conf.d/ on créer un nouveau fichier mon_dossier_enligne.conf (/etc/nginx/conf.d/ public_html.conf)
+- Dans le dossier de **/etc/nginx/conf.d/** on créer un nouveau fichier _**mon_dossier_enligne.conf**_ (/etc/nginx/conf.d/ public_html.conf)
 ~~~
 root@hoc:/var/www/public# cat /etc/nginx/conf.d/public_html.conf
 server{
