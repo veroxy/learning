@@ -13,7 +13,7 @@ SELECT 'CREATING DATABASE STRUCTURE' as 'INFOS';
 
 CREATE TABLE role(
   id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-  name VARCHAR(255) NOT NULL  
+  name VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE users(
@@ -27,12 +27,12 @@ CREATE TABLE users(
   is_active TINYINT,
   role_id INT NOT NULL,
 
-  CONSTRAINT fk_role_id FOREIGN KEY (role_id) REFERENCES role(id) 
+  CONSTRAINT fk_role_id FOREIGN KEY (role_id) REFERENCES role(id)
 );
 CREATE TABLE  password_reset(
   id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
   email VARCHAR(255) NOT NULL UNIQUE,
-  token VARCHAR(255) NOT NULL UNIQUE 
+  token VARCHAR(255) NOT NULL UNIQUE
 );
 
 CREATE TABLE media (
@@ -41,7 +41,7 @@ CREATE TABLE media (
   extension VARCHAR(20) NOT NULL ,
   user_id INT NOT NULL,
 
-  CONSTRAINT fk_user_id FOREIGN KEY (user_id) REFERENCES users(id) 
+  CONSTRAINT fk_user_id FOREIGN KEY (user_id) REFERENCES users(id)
 
 );
 
@@ -56,7 +56,7 @@ CREATE TABLE article(
 
   CONSTRAINT fk_author_id FOREIGN KEY (author_id) REFERENCES users(id),
   CONSTRAINT fk_media_header FOREIGN KEY (media_header) REFERENCES media(id)
-    ON DELETE CASCADE 
+    ON DELETE CASCADE
 );
 
 -- dans la table intermediair on effectue un delete on cascade pour supprimer l'association des ifk_id
@@ -68,12 +68,12 @@ CREATE TABLE article_media(
   CONSTRAINT fk_media_id FOREIGN KEY (media_id) REFERENCES media(id)
     ON DELETE CASCADE,
   CONSTRAINT fk_article_id FOREIGN KEY (article_id) REFERENCES article(id)
-    ON DELETE CASCADE 
+    ON DELETE CASCADE
 );
 
 CREATE TABLE course(
   id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-  name VARCHAR(255) NOT NULL  
+  name VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE article_course(
@@ -84,7 +84,7 @@ CREATE TABLE article_course(
   CONSTRAINT fk_article_course_id FOREIGN KEY (article_id) REFERENCES article(id)
     ON DELETE CASCADE,
   CONSTRAINT fk_course_id FOREIGN KEY (course_id) REFERENCES course(id)
-    ON DELETE CASCADE 
+    ON DELETE CASCADE
 );
 
 CREATE TABLE comment(
@@ -98,7 +98,7 @@ CREATE TABLE comment(
   CONSTRAINT fk_user_comment_id FOREIGN KEY (user_id) REFERENCES users(id)
     ON DELETE CASCADE,
   CONSTRAINT fk_article_comment_id FOREIGN KEY (article_id) REFERENCES article(id)
-    ON DELETE CASCADE 
+    ON DELETE CASCADE
 );
 
 CREATE TABLE log(
@@ -107,10 +107,10 @@ CREATE TABLE log(
   user_id INT NOT NULL ,
   article_id INT NOT NULL ,
 
-CONSTRAINT fk_user_log_id FOREIGN KEY (user_id) REFERENCES users(id)
+  CONSTRAINT fk_user_log_id FOREIGN KEY (user_id) REFERENCES users(id)
     ON DELETE CASCADE,
   CONSTRAINT fk_article_log_id FOREIGN KEY (article_id) REFERENCES article(id)
-    ON DELETE CASCADE 
+    ON DELETE CASCADE
 );
 
 
@@ -139,16 +139,16 @@ INSERT INTO role VALUES (1,'administrator'),(2,'author'),(3,'moderator');
 -- meth 2
 INSERT INTO users (id, login, first_name, last_name, email, password, salt, is_active, role_id)
 VALUES
-(1, 'j_corey', 'James', 'Corey', 'jcorey@gmail.com', 'md5()', 'graindesel', 1, 1),
-(2, 'P_J_Farm', 'Philip', 'Farmer', 'philipfarmer@gmail.com', 'md5()', 'graindesel', 1, 2),
-(3, 'JCronin', 'Justin', 'Cronin', 'jcronin@gmail.com', 'md5()', 'graindesel', 1, 3),
-(4, 'franckherb', 'Franck', 'Herbert', 'fherbert@gmail.com', 'md5()', 'graindesel', 1, 2),
-(5, 'dansimm', 'Dan', 'Simmons', 'dan.simmons@gmail.com', md5('minoupitou'), 'graindesel', 1, 2),
-(6, 'isaacasimov1986', 'Isaac', 'Asimov', 'asimo@gmail.com', 'md5()', 'graindesel', 1, 2),
-(7, 'pkd4eva', 'Philip Kindred', 'Dick', 'pkdick@gmail.com', 'md5()', 'graindesel', 1, 2),
-(8, 'true_martian', 'Kim Stanley', 'Robinson', 'ksrobinson@gmail.com', 'md5()', 'graindesel', 1, 2),
-(9, 'rcwilson', 'Robert Charles', 'Wilson', 'rcwilson@gmail.com', 'md5()', 'graindesel', 1, 2),
-(10, 'horrormasta', 'Stephen', 'King', 'sking@gmail.com', 'md5()', 'graindesel', 1, 2);
+  (1, 'j_corey', 'James', 'Corey', 'jcorey@gmail.com', 'md5()', 'graindesel', 1, 1),
+  (2, 'P_J_Farm', 'Philip', 'Farmer', 'philipfarmer@gmail.com', 'md5()', 'graindesel', 1, 2),
+  (3, 'JCronin', 'Justin', 'Cronin', 'jcronin@gmail.com', 'md5()', 'graindesel', 1, 3),
+  (4, 'franckherb', 'Franck', 'Herbert', 'fherbert@gmail.com', 'md5()', 'graindesel', 1, 2),
+  (5, 'dansimm', 'Dan', 'Simmons', 'dan.simmons@gmail.com', md5('minoupitou'), 'graindesel', 1, 2),
+  (6, 'isaacasimov1986', 'Isaac', 'Asimov', 'asimo@gmail.com', 'md5()', 'graindesel', 1, 2),
+  (7, 'pkd4eva', 'Philip Kindred', 'Dick', 'pkdick@gmail.com', 'md5()', 'graindesel', 1, 2),
+  (8, 'true_martian', 'Kim Stanley', 'Robinson', 'ksrobinson@gmail.com', 'md5()', 'graindesel', 1, 2),
+  (9, 'rcwilson', 'Robert Charles', 'Wilson', 'rcwilson@gmail.com', 'md5()', 'graindesel', 1, 2),
+  (10, 'horrormasta', 'Stephen', 'King', 'sking@gmail.com', 'md5()', 'graindesel', 1, 2);
 
 INSERT INTO course (name)
 VALUES
@@ -172,8 +172,8 @@ VALUES
   (4, '/img/monimg2', '.jpg', 4),
   (5, '/doc/mondoc2', '.doc', 3),
   (6, '/img/monimg3', '.jpg', 8),
-   (7, '/doc/mondoc3', '.doc', 9),
-   (8, '/img/monimg4', '.jpg', 10);
+  (7, '/doc/mondoc3', '.doc', 9),
+  (8, '/img/monimg4', '.jpg', 10);
 
 INSERT INTO article(id,author_id, title, media_header, content, is_active,date_creation)
 VALUES
@@ -232,10 +232,11 @@ VALUES (1, 1, 1),
   (18, 2, 2),
   (19, 5, 9);
 
+
 -- déclencheur qui pet
 CREATE TRIGGER trigger_article_update AFTER UPDATE ON article FOR EACH ROW
-INSERT INTO log (article_id,date_modif,user_id)
-VALUES (OLD.id,NOW(),1);
+  INSERT INTO log (article_id,date_modif,user_id)
+  VALUES (OLD.id,NOW(),1);
 -- [via mysql]('trigger.png')
 
 CREATE TABLE article_title_version(
@@ -251,3 +252,81 @@ CREATE TRIGGER trigger_title_version_insert AFTER UPDATE ON article FOR EACH ROW
   INSERT INTO article_title_version(article_id,title,date_version)
   VALUES (NEW.id,NEW.title,NOW());
 -- [via mysql]('trigger_titremaj.png')
+
+
+-- on peut créer une condition qui exécutera ou les différent
+DROP TRIGGER IF EXISTS trigger_article_update;
+CREATE TRIGGER trigger_article_update AFTER UPDATE ON article FOR EACH ROW
+  BEGIN
+    IF OLD.title <> NEW.title THEN
+      INSERT INTO article_title_version(article_id,title,date_version)
+      VALUES (NEW.id,NEW.title,NOW());
+    END IF;
+
+    INSERT INTO log (article_id,date_modif,user_id)
+    VALUES (NEW.id,NOW(),1);
+  END;
+
+CREATE TABLE log_action(
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  table_name VARCHAR(50) NOT NULL ,
+  action_type VARCHAR(50) NOT NULL,
+  id_line INT NOT NULL,
+  date_creation DATETIME NOT NULL
+);
+
+
+-- creer un trigger qui/
+--  table 'article' > suppression
+--  > nouvel enregistrement > log_action
+-- table: article
+-- action: delete
+-- id_ligne : id de m'article
+
+CREATE PROCEDURE insert_log_action(
+-- seront les parmètres qui iront dans VALUES == $var
+  IN name_table VARCHAR(50),
+  IN type_action VARCHAR(50),
+  IN line_id INT
+)
+  BEGIN
+    INSERT INTO log_action (
+      date_creation,
+      id_line,
+      table_name,
+      action_type
+    ) VALUES (
+      NOW(),
+      line_id,
+      name_table,
+      type_action
+    );
+  END;
+
+CREATE TRIGGER  article_delete AFTER DELETE  ON  article FOR EACH ROW
+  /*
+    INSERT INTO log_action(type_action,date_creation,id_line,table_name)
+        VALUES ('delete',NOW(),OLD.id,'article')
+  */
+  CALL insert_log_action('article','delete',OLD.id);
+
+
+-- il est o
+-- pour avoir le même effet que le "ON DELETE CASCADE " dans article_media on met la FOREIGN KEY de la colonne de article_id en en RESTRICT
+--  après avoir ALTERE la fk_article_id dans la article_media qui  fait référence à l'article O NLA
+
+ALTER TABLE `article_media` DROP FOREIGN KEY `fk_article_id`;
+ALTER TABLE `article_media` ADD CONSTRAINT `fk_article_id` FOREIGN KEY (`article_id`) REFERENCES `article`(`id`) ON DELETE RESTRICT ON UPDATE RESTRICT;
+
+--  maintenant on peut faire le trigger delete on cascade manuellement par un trigger
+CREATE TRIGGER `article_media_before_delete` BEFORE DELETE ON `article`
+FOR EACH ROW BEGIN
+  DELETE FROM article_media WHERE article_id=OLD.id;
+END;
+
+-- on peut maintenant supprimer un article qui supprimera le "media_header"
+DELETE FROM `article` WHERE `article`.`id` = 6;
+
+DROP TRIGGER IF EXISTS `article_media_delete`;
+CREATE TRIGGER `article_media_delete` AFTER DELETE ON `article_media` FOR EACH ROW CALL insert_log_action('article_media','delete',OLD.article_id);
+

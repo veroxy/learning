@@ -20,6 +20,11 @@ REF blog du moderateur
 
 * **CDC** : Cahier des charges. Les professionnels évoluant en méthodes agiles y ont moins recours, mais le CDC reste encore aujourd’hui une pratique courante.
 
+* **CLI** : 
+    - "Command Line Interface"
+    - SQL CLI : "SQL Call Level Interface" est une API dont la fonction est de permettre à un programme(s) d'effectuer des requêtes SQL de façon dynamique.  
+            
+
 * **CMS** : [cms wp]()
 
 * **Codage** : action réalisée par un programmeur qui écrit le code source d’un programme et le compile.

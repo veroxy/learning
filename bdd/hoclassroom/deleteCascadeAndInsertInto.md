@@ -21,4 +21,6 @@ role "admin" delete cascade> tous les users qui ont un role "admin"
  
  usigned INT > au lieu de prendre -2XXXXX à 2XXXXXX on aura 4xxxxxx car on ne permet pas de valeurs négatives.
  
- Trigger permet de
+ Trigger > déclencheur
+ [création phpMyAdmin]('trigger.PNG');
+ résultats des modifications : 
