@@ -7,13 +7,13 @@ md5 est un système de hasging et est systemique, ctd que
 
 3. ### bsrypt
 est l'un des dernier systeme cryptage les plus sécurisé -  il ne nécessite plus de salt car cela est intégré dans la méthode php
-~~~php
+```php
    $options = [
        'cost' => 12,
    ];
    echo password_hash("rasmuslerdorf", PASSWORD_BCRYPT, $options);
    
-~~~
+```
 > $2y$12$QjSH496pcT5CEbzjD/vtVeH03tfHKFy36d4J0Ltp3lRtee9HDxY3K
 
 Password test et hasging

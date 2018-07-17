@@ -29,9 +29,9 @@ ssh-keygen -t rsa -b 4096 -C"HOC-key-veroxy"
     +----[SHA256]-----+
 
 On copie le fichier de la public_key sur le serveur dans le répertoire `/root/` pour la stocker
- ~~~shell
+ ```shell
  scp id_rsa.pub root@131.105.80.170:/root/
- ~~~
+ ```
  
     The authenticity of host '131.105.80.170 (131.105.80.170)' can't be established.
     ECDSA key fingerprint is SHA256:oV2aEtkoFbmVZjhK81KiqzORJlobcNy7OQcFQtjKLyk.
@@ -53,15 +53,15 @@ Pour acceder au bureau local (windows) on peut lancer `mount` pour voir tout le 
 > C: on /mnt/c type drvfs (rw,noatime,uid=1000,gid=1000)
 
 on a créer un dossier **ansible/** dans 
-~~~shell
+```shell
 veroxy@99MFO-HOC00005:/mnt/c/wamp/www/vagrant/httpdoc/ansible$
-~~~
+```
 dans celui ci on un fichier **hosts** dans un dossier **inventory/** dans lequel on echo 
-~~~shell
+```shell
 echo "server-hoc ansible_ssh_host=131.105.80.170" > hosts
-~~~
+```
 
 on lance ensuite une commande ansible pour récupérer le `setup` de la machine
-~~~shell
+```shell
 ansible -uroot -i inventory/hosts server-hoc -m setup
-~~~
+```

@@ -15,24 +15,24 @@ catalog > virtual server (0,038€)
     
     
 2. ### CONNEXION SSH HOC
-~~~shell
+```shell
 ssh + username + vers + adresse IP public
-~~~
+```
 ssh root@158.X.X.X +  mp
 
 PHP + nginx
-~~~
+```
 apt update && apt upgrade
 apt search php7-
 apt intall php7.0-fpm nginx
-~~~
+```
 
 MYSQL-SERVER
-~~~
+```
 apt update && apt upgrade
 apt search mysql-server
 apt intall mysql-server
-~~~
+```
 
 > mariadB est installée
 
@@ -47,11 +47,11 @@ permet de voir (lister) ce qui intsallé et nonn les dépendances non installés
 
 
 ### nestat
-~~~
+```
 root@hoc:~# apt install net-tools
-~~~
+```
 permet d'avoir les différents ports
-~~~
+```
 root@hoc:~# netstat -lapute
 Active Internet connections (servers and established)
 Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name
@@ -62,7 +62,7 @@ tcp        0    356 hoc.CCI-Auvergne-Rh:ssh reverse.completel:57575 ESTABLISHED 
 tcp        0      0 10.85.217.202:34874     10.0.77.54:http         TIME_WAIT   root       0          -
 tcp6       0      0 [::]:ssh                [::]:*                  LISTEN      root       14545      1209/sshd
 tcp6       0      0 [::]:http               [::]:*                  LISTEN      root       46773      23267/nginx: master
-~~~
+```
 
 **lapute : **
 
@@ -71,7 +71,7 @@ tcp6       0      0 [::]:http               [::]:*                  LISTEN      
    - program :
    - u
    - 
-~~~
+```
 root@hoc:~# ip a
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1
     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
@@ -92,7 +92,7 @@ root@hoc:~# ip a
        valid_lft forever preferred_lft forever
     inet6 fe80::450:26ff:fe63:8987/64 scope link
        valid_lft forever preferred_lft forever
-~~~~
+```~
 
 
 - On creer un nouveau repertoir soit dans **/srv/mon_dossier_enligne** soit dans **/var/www/mon_dossier_enligne**
@@ -101,7 +101,7 @@ root@hoc:~# ip a
 
 
 - Dans le dossier de **/etc/nginx/conf.d/** on créer un nouveau fichier _**mon_dossier_enligne.conf**_ (/etc/nginx/conf.d/ public_html.conf)
-~~~
+```
 root@hoc:/var/www/public# cat /etc/nginx/conf.d/public_html.conf
 server{
         listen 158.177.99.180:80;
@@ -122,7 +122,7 @@ server{
         }
 
 }
-~~~
+```
 
     - `server_name` > est le vers lquel va pointer l'adresse
     - `root` de poiinter vers le dossier local où se trouve la racine du site

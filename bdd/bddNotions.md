@@ -122,13 +122,13 @@ ennoncé
 > min param MYSQL == v 5.7
 #### réinitialiser mot de passe root Mysql
 dans un fichier `mysql-init.txt`
-~~~~
+```~
     ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPass';
-    SET PASSWORD FOR 'root'@'localhost' = PASSWORD('MyNewPass');
-~~~~
-~~~
+    SET PASSWORD FOR 'root'@'localhost' = PASSWORD('MyNewPass);
+```~
+```
     C:\> cd "C:\Program Files\MySQL\MySQL Server 5.7\bin"
     C:\> mysqld --init-file=C:\\mysql-init.txt
-~~~
+```
 
 ----

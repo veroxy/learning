@@ -1,5 +1,5 @@
 # proxy
-[dailysecurity]('https://www.dailysecurity.fr/server-side-request-forgery/')
+[dailysecurity](https://www.dailysecurity.fr/server-side-request-forgery/)
 
 > mandataire, procuration, intermédiaire
 

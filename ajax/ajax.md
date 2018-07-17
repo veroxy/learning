@@ -16,7 +16,7 @@ Attention, il faut mettre cette fonction en début de page, avant d'avoir envoy�
 
 
 ### POST & GET & PUT (API REST)
-1. [GET]('https://sutterlity.gitbooks.io/apprendre-jquery/content/la_methode_get.html'') > Récupère - permet de recevoir des données
+1. [GET](https://sutterlity.gitbooks.io/apprendre-jquery/content/la_methode_get.html') > Récupère - permet de recevoir des données
 2. POST > envoi (bdd)
 3. PUT > maj datas
 4. PATCA > 

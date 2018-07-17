@@ -16,7 +16,7 @@ Là où nous faisions des forêts de `<div>` avec des `class=""` nous avons main
 | footer       | est ce qui contient les élements en bas de page (map de navigation, contact, cgu etc...)       |
 
 ce qui donne:
-~~~html
+```html
 <body>
   <!-- header contient des éléments récurrents sur toutes mes pages-->
   <header>
@@ -65,7 +65,7 @@ ce qui donne:
   <!-- footer contient des éléments récurrents sur toutes mes pages-->
   <footer></footer>
 </body>
-~~~
+```
 
 si l'on test ce code on ne constatera pas grand chose de différent par rapport à l'emploi des `div` la différence est dans la re-lecture du code il sera plus simple de reprendre et comprendre ce code que s'il y avait des div de partout c'est ce que l'on appel la valeur "sémantique".
 C'est pareil que lorsque l'on donne un nom à une id ou class, si vous les appelé `<div class="div1">` puis `<div class="div2">` ou à une variable en js `var variable = "ma variable";` il n'y a aucun intérêt dans le nommage.
@@ -124,9 +124,9 @@ Je crois que c'est ma partie préférée, ça simplifie foncièrement l'emploi d
 </table>
 
 par exemple on veut l'email d'un utilisateur et qu'il est obligatoire, on va simplement indiquer que le input est de `type="email"` et qu'il requis `required`. Si l'utilisateur renseigne mal le mail (@ .) il a message d'erreur, si il est vide il renvois 'require'.
-~~~html
+```html
   <form class="" action="submit.html" method="post">
     <input type="email" name="email" value="votre email" required>
     <input type="submit" name="submit" value="envoyer">
   </form>
-~~~
+```

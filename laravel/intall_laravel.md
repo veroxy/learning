@@ -1,13 +1,14 @@
 # laravel install
 
+
 ### ENVIRONNMENT LARAVEL
-   1. [COMPOSER.exe]('https://getcomposer.org/Composer-Setup.exe')
+   1. [COMPOSER.exe](https://getcomposer.org/Composer-Setup.exe)
    2. env wamp/mamp server 
    3. verification de la version de php `php - v` > ici c'ests la version 5.4
    4. le repertoire source `httpdoc` 
-       ~~~shell
+       ```shell
         composer create-project --prefer-dist laravel/laravel nom_mon_projet "5.4.*" 
-       ~~~
+       ```
    5. **virtual host**  > dans wamp/mamp à `localhost/` créer `Ajouter un Virtual Host`
    6. indiquer
         - le nom du virtual host `http://goodfoodncookbook.projet/`
@@ -36,20 +37,20 @@
 - **Test** : Pour tous les tests automatisés, pas utilisé pr nous.
 - **Vendor** : Contient toutes les dépendances qui font fonctionner l’application laravel.
 - **.env** : contient toutes les infos sensible de d'environnement bdd il faut indiquer le nm de la bdd / utilisateur /mp
-    ~~~
+    ```php
         DB_CONNECTION=mysql
         DB_HOST=127.0.0.1
         DB_PORT=3306
         DB_DATABASE=bdd_name
         DB_USERNAME=user_name
         DB_PASSWORD=mp
-    ~~~
+    ```
 - **database.php**
 changer les paramètres d'encodage pour ne pas avoir d'"rreur
-    ~~~
+    ```php
          'charset' => 'utf8',
          :'collation' => 'utf8_unicode_ci',
-    ~~~
+    ```
 - **artisan**    
 - **Package.json** : ce qui nous permet de compiler nos fichier
  
@@ -58,5 +59,5 @@ changer les paramètres d'encodage pour ne pas avoir d'"rreur
 
 ----
 ## DIFFICULTES
-voir [tuto]('https://www.rosehosting.com/blog/install-laravel-on-ubuntu-16-04/')
+voir [tuto](https://www.rosehosting.com/blog/install-laravel-on-ubuntu-16-04/)
 

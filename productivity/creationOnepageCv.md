@@ -20,6 +20,6 @@
 7. portfolio
     
 ## MOCKUPS /wireframes
-- [wireframe cv en ligne contenu]('http://raphaelbodart.fr/wp-content/uploads/Wireframe3_HP.png')
+- [wireframe cv en ligne contenu](http://raphaelbodart.fr/wp-content/uploads/Wireframe3_HP.png)
 
 

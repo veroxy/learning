@@ -1,5 +1,5 @@
 # vim config
-~~~
+```
   " VIM VUNDLE VOIRE SUR GITHUB LE README "
   set nocompatible  " be iMproved, required
   filetype off      " required
@@ -82,4 +82,4 @@
 
   "affiche les commandes incomplète
   set showcmd
-~~~
+```

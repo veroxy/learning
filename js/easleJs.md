@@ -1,2 +1,2 @@
 
-[easle]('https://www.createjs.com/easeljs'')
+[easle](https://www.createjs.com/easeljs')

@@ -1,7 +1,16 @@
 # Summary
 
+<details>
+<summary>Heading</summary>
+    + markdown list 1
+        + nested list 1
+        + nested list 2
+    + markdown list 2
+</details>
+
 ## LANGAGE
 * [INTRO](README.md)
+
 * IDE & EDITEUR DE TEXTE
     * [terminal](text_editor_ide/terminal.md)
     * [IDE](text_editor_ide)
@@ -27,9 +36,8 @@
 * HTLM5
     * [balises & sémantiques](html5/balises.md)
     * [les attributs utiles](html5/attributes.md)
-* CSS3
-* SASS
-    * [sass](sass/sass.md)
+* CAS
+    * [sass](cssAndSass/sass.md)
 * JAVASCRIPT
 * JQUERY
 * JSON

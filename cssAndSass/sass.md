@@ -24,33 +24,31 @@ En plus de toutes les raisons de bases que l'on choisi d'utiliser SASS
 
 ## 1-KEZAKO ?
 ### TREE
-~~~
+```
 dir_PROJET/
   CSS/
     SCSS/
     style.scss
     _mixins.scss
     _colors.scss
-~~~
+```
 * les fichier commençant par "\_fichier" sont des PARTIES. >> @import dans le fichier PRINCIPAL "style".
 
 * les @import sass sont incorporer dans les autres MASTERS/STYLES. Le préprocesseur va incorporer directement les différentes parties dans le fichier STYLE.CSS
 
-~~~css
-#!sass
+```scss
 example : dans le fichier style.sass
 
 /** importer diff styles des autres pages **/
 @import '/scss/home';
 @import '/scss/job';
-~~~
+```
 
 ### Imbrication
 * Indentation du code / code imbriqué
 * @mediaquery facilité
 
-~~~css
-#!sass
+```scss
 body.home {
   .media-unit {
     border: 1px solid #ccc;
@@ -73,26 +71,24 @@ body.home {
     width: auto; }
   }
 }
-~~~
+```
 
 ### variables
 * modifier le code plus facilement en réduisant les duplications.
 * de nommer la valeur d’une propriété, la couleur par exemple
 
-~~~css
-#!sass
+```scss
 $color: #ffffff;
 a{
   color: $color;
 }
-~~~
+```
 
 ### @mixins && @include
 * on créer un exemple de style @mixin que l'on nomme
 * on intégrègre le mixin dans une balise/class/id/ avec @include + nom de la mixin
 
-~~~css
-#!sass
+```scss
 //Exemple de mixin
 
 $bkgdcolor: #ffa;
@@ -105,10 +101,9 @@ $bkgdcolor: #ffa;
     @include texte-surligne-gras;
   }
 }
-~~~
+```
 utilité àvec cross-browser:
-~~~css
-#!sass
+```scss
 @mixin rounded-corners {
   $rounded-corner-radius: 4px;
   -webkit-border-radius: $rounded-corner-radius;
@@ -119,14 +114,13 @@ utilité àvec cross-browser:
 .button {
 @include rounded-corners;
 }
-~~~
+```
 
 ### function utile
 * procède de la même façon que lorsque l'on parcours les propriétés d'un objet.
 * on demande la correspondance entre la liste et la classe dans ls html.
 
-~~~css
-#!sass
+```scss
   $list: (orange, purple, teal);
 
   @each $item in $list {
@@ -134,15 +128,15 @@ utilité àvec cross-browser:
       background: $item;
     }
   }
-
+```
+```html
 <div class="orange">orange</div>
 <div class="purple">purple</div>
 <div class="teal">teal</div>
-~~~
+```
 * ou encore créer un arc-en-ciel bien dégeulasse selon le nombre de divs <= 10
 
-~~~css
-#!sass
+```scss
 .ray {
   height: 30px;
 }
@@ -153,11 +147,10 @@ utilité àvec cross-browser:
     background: adjust-hue(blue, $i * $step);
    }
 }
-~~~
+```
 ### conditionS
 
-~~~css
-#!sass
+```scss
 $total: 10; //Number of .ray divs in our html
 $step: 360deg / $total; //Used to compute the hue based on color-wheel
 
@@ -170,12 +163,11 @@ $step: 360deg / $total; //Used to compute the hue based on color-wheel
 	margin-left: if($i % 2 == 0, 0px, 50px);
    }
 }
-~~~
+```
 ### extension
  \@extend permet de d'ajouter des propriété à d'autres definitions de style par exemple lorsque l'on veut appliquer une propriété à différentes balise/class/id en même temps sans les énumérer manuellement.
 
- ~~~css
-#!sass
+ ```scss
  .absolute {
    position: absolute;
 }
@@ -192,38 +184,38 @@ $step: 360deg / $total; //Used to compute the hue based on color-wheel
 .absolute, .caca, .capa p{
   position: absolute;
 }
-~~~
+```
 ----
 ## 2-USAGES
-~~~css
+```scss
 @each $asideSect in photo, contactMe, calendar {
   .#{$asideSect}-a {
     margin: 10px 0;
     padding: 15px;
   }
 }
-~~~
+```
 
 ----
 ## 3-COMMAND LINE / SHELL
 compiler un fichier scss le motif : INPUT > OUTPUT, je suis dans le répertoire /assets/
 - pour compiler manuellement un fichier sass c'est la commande suivante qui permet d'envoyer le fichier compilé dans le dossier désiré ici je l'envois dans le dossier 'autres' qui est hors du dossier courant où se trouve le dossier sass/
-  ~~~bash
+  ``` shell
     sass sass/style.scss:../autres/style.css  
-  ~~~
+  ```
 - ici le fichier style.css se met à jour automatiquement. En gros le préprocesseur regarde le fichier ".scss" et l'enregistre automatiquement le dossier de "css/"
-  ~~~bash
+  ``` shell
     sass --watch sass/style.scss:css/style.css  
-  ~~~
+  ```
 En Le **fichier.css** ce trouve ici dans le dossier **./Mon_projet/autres/** mais aussi dans le **./Mon_projet/assets/css** mais le fichier **original.scss** (non compilé) est toujours dans le dossier  **./Mon_projet/assets/sass**
 
 ---
 
 ## 4-INSTALLATION GEM
-// OVER FILES IMPORT
-// COMPASS  http://compass-style.org/reference/compass/css3/box_shadow/
-GEM files à installer
-~~~css
+- OVER FILES IMPORT
+- [COMPASS](http://compass-style.org/reference/compass/css3/box_shadow/)
+[GEM files à installer]()
+```scss
 @import "compass/css3/box-shadow";
 
-~~~
+```

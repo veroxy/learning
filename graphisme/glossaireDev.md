@@ -14,7 +14,7 @@ REF blog du moderateur
 
 * **Balises** : partie de code de programmation destinée à la création et à la structure d’une page internet, ou utilisée par les moteurs de recherche afin de mieux analyser un élément.
 
-* **Base de données - [bdd](./bdd/bddNotions.md)** : ensemble de données propres à un domaine déterminé, et organisées de manière à pouvoir être facilement retrouvées et mises à jour. Quand elle est informatisée, la base de données se matérialise par un ou plusieurs fichiers, qui sont gérés par un logiciel spécialisé.
+* **Base de données - [bdd](../bdd/bddNotions.md)** : ensemble de données propres à un domaine déterminé, et organisées de manière à pouvoir être facilement retrouvées et mises à jour. Quand elle est informatisée, la base de données se matérialise par un ou plusieurs fichiers, qui sont gérés par un logiciel spécialisé.
 
 * **Blog** : site Web caractérisé par la publication régulière de billets ou de « post », à l’image d’un journal de bord. Le blogueur (rédacteur qui tient le blog) y rédige un contenu souvent textuel, enrichi d’hyperliens et d’éléments multimédias, sous lequel chaque lecteur peut généralement apporter des commentaires.
 
@@ -33,6 +33,10 @@ REF blog du moderateur
 
 * **Compiler** : générer le code exécutable d’un programme à partir du code source.
 
+* **Délimitateur** :  désigne un couple de symbole qui permet "**d'encader**" un code afin de ne pas le confondre ave le reste, exemples:
+    - en **php -  REGEX** peut est mis dans en slash **/REGEX-CODE/** 
+    - en **SQL** on indique en début de code quel sera le délimitateur utilisé, c'est bien souvent des **$$** > `DELIMITATER $$`
+
 * **Développer** : réaliser une application ou un site web.
 
 * **Feature** : Fonctionnalité d’une application ou d’un site web en développement.
@@ -43,7 +47,7 @@ REF blog du moderateur
 
 Gamification: est l'utilisation de la manière de penser et de concevoir un jeu afin que le produit final soit amusant mais puisse aussi devenir une connaissance acquise.
 
-* **[IDE]('text_editor_ide/ide_phpstorm.md)** : Logiciel de développement utilisé pour réaliser le code source, compiler, lancer des tests… C’est l’outil principal qu’utilise tous les jours un développeur.
+* **[IDE](../editorIde/ide_phpstorm.md~HEAD)** : Logiciel de développement utilisé pour réaliser le code source, compiler, lancer des tests… C’est l’outil principal qu’utilise tous les jours un développeur.
 
 * **Intégration** : consiste à réunir au sein d’un même système d’information, des parties développées de façon séparées. L’intégration peut également consister à la tâche effectuée par le développeur Front-End (aussi appelé intégrateur).
 
@@ -86,3 +90,5 @@ Gamification: est l'utilisation de la manière de penser et de concevoir un jeu 
 * **Tests** : contrôles effectués au cours des différentes phases d’un projet (ou cycle de vie) afin de vérifier l’adéquation entre ce qui est livré et ce qui était attendu pour chaque phase. Exemples** : test d’intégration, test de non-régression, test de performance, test de réception, test unitaire, test de validation.
 
 * **Tests unitaires (ou TU)** : tests réalisés par du code (souvent avec des Frameworks dédiés).
+
+* **User-friendtly (+ interfaces)**:  traduisible "(interface) convivial". Se dit d'une interface entièrement tournée vers l’expérience utilisateur, 

@@ -10,7 +10,7 @@ php artisan make:model Role -m
   + une class Role dans (App > ROle.php )
  
 1. ### Created Migration: 2018_07_02_112920_create_roles_table
-    ~~~
+    ```
          public function up()
             {
                 Schema::create('roles', function (Blueprint $table) {
@@ -19,11 +19,11 @@ php artisan make:model Role -m
                     $table->timestamps();
                 });
             }
-    ~~~
+    ```
 
 2. ### modification de la class Role.php
-    ~~~
-    ~~~
+    ```
+    ```
 
 
 ## MIDDLEWARE

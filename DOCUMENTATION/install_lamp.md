@@ -25,15 +25,15 @@ sudo /etc/init.d/mysql stop
 
 ## ZSHRC / BACHRC alias
 avant de lancer mon lampp faur un HARD STOP
-~~~shell
+```shell
 $ lamppinit
-~~~
+```
 lancer ou un redémarage des services
-~~~shell
+```shell
 $ lamppstart
 $ lampprestart
-~~~
+```
 arrêter
-~~~shell
+```shell
 $ lamppstop
-~~~
+```

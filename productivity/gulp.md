@@ -1,10 +1,10 @@
 #gulp
 
- - [documentation - gitbook]('https://gulpjs.org/')
- - [première prise en main]('http://mnemotix.github.io/gulp-tuto/')
- - [gulp dfacile]('https://la-cascade.io/gulp-pour-les-debutants/')
+ - [documentation - gitbook](https://gulpjs.org/)
+ - [première prise en main](http://mnemotix.github.io/gulp-tuto/)
+ - [gulp dfacile](https://la-cascade.io/gulp-pour-les-debutants/)
 
-> voir exemple Alexandre Peyron [popcarte]('https://www.popcarte.com/')
+> voir exemple Alexandre Peyron [popcarte](https://www.popcarte.com/)
 
 --------
 
@@ -21,7 +21,7 @@ dans ce fichier
 - on écrit les "TASK"s que l'on veux faire 
 - associé à des commandes
 
-~~~
+```
     var gulp = require('gulp');
     var merge = require('merge-stream');
     
@@ -34,7 +34,7 @@ dans ce fichier
     
       return merge(bootstrap, jquery);
     });
-~~~
+```
 
 dans le script ci-dessus on mergé le script jquery avec celui de bootstrap
 

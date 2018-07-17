@@ -1,5 +1,5 @@
 # REGEX // COMMANDES BASIQUES BASH/SHEL SCRIPT
-[pays du 42 pour débuter](http://i.paysdu42.fr/?page=impatient-shell-debutant 'source'); et toujours [l'ABS pour se perfectionner](http://abs.traduc.org/abs-fr/ch01.html 'souce')
+[pays du 42 pour débuter](http://i.paysdu42.fr/?page=impatient-shell-debutant 'source); et toujours [l'ABS pour se perfectionner](http://abs.traduc.org/abs-fr/ch01.html 'souce)
 
 ----
 > quand on ne sait pas on cherche. Si on a pas la réponse c'est qu'lon pas assez chercher !!
