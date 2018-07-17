@@ -6,8 +6,17 @@ On gènère une nouvelle clef avec une passphrase et un mp
 ssh-keygen -t rsa -b 4096 -C"HOC-key-veroxy"
     
     
-    
-    +---[RSA 9827]----+
+    Generating public/private rsa key pair.
+    Enter file in which to save the key (/home/veroxy/.ssh/id_rsa):
+    Created directory '/home/veroxy/.ssh'.
+    Enter passphrase (empty for no passphrase):
+    Enter same passphrase again:
+    Your identification has been saved in /home/veroxy/.ssh/id_rsa.
+    Your public key has been saved in /home/veroxy/.ssh/id_rsa.pub.
+    The key fingerprint is:
+    SHA256:/EptpozTdvZKQNutSln+mMX8VsYj65qqdMb1NLOb/uo HOC-key-veroxy
+    The key's randomart image is:
+    +---[RSA 4096]----+
     |                 |
     |                 |
     |        .        |

@@ -32,7 +32,7 @@
    * Edition -> Préférences profil (choix du profil) -> Commande -> soit Script shell / soit rentrer une commande
 
 4. faire en sorte que le terminal ne soit pas sensible à la CASE en autocomplétion (TAB) il faut créer un fichier ".inputrc"
-     ~~~
+     ~~~shell
          vi .inputrc
          
          ---
@@ -42,7 +42,7 @@
 5. installer VIM et créer un fichier ".vimrc" avec les [paramètres]() 
      ~~~
          git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-         sudo apt-get install vim
+         sudo apt install vim
          vim .vimrc
      ~~~
      
@@ -53,8 +53,8 @@
 1. ### APACHE
     * on installe Apache2, avant tout vérifier si apache n'est pas déja installé et quelle version 'apache -v'
     ~~~
-            sudo apt-get update
-            sudo apt-get install apache2
+            sudo apt update &&apt upgarde
+            sudo apt install apache2
     ~~~
     * après quoi vous aurez paramétrer le fichier /etc/apache2/apache2.conf pour ajouter une VARIABLE GLOBLAE ServerName votre_domaine_ouvotre_Addr_Ip_Local
     (localhost ou 127...)
@@ -109,7 +109,7 @@
 2. ### MYSQL
   * installation sans 'update' car on vient de le faire mais n'a pas d'impacte
       ~~~
-         sudo apt-get install mysql-server
+         sudo apt install mysql-server
       ~~~
   * installation des test de sécurité: création de login/mp désactiver/activé control par mp, création de profil de connection
     ~~~
@@ -121,7 +121,7 @@
     
     * on va installer les module dépendant de la librairie apache et mysql dont php a besoin en meme 
         ~~~
-          sudo apt-get install php libapache2-mod-php php-mcrypt php-mysql
+          sudo apt install php libapache2-mod-php php-mcrypt php-mysql
         ~~~
     
     * on va faire une petite manipulation dans le fichier "/etc/apache2/mods-enabled/dir.conf" pour éviter que lorsque Apache se connecte au serveur il renvois d"abord un index.html et non un index.php. On va intervertir l'ordre des appel afin que "index.php" soit en premier au lieu de index.html
@@ -140,8 +140,8 @@ Install phpMyAdmin 4.6.4 on Ubuntu 16.10, Ubuntu 16.04, Ubuntu 15.04, Ubuntu 14.
 
    * Faire un UPDATE avant tout et Lancer la commande d'installation du package
         ~~~
-            sudo apt-get upgrade
-            sudo apt-get install phpmyadmin
+            sudo apt upgrade
+            sudo apt install phpmyadmin
         ~~~
    * Si le dossier n'est pas trouvé (http://localhost/phpmyadmin) et qu’aucun lien vers phpmyadmin n’existe dans /var/www/html/’:
        ~~~
@@ -157,7 +157,7 @@ Install phpMyAdmin 4.6.4 on Ubuntu 16.10, Ubuntu 16.04, Ubuntu 15.04, Ubuntu 14.
 ## GIT 
 1. installation rapide
     ~~~
-       apt-get install git-all
+       apt install git-all
     ~~~
    
    * installation manuel [ICI](https://git-scm.com/book/fr/v1/D%C3%A9marrage-rapide-Installation-de-Git)

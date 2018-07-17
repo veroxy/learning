@@ -58,5 +58,5 @@ changer les paramètres d'encodage pour ne pas avoir d'"rreur
 
 ----
 ## DIFFICULTES
-voir [tuto](https://www.rosehosting.com/blog/install-laravel-on-ubuntu-16-04/)
+voir [tuto]('https://www.rosehosting.com/blog/install-laravel-on-ubuntu-16-04/')
 
