@@ -1,19 +1,18 @@
 #Base de données et structures, NOTIONS
 
-##distribution
- - WAMP/MAMP/LAMP/XAMP == STACK (pile) pour eviter les pbs sur WINDOWS installer la version 32bits
+### WAMP/MAMP/LAMP/XAMP ==
+ -  STACK (pile) pour eviter les pbs sur WINDOWS installer la version 32bits
 
 Pour optimiser le serveur pour prendre plus de place, pour que 'exécustion soit plus rapide et alouer plus de mémoire aux données (cache, retc...)
 
-    MLD Modèle logique de données(précedents)
-    dictionnaire des données
-    MCD Modèle conceptuel de données ->
-
+ - MLD Modèle logique de données(précedents) [mld hocClassroom blog](hoclassroom/MldMysqlWorkbench.md)
+ - dictionnaire des données
+ - MCD Modèle conceptuel de données 
 
 
  - SGBDR (System de Gestion de Bases de Données Relationnelles):
 
-    MLD Modèle logique de données(précedents)
+ 
 
 Server
 |>

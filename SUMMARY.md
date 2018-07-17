@@ -10,7 +10,10 @@
 
 ## LANGAGE
 * [INTRO](README.md)
-
+* BDD
+    * [notions de base de données](bdd/bddNotions.md)
+    * [phpMyAdmin](bdd/phpMyAdmin.md)
+    * [password, securité & chiffrage](bdd/chiffragemp.md)
 * IDE & EDITEUR DE TEXTE
     * [terminal](editorIde/terminal.md)
         * [Paramètres Terminal](bash_script/param_terminal.md)
