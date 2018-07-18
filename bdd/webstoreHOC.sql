@@ -207,6 +207,6 @@ ORDER BY produit_similaire.degre DESC;
 
 -- ------------------------------------------------------------
 -- le nom, le prix des produits visible dont le prix est strictement supérieur 700$
-SELECT produit.nom, visible, prix_HT
+SELECT nom, visible, prix_HT
 FROM produit
 WHERE prix_HT > 700 AND visible;

@@ -5,9 +5,53 @@
 
 Pour optimiser le serveur pour prendre plus de place, pour que 'exécustion soit plus rapide et alouer plus de mémoire aux données (cache, retc...)
 
+
+[VOIR](https://fsmrel.developpez.com/basesrelationnelles/workbench/?page=7)
+[w3cshool](https://www.w3schools.in/mysql/ddl-dml-dcl/)
  - MLD Modèle logique de données(précedents) [mld hocClassroom blog](hoclassroom/MldMysqlWorkbench.md)
  - dictionnaire des données
- - MCD Modèle conceptuel de données 
+ - MCD Modèle conceptuel de données
+ 
+###  Les types de commandes SQL (DDL, DML)
+
+ 1. ddl defininir un element de structure 
+    > DDL is short name of Data Definition Language, which deals with database schemas and descriptions, of how the data should reside in the database. 
+    - CREATE - to create database and its objects like (table, index, views, store procedure, function, and triggers)
+    - ALTER - alters the structure of the existing database
+    - DROP - delete objects from the database
+    - TRUNCATE - remove all records from a table, including all spaces allocated for the records are removed
+    - COMMENT - add comments to the data dictionary
+    - RENAME - rename an object
+    
+ 2. dml
+    > DML is short name of Data Manipulation Language which deals with data manipulation and includes most common SQL statements such SELECT, INSERT, UPDATE, DELETE etc, and it is used to store, modify, retrieve, delete and update data in a database. 
+     - SELECT - retrieve data from a database
+     - INSERT - insert data into a table
+     - UPDATE - updates existing data within a table
+     - DELETE - Delete all records from a database table
+     - MERGE - UPSERT operation (insert or update)
+     - CALL - call a PL/SQL or Java subprogram
+     - EXPLAIN PLAN - interpretation of the data access path
+     - LOCK TABLE - concurrency Contr
+     
+ 3. dcl (data control language)
+    > DCL is short name of Data Control Language which includes commands such as GRANT and mostly concerned with rights, permissions and other controls of the database system. 
+ déclarations de DCL contrôlent le niveau d`accès que les utilisateurs ont sur les objets de base de données. 
+ 
+    - SUBVENTION - permet aux utilisateurs de lire / écrire sur certains objets de base de données 
+    - RÉVOQUER - empêche les utilisateurs de l`autorisation de lecture / écriture sur les objets de base de données
+    - GRANT - allow users access privileges to database
+    - REVOKE - withdraw users access privileges given by using the GRANT command
+    
+ 4. TCL
+    > is short name of Transaction Control Language which deals with a transaction within a database.    
+    - COMMIT - commits a Transaction
+    - ROLLBACK - rollback a transaction in case of any error occurs
+    - SAVEPOINT - to rollback the transaction making points within groups
+    - SET TRANSACTION - specify characteristics of the transaction
+     
+     
+ ![tableau des commandes](dml-ddl-dcl-and-tcl-commande.png)
 
 
  - SGBDR (System de Gestion de Bases de Données Relationnelles):
@@ -121,13 +165,30 @@ ennoncé
 > min param MYSQL == v 5.7
 #### réinitialiser mot de passe root Mysql
 dans un fichier `mysql-init.txt`
-```~
+```
     ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPass';
     SET PASSWORD FOR 'root'@'localhost' = PASSWORD('MyNewPass);
-```~
+```
 ```
     C:\> cd "C:\Program Files\MySQL\MySQL Server 5.7\bin"
     C:\> mysqld --init-file=C:\\mysql-init.txt
 ```
 
-----
+
+## 4 jointures differentes en SQL
+
+- (INNER) JOIN:   
+Retourne les valeurs correspondantes/matchs dans les deux tables
+
+ ![join](join_innerjoin.gif)
+- LEFT (OUTER) JOIN: Return all records from the left table, and the matched records from the right table
+ ![join](join_leftjoin.gif)
+
+- RIGHT (OUTER) JOIN:    
+Retoune toutes les éléments de la table de droite qui ont des valeurs/colonnes qui correspondent à la table de gauche  mais aussi celles qui ne match pas / correspondent pas à la table de gauche
+ ![join](join_rightjoin.gif)
+
+- FULL (OUTER) JOIN:
+Retourne toutes les correspondance qui matchent dans l'une ou l'autre des table de gauche et de droite
+ ![join](join_fulljoin.gif)
+ 

@@ -113,4 +113,57 @@ CREATE TRIGGER stock_negative_qty_add BEFORE UPDATE
 
 INSERT INTO ligne_commande(id,quantity, id_commande, id_produit)
 VALUES
-(1,152,1,1)
+(1,152,1,1);
+
+--  afficher tous les clients et le nb de cmd qu'ils ont passés
+--  afficher toutes les colonnes de la tabke client + colonne supplémentaire  "nombre de commande"
+-- Inclure les clients qui n'ont jamais commandé (afficher nb cmds = 0)
+USE webstore;
+INSERT INTO commande(id_client,date_commande)
+VALUES
+(1,NOW()),
+(3,NOW()),
+(6,NOW()),
+(8,NOW()),
+(10,NOW());
+
+INSERT INTO ligne_commande(quantity, id_commande, id_produit)
+VALUES
+  -- (4,1,1),
+  (20,9,4),
+  (15,8,7),
+  (1,7,9),
+  (5,5,9);
+
+SELECT cmd.id_client as cli
+  FROM commande cmd
+    INNER JOIN
+    ligne_commande lc
+      ON cmd.id = lc.id_commande
+    INNER JOIN client c
+      ON cmd.id_client = c.id
+
+    WHERE cmd.id;
+
+SELECT client.login AS customer, commande.id AS cmds
+FROM client , commande
+ WHERE client.id = commande.id_client;
+
+-- on cré une view :: un raccpourcit vers la commande select
+CREATE OR REPLACE VIEW V_client_nb_cmds AS;
+
+SELECT client.login, cmd.id AS nb_cmds
+FROM client
+INNER JOIN commande cmd ON  client.id = cmd.id_client
+-- agréger les données par id de client car unique / cef primaire
+GROUP BY client.id;
+-- affiche ler
+SELECT * FROM v_client_nb_cmds;
+
+show create view v_client_nb_cmds;
+
+
+UPDATE client
+INNER JOIN commande ON  client.id = commande.id_client
+    SET has_cmds =  1
+WHERE ***;
