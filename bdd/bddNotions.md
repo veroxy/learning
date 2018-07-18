@@ -115,7 +115,22 @@ Normalisation de schémas:
 ###3. 3NF (non indispensable)
 >elle ressemble à la 2eme mais à l'inverse:  on ne doit pas déduire le résultat d'un champs par l’addition de plusieurs autres champs;
 - Selon les besoins des requêtes -> si une requêtes est souvent appelée on peut écraser la 3NF ()
-- Lors de la création d'une table on peu créer une clef primaire exemple dans une table de VILLES avec des noms de ville et en valeur primaires 1
+- Lors de la création d'une table on peu créer une clef primaire exemple dans une table de VILLES avec des noms de ville et en valeur primaires 1    
+
+on peut faire la requete via php
+    ```php
+        class MyClasse{
+        private effectifFille;
+        private effectifGarcon;
+        
+        public function getEffectifFille(){...}
+        public function getEffectifGarçon(){...}
+        
+        public function getEffectifTotal(){
+            return $this->getEffectifFille() + $this->getEffectifFille();
+        }
+    ```
+
 
 ### dictionnaire des données
 - N: numérique

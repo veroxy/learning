@@ -151,9 +151,9 @@ FROM client , commande
 -- on cré une view :: un raccpourcit vers la commande select
 CREATE OR REPLACE VIEW V_client_nb_cmds AS;
 
-SELECT client.login, cmd.id AS nb_cmds
+SELECT client.*, COUNT(cmd.id) AS nb_cmds
 FROM client
-INNER JOIN commande cmd ON  client.id = cmd.id_client
+left JOIN commande cmd ON client.id = cmd.id_client
 -- agréger les données par id de client car unique / cef primaire
 GROUP BY client.id;
 -- affiche ler
@@ -161,8 +161,38 @@ SELECT * FROM v_client_nb_cmds;
 
 show create view v_client_nb_cmds;
 
+-- Donner le nd de produits commandés par un client et par produit
 
-UPDATE client
-INNER JOIN commande ON  client.id = commande.id_client
-    SET has_cmds =  1
-WHERE ***;
+SELECT lc.* , cmds.id_client AS Client, sum(p.id_produit) AS nbProduit
+  FROM ligne_commande lc
+INNER JOIN commande cmds ON lc.id_commande = cmds.id
+INNER JOIN client c ON cmds.id_client = c.id
+INNER JOIN produit p ON lc.id_produit = p.id_produit
+GROUP BY c.id;
+
+SELECT sum(lc.quantity) AS 'totale prod commande' ,count(cmds.id_client) AS cmdClient, c.login
+FROM ligne_commande lc
+  INNER JOIN commande cmds ON lc.id_commande = cmds.id
+  INNER JOIN client c ON cmds.id_client = c.id
+  INNER JOIN produit p ON lc.id_produit = p.id_produit
+GROUP BY lc.quantity DESC;
+
+
+SELECT sum(lc.quantity) AS 'totale prod commande' ,count(cmds.id_client) AS cmdClient, c.login
+FROM ligne_commande lc
+  INNER JOIN commande cmds ON lc.id_commande = cmds.id
+  INNER JOIN client c ON cmds.id_client = c.id
+  INNER JOIN produit p ON lc.id_produit = p.id_produit
+GROUP BY lc.quantity DESC;
+
+SELECT c.login, p.nom, COALESCE(SUM(lc.quantity),0) AS quantite
+FROM client c
+CROSS JOIN produit p
+LEFT JOIN commande cmd
+    ON c.id = cmd.id_client
+LEFT JOIN ligne_commande lc
+    ON cmd.id = lc.id_commande
+    AND p.id_produit = lc.id_produit
+GROUP BY p.id_produit, c.id,lc.quantity
+ORDER BY c.login;
+
