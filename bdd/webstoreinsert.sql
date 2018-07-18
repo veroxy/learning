@@ -1,7 +1,6 @@
 USE webstore;
 
 -- on ajoute la colonne à la une
-
 ALTER TABLE produit ADD stock INT DEFAULT 150;
 
 -- on cré la table client

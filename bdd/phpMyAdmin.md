@@ -1,19 +1,31 @@
-# phpMyAdmin - usage
+# phpMyAdmin (UI)- mysql CMD (CLI)
+
+
+## connnexion à la BDD et permission utilisateur
+- le ROOT peut accéder à toutes les BDDs et créer des NOUVEAU UTILISATEURS et leur donner les droits (similaires ou non)
+- un utilisateur X ou Y peut ne pas accéder à toutes les BDDs car il n'a pas forcément les droit d'accès
 
 #### ajouter un utilisateur
-
 - VIA L'INTERFACE GRAPHIQUE dans l'onglet **Home > comptes uilisateur**
-
-
     INFORMATIONS POUR LA CONNEXIONS
     > nom utilisateur 
     > hote ==  D'où peut on se connecter à la base de données (local/tout(%)/ saisi)
-    > on peut créer une bdd automatiquement associé à cet utilisateur 
+    > on peut créer une bdd automatiquement associé à cet utilisateur qui aura le même le nom 
     > les privilèges == choisir pspécifiquement ce que peut faire l'utilisateur
     > ssl , pas forcément nécessaire
    
 - VIA LA CONSOLE SQL
   **Home > SQL** 
+  donner les droits à un utilisateur :
+  ```
+      mysql -u root -p 
+      ****
+      
+      CREATE USER monomuser IDENTIFIED BY caca; 
+      
+      CREATE DATABASE database_name; IDENT
+      GRANT ALL PRIVILEGES ON database_name.* TO 'username@localhost';
+  ```
   
   
 ## tables
@@ -71,14 +83,7 @@ myIsam ne fait pas :
 integrite entre les tables
 fulltext a été intégré à innoDB
 
-#### CREER un utilisateur
-donner les droits à un utilisateur :
-```
-    CREATE USER monomuser IDENTIFIED BY caca; 
-    
-    CREATE DATABASE database_name; IDENT
-    GRANT ALL PRIVILEGES ON database_name.* TO 'username@localhost';
-```
+
 
 #### console SQL
 DML - voir le fichier [createClasseHoc.sql](createClasseHoc.sql);

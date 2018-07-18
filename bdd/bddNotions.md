@@ -1,4 +1,4 @@
-#Base de données et structures, NOTIONS
+# Base de données et structures, NOTIONS
 
 ### WAMP/MAMP/LAMP/XAMP ==
  -  STACK (pile) pour eviter les pbs sur WINDOWS installer la version 32bits
@@ -15,7 +15,8 @@ Pour optimiser le serveur pour prendre plus de place, pour que 'exécustion soit
 ###  Les types de commandes SQL (DDL, DML)
 
  1. ddl defininir un element de structure 
-    > DDL is short name of Data Definition Language, which deals with database schemas and descriptions, of how the data should reside in the database. 
+    > (Data Definition Language) which deals with database schemas and descriptions, of how the data should reside in the database. 
+    il traite avec les schemas de bdd et les descriptionsn de bdd de comment les donnees  
     - CREATE - to create database and its objects like (table, index, views, store procedure, function, and triggers)
     - ALTER - alters the structure of the existing database
     - DROP - delete objects from the database
@@ -54,9 +55,19 @@ Pour optimiser le serveur pour prendre plus de place, pour que 'exécustion soit
  ![tableau des commandes](dml-ddl-dcl-and-tcl-commande.png)
 
 
- - SGBDR (System de Gestion de Bases de Données Relationnelles):
+## SGBDR :
+> Un (Système de Gestion de Base de Données Relationnel) (SGBDR) est, comme son nom l’indique, un outil permettant de créer et d’administrer des bases de données relationnelles. Les SGBDR sont fréquemment utilisés pour stocker de gros volumes de données complexes, sous forme de tables avec lignes et colonnes. Comme elles n’ont pas besoin d’informations concernant la méthode d’extraction ou d’utilisation des données, il est possible d’analyser les données stockées de différentes façons.
 
- 
+- ThinkSQL
+- SQL Server (Microsoft)
+- Informix (IBM)
+- Access (MS)(Microsoft)
+- PostgreSQL
+- DB2 (IBM)
+- Oracle Database
+- MySQL -> open source
+
+[VOIR PLUS ](https://assessment-tools.ca.com/tools/continuous-delivery-tools/fr/rdbms-tools?redirect=automic.com)
 
 Server
 |>
@@ -176,7 +187,6 @@ dans un fichier `mysql-init.txt`
 
 
 ## 4 jointures differentes en SQL
-
 - (INNER) JOIN:   
 Retourne les valeurs correspondantes/matchs dans les deux tables
 
@@ -192,3 +202,4 @@ Retoune toutes les éléments de la table de droite qui ont des valeurs/colonnes
 Retourne toutes les correspondance qui matchent dans l'une ou l'autre des table de gauche et de droite
  ![join](join_fulljoin.gif)
  
+ --  
