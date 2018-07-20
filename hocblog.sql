@@ -217,7 +217,7 @@ create table hocblog.categories
   updated_at timestamp null
 )
 ;
--- auto-generated definition
+-- auto-generated definitionsugar
 create table hocblog.posts
 (
   id int(10) unsigned auto_increment
