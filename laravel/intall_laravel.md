@@ -15,6 +15,32 @@
         - le root path vers lequel celui-ci doit pointer `http://localhost/vagrant/httpdoc/goodfoodncookbook` 
    7. dans les **outils** de wamp/mamp `redemarer le serveur DNS`
    
+ a.   
+   ```
+   $ php artisan make:model Plat -m
+   Model created successfully.
+   Created Migration: 2018_07_24_144147_create_plats_table
+
+   ```   
+ a.   
+   ```$ php artisan make:model Menu -m
+      Model created successfully.
+      Created Migration: 2018_07_24_144323_create_menus_table
+
+   ```   
+ a.   
+   ```
+   $ php artisan make:controller PlatsController --resource
+   Controller created successfully.
+$ php artisan make:controller MenusController --resource
+Controller already exists!
+
+   ```   
+ a.   
+   ```
+   php artisan make:auth
+
+   ```
    
 ###STRUCTURE DU PROJET
 - **App** => ce qui fait fonctionner l’application
