@@ -6,9 +6,9 @@
    2. env wamp/mamp server 
    3. verification de la version de php `php - v` > ici c'ests la version 5.4
    4. le repertoire source `httpdoc` 
-       ```shell
-        composer create-project --prefer-dist laravel/laravel nom_mon_projet "5.4.*" 
-       ```
+   ```shell
+    composer create-project --prefer-dist laravel/laravel nom_mon_projet "5.4.*" 
+   ```
    5. **virtual host**  > dans wamp/mamp à `localhost/` créer `Ajouter un Virtual Host`
    6. indiquer
         - le nom du virtual host `http://goodfoodncookbook.projet/`
