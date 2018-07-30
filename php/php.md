@@ -7,9 +7,7 @@
   * [td 2 deuxième année](https://www.univ-orleans.fr/iut-orleans/informatique/intra/tuto/php/td/2A/2015/td1Web.pdf "td2")
 
 250 millions de sites environ sont réalisés à travers le monde en PHP
----
-```
-```
+--
 
 ### HISTOIRE : v1 & v2
   * d’abord Personal Home Pages puis HypertextPreProcessor.
@@ -18,9 +16,9 @@
   1994 pour analyser les connexions sur son site Web.
 
   * nous sommes maintenant à la version 7 depuis novembre 2015 sotant la [v6]
-  [v6]:https://www.phproundtable.com/episode/what-happened-to-php-6
+  [v6]()https://www.phproundtable.com/episode/what-happened-to-php-6)
 
-  >des dizaines de millions de sites Web l’utilisent à travers le monde…
+  > des dizaines de millions de sites Web l’utilisent à travers le monde…
   Comme Le Monde , Facebook ou Yahoo
 
 ### PHP7

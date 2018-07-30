@@ -4,7 +4,8 @@
 REF blog du moderateur
 
 * **API** : (Application Programming Interface) Il s’agit d’un ensemble de fonctions qui permettent d’accéder aux services d’une application, via un langage de programmation.
-* ** Back-end / Front-end** : en travaillant en front-end, un développeur prend principalement en charge la création d’une interface claire et simple pour les internautes. Inversement, le développeur back-end interviendra principalement sur le back-office ainsi que sur tous les éléments d’un projet web qui sont « invisibles » mais indispensables lorsque l’on navigue sur un site Internet.
+
+* **Back-end / Front-end** : en travaillant en front-end, un développeur prend principalement en charge la création d’une interface claire et simple pour les internautes. Inversement, le développeur back-end interviendra principalement sur le back-office ainsi que sur tous les éléments d’un projet web qui sont « invisibles » mais indispensables lorsque l’on navigue sur un site Internet.
 
 * **Back-office** : terme qui désigne la partie administrative d’un site web (également appelé CMS).
 
@@ -78,6 +79,8 @@ Gamification: est l'utilisation de la manière de penser et de concevoir un jeu 
 * **Refonte** : modifier totalement ou en partie un site internet ou une application.
 
 * **Responsive** : REF 
+
+* **RESTful** : développement mobile dont l'application respecte pleinement REST 
 
 * **Repository (ou « Repo »)** : Entrepôt de code, gestionnaire de code source.
 

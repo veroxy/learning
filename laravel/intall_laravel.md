@@ -6,15 +6,41 @@
    2. env wamp/mamp server 
    3. verification de la version de php `php - v` > ici c'ests la version 5.4
    4. le repertoire source `httpdoc` 
-       ```shell
-        composer create-project --prefer-dist laravel/laravel nom_mon_projet "5.4.*" 
-       ```
+   ```shell
+    composer create-project --prefer-dist laravel/laravel nom_mon_projet "5.4.*" 
+   ```
    5. **virtual host**  > dans wamp/mamp à `localhost/` créer `Ajouter un Virtual Host`
    6. indiquer
         - le nom du virtual host `http://goodfoodncookbook.projet/`
         - le root path vers lequel celui-ci doit pointer `http://localhost/vagrant/httpdoc/goodfoodncookbook` 
    7. dans les **outils** de wamp/mamp `redemarer le serveur DNS`
    
+ a.   
+   ```
+   $ php artisan make:model Plat -m
+   Model created successfully.
+   Created Migration: 2018_07_24_144147_create_plats_table
+
+   ```   
+ a.   
+   ```$ php artisan make:model Menu -m
+      Model created successfully.
+      Created Migration: 2018_07_24_144323_create_menus_table
+
+   ```   
+ a.   
+   ```
+   $ php artisan make:controller PlatsController --resource
+   Controller created successfully.
+$ php artisan make:controller MenusController --resource
+Controller already exists!
+
+   ```   
+ a.   
+   ```
+   php artisan make:auth
+
+   ```
    
 ###STRUCTURE DU PROJET
 - **App** => ce qui fait fonctionner l’application
