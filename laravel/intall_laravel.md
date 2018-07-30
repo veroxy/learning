@@ -2,9 +2,10 @@
 
 
 ### ENVIRONNMENT LARAVEL
-   1. [COMPOSER.exe](https://getcomposer.org/Composer-Setup.exe)
+   1. [COMPOSER.exe](https://getcomposer.org/Composer-Setup.exe)  ===> ref [nodeJs](pkgnodejs/composerlaravel.md)
+
    2. env wamp/mamp server 
-   3. verification de la version de php `php - v` > ici c'ests la version 5.4
+   3. verification de la version de php `php - v` > ici c'est la version 5.4
    4. le repertoire source `httpdoc` 
    ```shell
     composer create-project --prefer-dist laravel/laravel nom_mon_projet "5.4.*" 

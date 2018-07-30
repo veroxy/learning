@@ -48,6 +48,8 @@
 * AJAX
     * [ajax](ajax/ajax.md)
     * [ajax Jquery](ajax/jqueryajax.md)
+* NODEJS
+    * [nodeJs](pkgnodejs/composerlaravel.md)
 * PHP
     * [sql](php/sql.md)
     * [pdo](php/pdo.md)
@@ -55,5 +57,10 @@
     * [la poo](poo/poo.md)
 
 ## OUTILS
-* FRAMEWORKS
-    * [laravel](laravel/laravel_install.md)
+* LARAVEL
+    * [laravel WAMP](laravel/install_laravel.md)
+    * [laravel MAC OSX / XAMP / LAMP](laravel/install_laravel_OSX.md)
+    * [laravel - création de projet](laravel/procedureCreationProjet.md)
+* WORDPRESS
+    * [créer un thème perso wp](wordpress-createwptheme/create_wptheme.md)
+
