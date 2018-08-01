@@ -51,7 +51,7 @@
 * NODEJS
     * [nodeJs](pkgnodejs/composerlaravel.md)
 * PHP
-    * [sql](php/sql.md)
+t pull    * [sql](php/sql.md)
     * [pdo](php/pdo.md)
 * POO
     * [la poo](poo/poo.md)

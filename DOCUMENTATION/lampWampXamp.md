@@ -1,11 +1,12 @@
-# lamp wamp xamp
+# lamp wamp xamp - Linux, Apache, MySQL, PHP
 
 ## sur linux/unix
 lors de l'installation de lampp ou Xampp error
 préférer un installation manuelle de
-- Apache
+- Apache2
 - mysql
-- etc
+- php
+- phpmyadmin
 
 ## ERREURES RECURENTES:
 - dans mon bashrc :
@@ -43,16 +44,17 @@ J'effectue toutes ces procédures en appelant les alias que j'ai créés dans un
 Ainsi il n'y pas de confli
 
 ## [MP ROOT de MYSQL PERDU](https://www.commentcamarche.com/faq/9773-mysql-changer-le-mot-de-passe-root)
-1. arrêter le serveur MySQ
-    ```
+
+1. arrêter le serveur MySQL
+    ```shell
     /etc/init.d/mysql stop
     ```
 2. Redémarrer MySQL en passant outre l'identification et en désactivant l'écoute du réseau (afin d'éviter d'être piraté à ce moment donné où MySQL est vulnérable
-     ```
+     ```shell
     mysqld --skip-grant-tables --skip-networking &
     ```
 3. Réinitialiser le mot de passe
-    ```
+    ```shell
     mysql mysql -u root
     ```
     
