@@ -15,7 +15,7 @@
 * [Ruby](DOCUMENTATION/install_ruby.md) & [koala préprocesseur sass](DOCUMENTATION/install_koala.md)
 * [nodeJs - Composer - intro laravel](pkgnodejs/composerlaravel.md)
 * [lamp](DOCUMENTATION/install_lamp.md)
-* [LAMP - XAMP - WAMP - MAMP](DOCUMENTATION/install_lampWampXamp.md)
+* [LAMP - XAMP - WAMP - MAMP](DOCUMENTATION/lampWampXamp.md)
 ## LANGAGE
 * BDD
     * [notions de base de données](bdd/bddNotions.md)
