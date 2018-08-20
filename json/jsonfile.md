@@ -1,6 +1,6 @@
 # traiter un fichier JSON dans PHP
 
-oui on peut traiter des fichiers de données de type objets javascript dans php tels que file.json
+> on peut traiter des fichiers de données de type objets javascript dans php tels que file.json, comme on peut aussi le faire avec curl
 ---
 
 
@@ -41,7 +41,7 @@ PHP peut décoder un fichier.json et encoder vers un fichier.json.
 
   ```
   * on peut désormais le parcourir avec une boucle for / foreach
-   ```
+   ```php
     foreach ($decodeJson as $value){
         echo $value
     }

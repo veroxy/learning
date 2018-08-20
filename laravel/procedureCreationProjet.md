@@ -5,8 +5,9 @@ Je créé mon projet laravel
     composer create-projet --prefer-dist laravel/laravel NOMPROJET "5.4.*"
 ```
 - Je créé mon virtual host
-- Je créé ma bdd
-- Je configure mon **.env**
+    - sous **WINDOWS** :  clic droit sur le le picto "wamp" en bas à gauche et on va dans **gérer mes virtual host** 
+- Je créé ma bdd(avec ou non utilisateurs) soit via la console soit en passant l'interface phpmyadmin
+- Je configure le fichier **.env** (environnement BDD)
 - Je suis en 5.4 donc je modifie config>database.php pour enlever les mb4
 - Je créé mes models et mes migrations
 ```

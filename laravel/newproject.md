@@ -1,13 +1,14 @@
 
 
-créer une migration avec le model  (ici Role)
+créer une migration avec le model(== Class / Objet) (ici Role)
+```
 php artisan make:model Role -m
-
+```
 **return :**
 > Model created successfully.
   Created Migration: 2018_07_02_112920_create_roles_table (fichier que l'on 
   modifie)
-  + une class Role dans (App > ROle.php )
+  + une class Role dans (App > Role.php )
  
 1. ### Created Migration: 2018_07_02_112920_create_roles_table
     ```
@@ -31,4 +32,4 @@ cette classe njhérite d'aucune classe
 ft handle > test si admin ou non 
 >  if(Auth::user()->isAdmin())
 
-retourne une instance de model User.php 
+return une instance de model User.php 

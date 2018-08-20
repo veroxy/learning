@@ -2,9 +2,10 @@
 ---
 
 ### views injections contenus
+
  1.  **Routing**
     -  dans `routes/web.php` dans lequel on fait ce qui suit:
-    -  on fait les routes vers les view()s `resources/view/file.blade.php` 
+    -  on fait les routes vers les view()s `resources/view/file.blade.php` qui sont dans le dossier public
     
  2. Création de model avec laravel
  ```
@@ -12,7 +13,8 @@
     php artisan make:model Model_Nom -m (migrate)
  ```
 
-3. les routes
+3. les routes  
+> les routes sont les différentes les **"liens / url"** vers lequels on va pointer   
 ```shell
     php artisan route:list  
     +--------+----------+----------+------+---------+--------------+
@@ -41,4 +43,4 @@ Route::get('/basicinsert',function(){
 ou metttre en haut use App\Post
 ```
 
-4. fillable
+4. fillable [en cours]

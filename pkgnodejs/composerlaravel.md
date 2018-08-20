@@ -52,36 +52,39 @@ on peut maintenant lancer la cmd `composer -version`
 # LARAVEL
 
 on peut maintenant créer un nouveau projet composer Laravel
-
+```shell
 ~$ composer create-project laravel/laravel nom_project "5.4.*"
-
-    - Problem 1
-    laravel/framework v5.4.9 requires ext-mbstring * -> the requested PHP extension mbstring is missing from your system.
+```
+> Problem 1  
+  laravel/framework v5.4.9 requires ext-mbstring * -> the requested PHP extension mbstring is missing from your system.
 
 on doit installer mbstring
+```shell
 ~$ sudo apt-get install php-mbstring
+```
 
-
-    - Problem 1
-    -phpunit/phpunit 5.7.9 requires ext-dom * -> the requested PHP extension dom is missing from your system.
->But in your server you're missing ext-dom. php7.1-xml has all the related packages you need. So, you can simply install it by running:
-
+> Problem 1  
+  phpunit/phpunit 5.7.9 requires ext-dom * -> the requested PHP extension dom is missing from your system.
+   But in your server you're missing ext-dom. php7.1-xml has all the related packages you need. So, you can simply install it by running:
+```shell
 sudo apt-get update
 sudo apt-get install php7.0-xml
+```
 
-
-mysql -u root -p
-
+```shell
+mysql -u root -p`
+```
 Une fois connecter à la base de données on créera un utilisateur : « foodies » dont le mot de passe sera « password ».
 
+```sql
 CREATE USER 'foodies'@'localhost' IDENTIFIED BY 'password';
-
+```
 Donner les privilèges à un utilisateur MySQL
 
 Si vous n’avez pas créé de base de données, vous pouvez le faire tout simplement avec la commande suivante :
-
+```sql
 CREATE DATABASE  foodies;
-
+```
 On donne ensuite tous les droits à « foodies » sur la base de données « foodies ».
 
 GRANT ALL PRIVILEGES ON foodies.* TO 'foodies'@'localhost'  WITH GRANT OPTION;

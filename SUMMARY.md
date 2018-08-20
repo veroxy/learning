@@ -8,19 +8,26 @@
     + markdown list 2
 </details>
 
-## LANGAGE
+
 * [INTRO](README.md)
+
+## ENVIRONNEMENT
+* [Ruby](DOCUMENTATION/install_ruby.md) & [koala préprocesseur sass](DOCUMENTATION/install_koala.md)
+* [nodeJs - Composer - intro laravel](pkgnodejs/composerlaravel.md)
+* [lamp](DOCUMENTATION/install_lamp.md)
+* [LAMP - XAMP - WAMP - MAMP](DOCUMENTATION/lampWampXamp.md)
+## LANGAGE
 * BDD
     * [notions de base de données](bdd/bddNotions.md)
+    * [sql](php/sql.md)
     * [phpMyAdmin](bdd/phpMyAdmin.md)
     * [password, securité & chiffrage](bdd/chiffragemp.md)
 * IDE & EDITEUR DE TEXTE
     * [terminal](editorIde/terminal.md)
         * [Paramètres Terminal](bash_script/param_terminal.md)
-            * [ZSH](bash_script/param_zshrc.md)
-            * [virmc](bash_script/vimrc_config.md)
-    * IDE
-        * [phpstorm](editorIde/ide_phpstorm.md)
+        * [ZSH](bash_script/param_zshrc.md)
+        * [virmc](bash_script/vimrc_config.md)
+    * [phpstorm IDE](editorIde/ide_phpstorm.md)
     
 * SCRIPT SHELL
     * [Man commande](bash_script/commande.md)
@@ -44,16 +51,23 @@
 * JAVASCRIPT
 * JQUERY
 * JSON
-    * [json](json/jsonfile.md)
+    * [json & API](json/json.md)
+    * [manipuler json avec php](json/jsonfile.md)
 * AJAX
     * [ajax](ajax/ajax.md)
     * [ajax Jquery](ajax/jqueryajax.md)
 * PHP
-    * [sql](php/sql.md)
+    * [php](php/php.md)
     * [pdo](php/pdo.md)
+    * [cookie & bdd](php/sessionCookie.md)
 * POO
     * [la poo](poo/poo.md)
 
 ## OUTILS
-* FRAMEWORKS
-    * [laravel](laravel/laravel_install.md)
+* LARAVEL
+    * [laravel WAMP](laravel/install_laravel.md)
+    * [laravel MAC OSX / XAMP / LAMP](laravel/install_laravel_OSX.md)
+    * [laravel - création de projet](laravel/procedureCreationProjet.md)
+* WORDPRESS
+    * [créer un thème perso wp](wordpress-createwptheme/create_wptheme.md)
+
