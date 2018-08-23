@@ -13,6 +13,12 @@ fr.houseofcode.dap.date.interval
 -
 
 -----------------------------
+
+- INSTALL
+    - [jdk]('http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html')
+    - [eclipse]('http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/photon/R/eclipse-jee-photon-R-win32-x86_64.zip')
+
+
 0. [codinGame]('https://www.codingame.com/start')
     - TYPE MIME
       > Le type MIME est utilisé dans de nombreux protocoles internet pour associer un type de média (html, image, vidéo, ...) avec le contenu envoyé. Ce type MIME est généralement déduit de l'extension du fichier à transférer.
