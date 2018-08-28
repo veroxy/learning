@@ -6,7 +6,7 @@
 
 ---
 ### INTRO
-La programation orienté objet permet de comme son nom l'indique des "objets".
+La programation orienté objet permet de comme son nom l'indique  de créer des "objets" c'est le contraire de la programme procédurale.
 <br>
 Comme on construirait un oridnateur : on implément des éléments les avec les autres qui sont composés dé'éléments (var / let ) et de méthode (allumer, ouvrir , eteindre...)
 <br>
@@ -36,7 +36,7 @@ Elle se distingue par sa structure:
         private sector; // source energy
         const pixel = 1600;
         
-        
+        // methodes, ici
         function __construct(width){
              this->_width
         }

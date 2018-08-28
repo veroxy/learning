@@ -1,5 +1,4 @@
-# POO PHP/home/vmllmv/Documents/simplon2016/LEARNING/poo/poo.md
-##### LA PROGRAMATION ORIENTÉE OBJET
+# LA PROGRAMATION ORIENTÉE OBJET
 
 - [pierre giraud](http://www.pierre-giraud.com/php-mysql/cours-complet/php-poo-classes-objets.php)
 - [tuto Graphikart](https://www.grafikart.fr/formations/programmation-objet-php/objets-poo)
@@ -25,7 +24,7 @@ Elle se distingue par sa structure:
 - de méthodes que l'on appels habituellement méthodes et qui prenne ou non des variables en paramètre
 - une classe peut prendre des valeur en paramètres via son Constructeur , qui est en réalité une méthode qui est appliqué directement à l'appel de la Class
 
-```
+```javascript
     class Screen{
         // VARIABLES 
         public width;
