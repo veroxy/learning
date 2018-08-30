@@ -63,3 +63,7 @@ on ne peut comparer deux objets entre elle (cci == poleemploi),  la méthode ".e
     if(cci == poleemploi){} // FAUX
     if(cci.equals(poleemploi)){}
 ```
+
+*
+* getService(Internal UserId == BOB) == userKey
+* mesage().list(GoogleUser == "me") = /{xxxxxx}
