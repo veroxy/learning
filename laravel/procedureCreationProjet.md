@@ -33,7 +33,8 @@ php artisan make:controller UsersController --resource
 - Je met en place mes relations
 - Je remplis mes vues
 - Je remplis mes controlleurs
-Si je récupère le projet d'un GIT:
+
+### Si je récupère le projet d'un GIT:
 ```
 git clone
 composer update
