@@ -88,7 +88,10 @@ create-react-native-app monProjet
 
 ### Modal
 > affiche une tooltips qui peut être personnalisé contrairement  "Alert"
--
+- êut contenir un style et contenu personnalisé
+- animation
+- visibilite est le déclencheur (true/false) => state
+- un event => state
 ```
         <Modal
           animationType="slide"
@@ -97,6 +100,7 @@ create-react-native-app monProjet
           onRequestClose={() => {
             alert('Modal has been closed.');
           }}>
+
           <View style={{marginTop: 22}}>
             <View>
               <Text>Hello World!</Text>
@@ -111,6 +115,56 @@ create-react-native-app monProjet
           </View>
         </Modal>
 ```
+
+### Alert
+> propriétés restraintes: pas de style , pas de contenu
+c'est un methode static on accède donc pas à this.
+- gestion error / warning
+
+- "'Alert Title'," => header
+- 'My Alert Msg' => content
+- 'Ask me later' | text: 'Cancel' | text: 'OK' => tableau /list obj qui retourne diff action
+
+```
+   Alert.alert(
+     'Alert Title',
+     'My Alert Msg',
+     [
+       {text: 'Ask me later', onPress: () => console.log('Ask me later pressed')},
+       {text: 'Cancel', onPress: () => console.log('Cancel Pressed'), style: 'cancel'},
+       {text: 'OK', onPress: () => console.log('OK Pressed')},
+     ],
+     { cancelable: false }
+   )
+```
+
+
+### TouchableOpacity
+>
+-
+-
+```
+```
+
+
+### Dimension
+> est une class qui possède des methode static qui ecoute unn evenement
+- get()
+- set()
+```
+const dim = Dimensions.get('window');
+
+  <View>
+
+<Text>{dim.height}</Text>
+<Text>{dim.width}</Text>
+  </View>
+
+ou
+var {height, width} = Dimensions.get('window');
+
+```
+
 
 ### SectionList
 >
