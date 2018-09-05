@@ -166,10 +166,50 @@ var {height, width} = Dimensions.get('window');
 ```
 
 
-### SectionList
->
--
--
+## Dependance
+
+- deux références:
+  - [npmjs](https://www.npmjs.com/package/react-native-css)
+  - [github](https://github.com/)
+- node.js == js : [moment.js](https://momentjs.com/)
+    - installation d'un dependances(pkg) npm pas en `--general` contrairement à un pkg utilitaire
 ```
+    npm install react-native-css --save
 ```
 
+- warning de demande d'installation manuel de pkg : c'est souvent qu'une autre dependance peut avoir besoin d'installer un pkg des versions de pkg de version différentes et donc laisser le choix à l'utilisateur de choisir sa version
+
+- en react-native JS + NATIF (ios/androoid)
+    - lors de la visu du repo d'un pkg (sur github) on peu voir s'il est natif sur le dossier racine où  il sera indiqué que ios/android
+
+## Export :  Fonction, constante,  class
+> download: [npm icon](https://github.com/oblador/react-native-vector-icons) qui rapatrie FontAwesome, Fondation,  les  [apercu](https://oblador.github.io/react-native-vector-icons/)
+**`export default`** permet d'importer tout le contenu du fichier  et l'import se fait par **`import Style from '../components/Style'`**
+```
+const Style = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: '#374046',
+        alignItems: 'center',
+    },
+    });
+export default Style;
+```
+
+**`export`** peut s'appliquer sur une Class / Var dans ce cas on peut importer unique la fonction / var / class et selon la sintax **`import { StyleSheet, Text, View } from 'react-native';`**
+```
+function style(){
+return "style toto";
+}
+export style();
+```
+
+## Navigation
+[react-navigation](https://reactnavigation.org/)
+- Menu
+    - onglet
+    - tiroir
+    - barre
+- Hierarchie entre les écrans
+- les transition
+> il y a des API rattaché à à la navigation qui sont directement rattachés aux API d'origine

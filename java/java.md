@@ -24,12 +24,7 @@ fr.houseofcode.dap.date.interval
       > Le type MIME est utilisé dans de nombreux protocoles internet pour associer un type de média (html, image, vidéo, ...) avec le contenu envoyé. Ce type MIME est généralement déduit de l'extension du fichier à transférer.
 
     - Type MIME (application/acad),	Type de fichier (Fichiers AutoCAD ), Extension associée (dwg)
-
-
-
-
     - concaténation avec "+"
-
 
 // les String === Objet et les int === primitif
 
@@ -64,6 +59,6 @@ on ne peut comparer deux objets entre elle (cci == poleemploi),  la méthode ".e
     if(cci.equals(poleemploi)){}
 ```
 
-*
+
 * getService(Internal UserId == BOB) == userKey
 * mesage().list(GoogleUser == "me") = /{xxxxxx}
