@@ -61,7 +61,7 @@ sudo apt update
   Réception de:19 http://fr.archive.ubuntu.com/ubuntu bionic/universe DEP-11 48x48 Icons [2 151 kB]
   66% [19 icons-48x48 2 075 kB/2 151 kB 96%]   
   
-sudo apt install apache2
+sudo apt install apache2 apache2-doc cd
 **RETURN :**
 >progression : [ 85%] [#####################.....................................]  
 Paramétrage de apache2 (2.4.29-1ubuntu4.2) ...####################.....................................]  
@@ -142,9 +142,10 @@ dpkg: erreur de traitement du paquet mysql-server-5.7 (--configure) :
 E: Sub-process /usr/bin/dpkg returned an error code (1)
 
 **FIXEB BY : (NE PAS REPONDRE OUI POUR LA SUPPRESSION DES BDD)**
+
 ```shell
 sudo apt-get remove --purge mysql-\*
-```shell
+```
 
 On refait la cmd `sudo apt install mysql-server`
 **RETURN :**
@@ -209,7 +210,7 @@ mysql -u root -p
 >Enter password: 
 ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
 
-**ERROR FIXED**
+## Ubuntu 18.04 **ERROR FIXED**
 > Dans Ubuntu 18.04  `mysql_secure_installation` ne fonction pas avec un ou non SUDO donc pas la peine de s'obstiner!!
 D'une par on stop MYSQL et va créer un fichier **mysqld** temps que l'on va utiliser car lui non plus n'existe pas --'
 - [ref 1](https://linuxconfig.org/how-to-reset-root-mysql-password-on-ubuntu-18-04-bionic-beaver-linux)
@@ -239,6 +240,7 @@ jobs
 mysql -u root
 enter root password:
 ```
+
 ```sql	
 FLUSH PRIVILEGES;
 USE mysql;
@@ -273,14 +275,12 @@ mysql> show databases;
 Après tout ça on peut enfin reprendre où ça avait plante:` mysql_secure_installation` [**ATTENTION**](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-ubuntu-18-04) maintenant il est important de lire les instruction concernant ce mot de passe lors de cette commande
 
 on va modifier l'ordre de lecture des fichier en mettant en premier les fichier '.php'
+```
 sudo vim /etc/apache2/mods-enabled/dir.conf
-
 sudo apt install php libapache2-mod-php php-mysql
-
 sudo apt install php-cli
-
-
 sudo service apache2 restart
+```
 **ERROR**
 >Job for apache2.service failed because the control process exited with error code.
 See "systemctl status apache2.service" and "journalctl -xe" for details.
@@ -294,15 +294,83 @@ sudo a2dismod php7.0
  To activate the new configuration, you need to run:
    systemctl restart apache2
    
-systemctl restart apache2
+   
+```
+sysStemctl restart apache2
+```
 
-
-creation du finchier info.php
+creation du fichier info.php
+```
 sudo vim info.php
-```php`
+```
+```php
 <?php
 phpinfo();
 ?>
 ```
-
+```
 sudo chown www-data:www-data /var/www/html/info.php
+```
+
+### créer un dossier de projet ailleur (lien symbolique)
+> pour pouvoir accéder directment au dossier de projet qui est par exemple dans ` ~/Documents/testLienDest/` il faut créer un lien symbbolique    
+cdtr une une connection ENTRE le DOSSIER_DESTINATION (le dossier que lon veut avoir dans) et le DOSSIER_DORIGINE (celui qui du quel on accède au lien)
+
+ici c'est le `testLisenDest` qui est notre cible et l'origine dans lequel son ALIAS va être stocké est `srcLn`
+```
+/var/www/html$ sudo ln -s ~/Documents/testLienDest/ srcLn/
+```
+**/!\ ATTENTION** dans le dossier  `html` on peut écrire qu'en SUPER USER
+
+on peut créer un dossier dédier avec des droits en lui donnant l'accès avec la cmd 
+```
+sudo chown www-data:www-data /var/www/[nom du dossier]
+```
+
+### installer phpmyadmin
+> `sudo apt-get install phpmyadmin` et donner le mot de passe root de MySQL et choigissez un mot de passe Root pour phpmyadmin durant l’installlation.
+ N’oubliez pas de cocher la case « apache2 »durant l’installation avec la **touche ESPACE** du clavier (si vous faites « entrer » ça ne cochera pas apache et passera à l’étape suivante). Si vous avez fait « entrer » (comme moi au début, forcément), vous pouvez rattraper la boulette avec un `sudo dpkg-reconfigure phpmyadmin`.
+ 
+ editer le fichier 
+ ```
+ sudo nano my.cnf
+ 
+ #
+# The MySQL database server configuration file.
+#
+# You can copy this to one of:
+# - "/etc/mysql/my.cnf" to set global options,
+# - "~/.my.cnf" to set user-specific options.
+# 
+# One can use all long options that the program supports.
+# Run program with --help to get a list of available options and with
+# --print-defaults to see which it would actually understand and use.
+#
+# For explanations see
+# http://dev.mysql.com/doc/mysql/en/server-system-variables.html
+
+#
+# * IMPORTANT: Additional settings that can override those from this file!
+#   The files must end with '.cnf', otherwise they'll be ignored.
+#
+# Mettre la langue en Français
+language = /usr/share/mysql/french
+# Taille du cache des index
+key_buffer = 32M
+# Limite du cache par requête
+query_cache_limit = 2M
+# Limite du cache pour toutes les requêtes
+query_cache_size = 32M
+# Loguer les requêtes lentes
+log_slow_queries = /var/log/mysql/mysql-slow.log
+# Indique le temps à partir du moment ou une requête est considéré comme lente
+long_query_time = 2
+# Activer l'utf-8 par default sur le serveur (dans [mysqld])
+default-character-set = utf8
+default-collation = utf8_general_ci
+# dans [client]
+default-character-set = utf8
+
+!includedir /etc/mysql/conf.d/
+!includedir /etc/mysql/mysql.conf.d/
+```

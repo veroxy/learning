@@ -37,5 +37,18 @@
 
 - tree 
 > permet de voir l'arborescence du répertoir courant
-    - `tree L 4` > affiche l'arborescence avec une profondeur de 4
+    - `tree L 4` > affiche l'arborescence avec une profondeur de 4 
+    
+    
+## INSTALLATION / DESINSTALLATION / MàJ / Nettoyage
+
+- installation
+> on install puis on met à jour 
+   * (sudo) apt install nom_pkg | (sudo) apt update
+   * (sudo) add-apt-repository ppa:hollywood/ppa
+      
+- désinstallation
+    * (sudo) add-apt-repository --remove ppa:hollywood/ppa
+    * (sudo) apt install ppa-purge
+
 
