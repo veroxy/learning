@@ -9,6 +9,22 @@ npm install -g create-react-native-app
 create-react-native-app monProjet
 ```
 
+
+## Running APP
+on peut avoir l'aperçu en faisant tourner l'app.js en lançant la cmd npm `start` que l'on a installé préallablement qui installe en même temps le dossier
+
+```bash
+npm start
+
+ › Press a to open Android device or emulator.
+ › Press s to send the app URL to your phone number or email address
+ › Press q to display QR code.
+ › Press r to restart packager, or R to restart packager and clear cache.
+ › Press d to toggle development mode. (current mode: development)
+
+```
+
+au préal
 ### TextInput
 - il faut ajouter dabord un param "style" pour que le composant soit visible
 - on donne une valaeur par default "placeholder" > "valeur initiale"
@@ -166,7 +182,7 @@ var {height, width} = Dimensions.get('window');
 ```
 
 
-## Dependance
+## Dependnces
 
 - deux références:
   - [npmjs](https://www.npmjs.com/package/react-native-css)
@@ -213,3 +229,82 @@ export style();
 - Hierarchie entre les écrans
 - les transition
 > il y a des API rattaché à à la navigation qui sont directement rattachés aux API d'origine
+
+### asynchrone
+- objet (Class) "Promise" intégré par defautl
+> c'est une classe qui possède une fonctin qui prends deux paramètres qui sont des fonction
+```javascript
+maMethodeAsyn(){
+    const maPromise = new Promise((success, failure )=>{
+    const toto  = 40;
+    success(toto)
+    failure("erreur - long")
+    });
+    maPromise.then(()=>{
+    console.log(returnValue);
+    })
+ }
+
+```
+
+```javascript
+async maMethodeAsyn(){
+    const maPromise = new Promise((success, failure )=>{
+    const toto  = 40;
+
+    success(toto)
+    failure("erreur - long")
+    });
+    maPromise.then(()=>{
+    console.log(returnValue);
+    })
+ }
+
+```
+- async, await
+> simule ce que va faire la Promise
+
+### api rest
+
+[fetch ](https://facebook.github.io/react-native/docs/network) (integré par defaul, pas d'import
+   - ne gère pas de timeout
+   - ne gère pas les errerus
+   - ne gère pas progression de gestion d'envoie fichier  contenu
+ pour ça choisir Axios
+> on lui passe des une valeur
+
+
+## stockage
+- [asyncStorage](https://facebook.github.io/react-native/docs/asyncstorage) possède des méthodes static, elle s'importe `{ AsyncStorage } from "react-native"`, cette fonction récupère un
+- orm (externe) [sqlite](),  [realm]()
+
+
+## cycle de vie
+will & did mount permet de voir les différente étape avant après que le render soit envoyé
+
+
+stateless
+> un composant qui est une fonction elle retourn un élement qui est un composant, la diff dans avec le composant dans la clsse c'est que cette méthode est ooptimisée
+
+```
+ maStatlessText(props){
+    return <Text>props.name</Text>
+ }
+
+ // dans la class on apple la props "name via le "l'atrtibut name="
+
+ <maStatlessTex name={this.state.content}/>
+```
+
+on peut implémenter un élémet "block" avec plusieur element jsx
+
+## géololocalisation
+- geolocalisation de l'appareil
+- maj position
+- coordoné postal
+
+avec react-native-maps
+& [location EXPO](https://docs.expo.io/versions/latest/sdk/location) & [geoloca REACT](https://facebook.github.io/react-native/docs/geolocation)
+
+[service google avec expo](Expo.Location.setApiKey(apiKey))
+
