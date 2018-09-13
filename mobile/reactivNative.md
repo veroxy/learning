@@ -58,16 +58,23 @@ au préal
 ### FlatList
 > Ul li ; liste d'informations dont les clefs sqont similaires
 - data : un tableau / object [clef :  valeur]
--  renderItem : qui applique un foreach avec la var à retourner dans la vue  ou comme une .map en prenant la var.nomdelaclef
+-  renderItem : qui applique un foreach avec la var à retourner dans la vue  ou comme une `.map` en prenant la   `var.nomdelaclef`
+
+nom
+    titre
+    rue
+    img
+    def
+
 
 ```
 <FlatList
-  data={[{key: 'a'}, {key: 'b'}]}
-  renderItem={({item}) => <Text>{item.key}</Text>}
+    data={[{key: 'a'}, {key: 'b'}]}
+    renderItem={({item}) => <Text>{item.key}</Text>}
 
-   data=[1,2,3,4]
-   renderItem={({item}) => <Text>{item}</Text>}
-/>
+     data=[1,2,3,4]
+     renderItem={({item}) => <Text>{item}</Text>}
+  />
 ```
 
 ### SectionList
@@ -261,8 +268,65 @@ async maMethodeAsyn(){
  }
 
 ```
-- async, await
-> simule ce que va faire la Promise
+
+```
+metAsyn(tot, tat){
+    console.warn("ma met tata tot);
+    toto("42)
+}
+metReturn(param){
+    console.warn(param)
+}
+metPromise(){
+    const maPromise = new Promise(this.metAsync).then(this.metReturn)
+}
+```
+
+ici param == au echo de la fonction tata tot
+```
+metAsynFleche(tot, tat){
+ const maPromise = new Promise((tot, tat) =>{
+    console.warn("ma met tata tot);
+ }).then((param) => {
+
+ }).catch((error)=>{});
+
+```
+
+
+```
+metAsyn(){
+const metFetch = fetch('url.json')
+metFetch.then(()=> {
+const resPromise =  titi.jon();
+    resPromise.then((retour)=>{
+            retour
+        }).catche(()=>{
+        error
+        });
+    }).catch((error)=>{error});
+}
+```
+
+>lors d'un appel de fonction commençant par `async` on peut envoyer une gestion des erreurs via un try-catch dans l'exemple suivant on aurati donc pu se passer du try catch si la valeur retour  ne renvois pas d'erreur sinon il ne passerai jamais dans le tryc catch
+```
+async metAsyn(){
+    const metFetch = await fetch('url.json') //promesse1
+    const retour = await titi.json; // promesse
+
+   // ne gère pas l'erreur et il faut le faire manuelleme en un try-catch
+
+    try{
+    const retour = await titi.json; // promesse
+}catch(e){e}
+    console.warn(retour);
+    return 42;
+}
+```
+
+
+
+
 
 ### api rest
 

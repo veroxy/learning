@@ -9,7 +9,7 @@
 ```
 
 ### COMMANDES
-les commandes sont les similaire à ceux de Git seulement que l'on ajoute le suffixe `-book` à `git`:
+les commandes sont similaires à ceux de Git seulement que l'on ajoute le suffixe `-book` à `git`:
   * `gitbook init` pour initialiser un nouveau livre/repo (qui)
   * `gitbook serve` pour l'aperçu
   * `gitbook build` pour créer une page web statique
