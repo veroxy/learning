@@ -55,7 +55,6 @@
     * [java les bases](java/java.md)
     * [java - UML](java/java_uml.md)
 * JAVASCRIPT
-    * [js les bases](angular6/angular6.md)
 * JQUERY
 * JSON
     * [json & API](json/json.md)
