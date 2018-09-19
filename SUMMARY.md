@@ -55,7 +55,7 @@
     * [java les bases](java/java.md)
     * [java - UML](java/java_uml.md)
 * JAVASCRIPT
-    * [js les bases](angular6/angular6.md)
+    * [js les bases](js/javascript.md)
 * JQUERY
 * JSON
     * [json & API](json/json.md)
@@ -77,7 +77,7 @@
 ## OUTILS / Framework
 * ANGULAR
     * [angularjs](angularjs/angularjs.md)
-    * []()
+    * [Angular + Google](angular6/angular6.md)
     * []()
 * LARAVEL
     * [laravel WAMP](laravel/install_laravel.md)

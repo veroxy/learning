@@ -1,19 +1,18 @@
 # javascript
 
-## diff
-
+## différentes versions de JS et frameworks js
+> a voir
 1. js
 2. jquery
 3. ajax
 4. canvas,[easlejs framework](https://www.createjs.com/easeljs)
 5. [svg](https://la-cascade.io/guide-des-animations-svg/),[svgjs](http://svgjs.com/)
 
+----
 
 ## javascript ES5(ECMA SCRIPT) vieux
 ECMA SCRIPT (action script, dart, Jscript)
-
 >  auhourd'hui en 2018
-
 - lagage interprété
 - typé
 - prototype
@@ -124,7 +123,7 @@ pouvoir faire autre chose / exécuté plusieurs choses même si l'une des action
 
 - moteur JavaScript V8 de Chrome developpé par Google
 
-## NPM package et modules ~
+## NPM package et modules
 
 ## [PROMISES](https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Utiliser_les_promesses)
 ```javascript
