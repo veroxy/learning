@@ -62,6 +62,8 @@ Gamification: est l'utilisation de la manière de penser et de concevoir un jeu 
 
 * **Product Owner (ou « PO »)** : rôle au sein de l’organisation d’une équipe Agile utilisant la méthodologie SCRUM. Le PO a pour mission principale de définir et conceptualiser un produit qui saura apporter le maximum de valeur aux utilisateurs, dans le temps et le budget impartis au projet.
 
+* **Mobile-first** :  Le concept mobile first consiste à **concevoir un site en concevant en priorité la version mobile** et en adaptant progressivement celui-ci pour les écrans plus large. Cette façon de procédé est contraire à la manière ordinaire qui consiste à dégrader progressivement un site web pour l'adapter à un affichage sur des écrans plus petit.
+Cette approche peut être utile pour les sites web et applications web qui sont principalement utilisées sur mobile. Elle a l'avantage **d'ajouter des effets/fonctionnalités** pour les grands écran au lieu d'en supprimer pour les petits. Toutefois il y a aussi des contraintes et des complications à adopter une telle façon de procéder (version grand écran potentiellement limité).
 * **Prototype** : est une ébauche contenant les fonctionnalités (à tester) d'une app ou page web. il est composée d'une image statique avec des zone cliquables.
 
 * **Mock-up** : document / production de l'UI/UX pour présentation en mise en abîme/ mis en situation d'une photo/design/page etc... afin de pouvoir avoir un aperçu du produit lors de sa présentation.

@@ -5,7 +5,6 @@
 [lien d'installation](https://github.com/GitbookIO/gitbook/blob/master/docs/setup.md)
 ```shell
   sudo npm install gitbook-cli -g
-  
 ```
 
 ### COMMANDES
@@ -14,8 +13,6 @@ les commandes sont similaires à ceux de Git seulement que l'on ajoute le suffix
   * `gitbook serve` pour l'aperçu
   * `gitbook build` pour créer une page web statique
   * ``
-
-
 
 ### ePub, Mobi, PDF
 pour pouvoir exporter en .pdf  il faut installer via `https://calibre-ebook.com/download_linux`
@@ -34,4 +31,3 @@ $ gitbook epub ./ ./mybook.epub
 $ gitbook mobi ./ ./mybook.mobi
 ```
 
-### importe Github Re

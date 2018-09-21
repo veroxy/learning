@@ -1,11 +1,15 @@
 # SASS
 
-f_sass.scss == input <br />
+> f_sass.scss == input
 f_css.css == output
-
----
+**cmd**:
+```shell
+sass --watch
+```
+------
 
 ### RÉFÉRENCES
+ - [the sass way](http://thesassway.com/)
 1.  **pour quelles usages ?**<br />
 En plus de toutes les raisons de bases que l'on choisi d'utiliser SASS
   * [Les sélécteurs css3](https://webdesign.tutsplus.com/tutorials/a-simple-responsive-grid-made-even-better-with-sass--cms-21540)

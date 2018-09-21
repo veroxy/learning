@@ -105,14 +105,12 @@ dans le dossier
 
 
 
-
-
-hook
-- `wp_header()`
+### hook
+- ` wp_header()`
 - `wp_footer()`
     > port d'attache afin d'integrer des feuilles css / javascript des plugin 
     
-PLUGINS
+### PLUGINS
 - [ACF Advanced Custom Fields ](Advanced Custom Fields )
 - regenerate thumbnail (régénration de miniature)
 - contact form 7 + flamingo (formulaire + sauvegarde mails)
