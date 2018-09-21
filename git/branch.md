@@ -1,6 +1,6 @@
-# Use Bitbucket and Github pour un même projet
-### fetch de GitHub et Push sur GitHub et deBIbucket
+# Utiliser Bitbucket & Github pour un même projet == 2 repos
 
+### fetch de GitHub et Push sur GitHub et de Bibucket
 1. relier le repo d'ou  vous voulez fetch et push depuis Github (ici) et just push vers Bitbucket avec le nom "ORIGIN"
   * REMOTE TO ORIGIN
 ```

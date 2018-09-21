@@ -15,3 +15,10 @@ Il est possible tout de même d'eviter l'usage du logiciel en téléchargeant Gi
 Ne pas confondre le lien logiciel avec le celuis du GUI git bash sinon lorsque l'on lancera le terminal dans Phpstorm il ouvrira le logiciel git bash en externe. Et ce n'est pa ce que l'on veut (
     "C:\Program Files\Git\git-bash.exe" -login -i)
 - Il faut ensuite redémarrer Phpstorm
+
+## settings
+[télécharger setting](editorIde/phpstorm_settings.jar) le setting Windows
+ pour l'importer il faut aller dans **file > Import Settings** puis choisir les les params
+
+
+ ##

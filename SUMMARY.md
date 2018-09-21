@@ -37,10 +37,10 @@
     * [ln - lien symbolique](bash_script/ln_liensymbolique.md)
     * [script shell](bash_script/info.md)   
 * GIT
-    * [premiers pas](git/learningit.md)
-    * [paramss_git](git/params_git.md)
-    * [Fork & Merge](git/fork_merge.md)
+    * [premiers pas](git/learngit.md)
+    * [paramss_git](git/doublerepos.md)
     * [Branche](git/branch.md)
+    * [Fork & Merge](git/fork_merge.md)
     * [gitbook](gitbookDoc/gitbook.md)
 * GRAPHISME
     * [ergonomie](graphisme/ergonomie.md)
@@ -49,12 +49,15 @@
 * HTLM5
     * [balises & sémantiques](html5/balises.md)
     * [les attributs utiles](html5/attributes.md)
-* SASS
+* CSS & SASS
+    * [css](cssAndSass/css.md)
+    * [les selecteurs](cssAndSass/selectors.md)
     * [sass](cssAndSass/sass.md)
 * JAVA
     * [java les bases](java/java.md)
     * [java - UML](java/java_uml.md)
 * JAVASCRIPT
+    * [js les bases](js/javascript.md)
 * JQUERY
 * JSON
     * [json & API](json/json.md)
@@ -63,9 +66,9 @@
     * [ajax](ajax/ajax.md)
     * [ajax Jquery](ajax/jqueryajax.md)
 * MOBILE
-    * [API:Soap/rest](mobile/mobileBase.md)
-    * [React Native les bases](mobile/reactNative.md)
-    * [principes complementaires](mobile/reactNativeRevision.md)
+    * [API:Soap/rest](mobile/mobile_base.md)
+    * [React Native les bases](mobile/react_native.md)
+    * [principes complementaires](mobile/react_native_revision.md)
 * PHP
     * [php](php/php.md)
     * [pdo](php/pdo.md)
@@ -76,7 +79,7 @@
 ## OUTILS / Framework
 * ANGULAR
     * [angularjs](angularjs/angularjs.md)
-    * []()
+    * [Angular + Google](angular6/angular6.md)
     * []()
 * LARAVEL
     * [laravel WAMP](laravel/install_laravel.md)
