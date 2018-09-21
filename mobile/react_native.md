@@ -3,7 +3,7 @@
 
 ## Installation globale
 prérequis : node - npm
-```
+```shell
 npm install -g start
 npm install -g create-react-native-app
 create-react-native-app monProjet
@@ -13,7 +13,7 @@ create-react-native-app monProjet
 ## Running APP
 on peut avoir l'aperçu en faisant tourner l'app.js en lançant la cmd npm `start` que l'on a installé préallablement qui installe en même temps le dossier
 
-```bash
+```shell
 npm start
 
  › Press a to open Android device or emulator.
@@ -21,16 +21,14 @@ npm start
  › Press q to display QR code.
  › Press r to restart packager, or R to restart packager and clear cache.
  › Press d to toggle development mode. (current mode: development)
-
 ```
 
-au préal
 ### TextInput
 - il faut ajouter dabord un param "style" pour que le composant soit visible
 - on donne une valaeur par default "placeholder" > "valeur initiale"
 - on lui donne un "event" ici un onChange(state) -> ici on a une écoute sur la saisie mais on peu avoir un event sur btn "onPress"
 - il faut penser à stock dans une variable afin de ne pas perdre les données de la même qu'en AJAX qui retourne la valeur de la saisie "POST" stock dans une "var" ASYNCHRON
-```
+```typescript
  <TextInput
           style={{height: 40, height : 20, width: 200}}
 
@@ -43,8 +41,7 @@ au préal
 ### ScrollView
 > une scroll view est une balise ibnline elle n'a pas de taille définie ; elle prend la taille de ses enfants :
 - height
-- width
-```
+```typescript
  <ScrollView>
           <Text style={{fontSize:96}}>Scroll me plz</Text>
           <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
@@ -67,7 +64,7 @@ nom
     def
 
 
-```
+```typescript
 <FlatList
     data={[{key: 'a'}, {key: 'b'}]}
     renderItem={({item}) => <Text>{item.key}</Text>}
@@ -82,7 +79,7 @@ nom
 - un tableau d'object qui seront les ("sections")
 - ce tableau est traité par la fonction de map "renderItem"
 - et un nommage auto unique pour identifier le composant "renderItem"
-```
+```typescript
 <SectionList
   renderItem={({item, index, section}) => <Text key={index}>{item}</Text>}
 
@@ -102,7 +99,7 @@ nom
 ### WebView
 > affiche le contenu d'une page web
 - à bannir / mauvaise pratique du dev web app
-```
+```typescript
 <WebView
         source={{uri: 'https://github.com/facebook/react-native'}}
         style={{marginTop: 20}}
@@ -115,7 +112,7 @@ nom
 - animation
 - visibilite est le déclencheur (true/false) => state
 - un event => state
-```
+```typescript
         <Modal
           animationType="slide"
           transparent={false}
@@ -148,7 +145,7 @@ c'est un methode static on accède donc pas à this.
 - 'My Alert Msg' => content
 - 'Ask me later' | text: 'Cancel' | text: 'OK' => tableau /list obj qui retourne diff action
 
-```
+```typescript
    Alert.alert(
      'Alert Title',
      'My Alert Msg',
@@ -162,19 +159,11 @@ c'est un methode static on accède donc pas à this.
 ```
 
 
-### TouchableOpacity
->
--
--
-```
-```
-
-
 ### Dimension
 > est une class qui possède des methode static qui ecoute unn evenement
 - get()
 - set()
-```
+```typescript
 const dim = Dimensions.get('window');
 
   <View>
@@ -208,7 +197,7 @@ var {height, width} = Dimensions.get('window');
 ## Export :  Fonction, constante,  class
 > download: [npm icon](https://github.com/oblador/react-native-vector-icons) qui rapatrie FontAwesome, Fondation,  les  [apercu](https://oblador.github.io/react-native-vector-icons/)
 **`export default`** permet d'importer tout le contenu du fichier  et l'import se fait par **`import Style from '../components/Style'`**
-```
+```typescript
 const Style = StyleSheet.create({
     container: {
         flex: 1,
@@ -220,7 +209,7 @@ export default Style;
 ```
 
 **`export`** peut s'appliquer sur une Class / Var dans ce cas on peut importer unique la fonction / var / class et selon la sintax **`import { StyleSheet, Text, View } from 'react-native';`**
-```
+```typescript
 function style(){
 return "style toto";
 }
@@ -269,7 +258,7 @@ async maMethodeAsyn(){
 
 ```
 
-```
+```javascript
 metAsyn(tot, tat){
     console.warn("ma met tata tot);
     toto("42)
@@ -283,7 +272,7 @@ metPromise(){
 ```
 
 ici param == au echo de la fonction tata tot
-```
+```javascript
 metAsynFleche(tot, tat){
  const maPromise = new Promise((tot, tat) =>{
     console.warn("ma met tata tot);
@@ -294,7 +283,7 @@ metAsynFleche(tot, tat){
 ```
 
 
-```
+```javascript
 metAsyn(){
 const metFetch = fetch('url.json')
 metFetch.then(()=> {
@@ -309,7 +298,7 @@ const resPromise =  titi.jon();
 ```
 
 >lors d'un appel de fonction commençant par `async` on peut envoyer une gestion des erreurs via un try-catch dans l'exemple suivant on aurati donc pu se passer du try catch si la valeur retour  ne renvois pas d'erreur sinon il ne passerai jamais dans le tryc catch
-```
+```javascript
 async metAsyn(){
     const metFetch = await fetch('url.json') //promesse1
     const retour = await titi.json; // promesse
@@ -350,7 +339,7 @@ will & did mount permet de voir les différente étape avant après que le rende
 stateless
 > un composant qui est une fonction elle retourn un élement qui est un composant, la diff dans avec le composant dans la clsse c'est que cette méthode est ooptimisée
 
-```
+```typescript
  maStatlessText(props){
     return <Text>props.name</Text>
  }

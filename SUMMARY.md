@@ -50,8 +50,8 @@
     * [balises & sémantiques](html5/balises.md)
     * [les attributs utiles](html5/attributes.md)
 * CSS & SASS
-    * [css](cssAndSass/css.css)
-    * [les selecteurs](cssAndSass/selectors.css)
+    * [css](cssAndSass/css.md)
+    * [les selecteurs](cssAndSass/selectors.md)
     * [sass](cssAndSass/sass.md)
 * JAVA
     * [java les bases](java/java.md)
