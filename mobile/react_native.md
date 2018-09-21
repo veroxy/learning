@@ -84,7 +84,8 @@ nom
 <SectionList
   renderItem={({item, index, section}) => <Text key={index}>{item}</Text>}
 
-  renderSectionHeader={({section: {title}}{% endraw %}) => (
+  renderSectionHeader={({section: {title}
+  }) => (
     <Text style={% raw %}{{fontWeight: 'bold'}}{% endraw %}>{title}</Text>
   )}
 
@@ -120,7 +121,8 @@ nom
           visible={this.state.modalVisible}
           onRequestClose={() => {
             alert('Modal has been closed.');
-          }}{% endraw %}>
+          }
+          }>
 
           <View style={% raw %}{{marginTop: 22}}{% endraw %}>
             <View>
@@ -129,7 +131,8 @@ nom
               <TouchableHighlight
                 onPress={() => {
                   this.setModalVisible(!this.state.modalVisible);
-                }}{% endraw %}>
+                }
+                }>
                 <Text>Hide Modal</Text>
               </TouchableHighlight>
             </View>
