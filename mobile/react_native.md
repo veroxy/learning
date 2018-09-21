@@ -28,9 +28,10 @@ npm start
 - on donne une valaeur par default "placeholder" > "valeur initiale"
 - on lui donne un "event" ici un onChange(state) -> ici on a une écoute sur la saisie mais on peu avoir un event sur btn "onPress"
 - il faut penser à stock dans une variable afin de ne pas perdre les données de la même qu'en AJAX qui retourne la valeur de la saisie "POST" stock dans une "var" ASYNCHRON
-```typescript
+
+```javascript
  <TextInput
-          style={{height: 40, height : 20, width: 200}}
+          style={% raw %}{{height: 40, height : 20, width: 200}}{% endraw %}
 
           placeholder="Type here to transl ate!"
 
@@ -43,10 +44,10 @@ npm start
 - height
 ```typescript
  <ScrollView>
-          <Text style={{fontSize:96}}>Scroll me plz</Text>
-          <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
-          <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
-          <Text style={{fontSize:96}}>If you like</Text>
+          <Text style={% raw %}{{fontSize:96}}{% endraw %}>Scroll me plz</Text>
+          <Image source={% raw %}{{ %uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}}{% endraw %} />
+          <Image source={% raw %}{{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}}{% endraw %} />
+          <Text style={% raw %}{{fontSize:96}}{% endraw %}>If you like</Text>
 
    </ScrollView>
 
@@ -83,8 +84,9 @@ nom
 <SectionList
   renderItem={({item, index, section}) => <Text key={index}>{item}</Text>}
 
-  renderSectionHeader={({section: {title}}) => (
-    <Text style={{fontWeight: 'bold'}}>{title}</Text>
+  renderSectionHeader={({section: {title}
+  }) => (
+    <Text style={% raw %}{{fontWeight: 'bold'}}{% endraw %}>{title}</Text>
   )}
 
   sections={[
@@ -101,8 +103,8 @@ nom
 - à bannir / mauvaise pratique du dev web app
 ```typescript
 <WebView
-        source={{uri: 'https://github.com/facebook/react-native'}}
-        style={{marginTop: 20}}
+        source={% raw %}{{uri: 'https://github.com/facebook/react-native'}}{% endraw %}
+        style={% raw %}{{marginTop: 20}}{% endraw %}
       />
 ```
 
@@ -119,16 +121,18 @@ nom
           visible={this.state.modalVisible}
           onRequestClose={() => {
             alert('Modal has been closed.');
-          }}>
+          }
+          }>
 
-          <View style={{marginTop: 22}}>
+          <View style={% raw %}{{marginTop: 22}}{% endraw %}>
             <View>
               <Text>Hello World!</Text>
 
               <TouchableHighlight
                 onPress={() => {
                   this.setModalVisible(!this.state.modalVisible);
-                }}>
+                }
+                }>
                 <Text>Hide Modal</Text>
               </TouchableHighlight>
             </View>
@@ -229,7 +233,7 @@ export style();
 ### asynchrone
 - objet (Class) "Promise" intégré par defautl
 > c'est une classe qui possède une fonctin qui prends deux paramètres qui sont des fonction
-```javascript
+```typescript
 maMethodeAsyn(){
     const maPromise = new Promise((success, failure )=>{
     const toto  = 40;
@@ -243,7 +247,7 @@ maMethodeAsyn(){
 
 ```
 
-```javascript
+```typescript
 async maMethodeAsyn(){
     const maPromise = new Promise((success, failure )=>{
     const toto  = 40;
@@ -258,7 +262,7 @@ async maMethodeAsyn(){
 
 ```
 
-```javascript
+```typescript
 metAsyn(tot, tat){
     console.warn("ma met tata tot);
     toto("42)
@@ -272,7 +276,7 @@ metPromise(){
 ```
 
 ici param == au echo de la fonction tata tot
-```javascript
+```typescript
 metAsynFleche(tot, tat){
  const maPromise = new Promise((tot, tat) =>{
     console.warn("ma met tata tot);
@@ -283,7 +287,7 @@ metAsynFleche(tot, tat){
 ```
 
 
-```javascript
+```typescript
 metAsyn(){
 const metFetch = fetch('url.json')
 metFetch.then(()=> {
@@ -298,7 +302,7 @@ const resPromise =  titi.jon();
 ```
 
 >lors d'un appel de fonction commençant par `async` on peut envoyer une gestion des erreurs via un try-catch dans l'exemple suivant on aurati donc pu se passer du try catch si la valeur retour  ne renvois pas d'erreur sinon il ne passerai jamais dans le tryc catch
-```javascript
+```typescript
 async metAsyn(){
     const metFetch = await fetch('url.json') //promesse1
     const retour = await titi.json; // promesse
