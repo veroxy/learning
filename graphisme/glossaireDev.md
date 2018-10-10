@@ -24,7 +24,8 @@ REF blog du moderateur
 * **CLI** : 
     - "Command Line Interface"
     - SQL CLI : "SQL Call Level Interface" est une API dont la fonction est de permettre à un programme(s) d'effectuer des requêtes SQL de façon dynamique.  
-            
+
+* **Client lourd** :  est une application que l'on installe pour pouvoir l'utiliser (usage)
 
 * **CMS** : [cms wp]()
 
