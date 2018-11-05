@@ -39,7 +39,7 @@ REF blog du moderateur
     - en **php -  REGEX** peut est mis dans en slash **/REGEX-CODE/** 
     - en **SQL** on indique en début de code quel sera le délimitateur utilisé, c'est bien souvent des **$$** > `DELIMITATER $$`
 
-* **Développer** : réaliser une application ou un site web.
+* **Développeur** : réaliser une application ou un site web.
 
 * **Feature** : Fonctionnalité d’une application ou d’un site web en développement.
 
@@ -50,6 +50,8 @@ REF blog du moderateur
 Gamification: est l'utilisation de la manière de penser et de concevoir un jeu afin que le produit final soit amusant mais puisse aussi devenir une connaissance acquise.
 
 * **[IDE](../editorIde/ide_phpstorm.md~HEAD)** : Logiciel de développement utilisé pour réaliser le code source, compiler, lancer des tests… C’est l’outil principal qu’utilise tous les jours un développeur.
+
+* **Immuable(imutable)** : Un objet immuable, en programmation orientée objet et fonctionnelle, est un objet dont l'état ne peut pas être modifié après sa création
 
 * **Intégration** : consiste à réunir au sein d’un même système d’information, des parties développées de façon séparées. L’intégration peut également consister à la tâche effectuée par le développeur Front-End (aussi appelé intégrateur).
 
