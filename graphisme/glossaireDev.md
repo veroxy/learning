@@ -27,6 +27,8 @@ REF blog du moderateur
 
 * **Client lourd** :  est une application que l'on installe pour pouvoir l'utiliser (usage)
 
+* **CLR** (Common Language Runtime): est le nom choisi par Microsoft pour le composant de machine virtuelle du framework .NET. Il s'agit de l'implémentation par Microsoft du standard Common Language Infrastructure (CLI) qui définit l'environnement d'exécution des codes de programmes. Le CLR fait tourner une sorte de bytecode nommé Common Intermediate Language (CIL). Le compilateur à la volée transforme le code CIL en code natif spécifique au système d'exploitation. Le CLR fonctionne sur des systèmes d'exploitation Microsoft Windows.
+
 * **CMS** : [cms wp]()
 
 * **Codage** : action réalisée par un programmeur qui écrit le code source d’un programme et le compile.
@@ -40,6 +42,7 @@ REF blog du moderateur
     - en **SQL** on indique en début de code quel sera le délimitateur utilisé, c'est bien souvent des **$$** > `DELIMITATER $$`
 
 * **Développeur** : réaliser une application ou un site web.
+* **DLL** (Dynamic Link Library): est l'extension utilisée par des morceaux de programmes ou plus exactement par des groupes de fonctions) utilisés par plusieurs programmes exécutables sous Windows.
 
 * **Feature** : Fonctionnalité d’une application ou d’un site web en développement.
 

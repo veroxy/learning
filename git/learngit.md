@@ -1,5 +1,5 @@
-# A/ Premiers pas sur GIT
-
+# Premiers pas sur GIT
+[doc GIT - bitbucket ](https://fr.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud)
 > Git est un gestinniaire de version, il permet le 'versionning' de vos projets  c'est à dire qu'il vous sera possible de voir les différentes versions d'un fichier par exemple.
 
 ---
@@ -73,3 +73,20 @@ Nous avons maintenant un dépot local **Medias/** contenant notre dossier caché
 > **vocabulaire :** on vient de parler de '*BRANCHE*',  ce n'est pas les branches d'un arbre mais on peux faire un rapprochement. Les **BRANCH** font la spécificité de GIT elles permettent de travailler sur un projet à différents stades de sa réalisation en même temps (ex: branch DEV, branch V1 ,branch PROD), ces noms sont arbitraire on aurait très bien pu les appeler 'riri', 'fifi' et 'loulou'.
 
 Beaucoup de blabla mais j'espère que le béaba de git vous semble un peu moins le Diable en personne.
+
+UPSTREAM
+- repo init > pas de droit d'ecriture
+- lors de la création d'une branche on peut linker la branche_mabranche à upstream avec l'option
+
+```
+ git push --set-upstream origin experimental
+
+ Counting objects: 7, done.
+ Delta compression using up to 2 threads.
+ Compressing objects: 100% (4/4), done.
+ Writing objects: 100% (6/6), 577 bytes, done.
+ Total 6 (delta 2), reused 0 (delta 0)
+ To ssh://gl42@depots.ensimag.fr/~/git
+  * [new branch]      experimental -> experimental
+ Branch experimental set up to track remote branch experimental from origin.
+ ```

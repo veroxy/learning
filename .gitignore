@@ -1,7 +1,2 @@
-.idea/modules.xml
-.idea/workspace.xml
-.idea/*
-./node_modules
-./_book
-./treecmd.md
-./summuray_diff.md
+_book
+.idea
