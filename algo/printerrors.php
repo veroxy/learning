@@ -66,8 +66,44 @@ $s2 = "kkkwwwaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbmmmmmmmmmmmmmmmmmmmxyz";
 //revTest(printerError($s), "6/60");
 $s3 = "kkkwwwaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbmmmmmmmmmmmmmmmmmmmxyzuuuuu";
 //revTest(printerError($s) , "11/65");
-
+/*
 echo printerError($s)."<br>";
 echo printerError($s1)."<br>";
 echo printerError($s2)."<br>";
 echo printerError($s3)."<br>";
+*/
+
+
+//
+function longest($s1, $s2){
+    $pattern = "/([a-z]){1}/i";
+
+    preg_match_all($pattern,$s1,$match1);
+     $p1 = preg_match_all($pattern,$s2,$match2);
+
+     echo array_count_values($p1);
+    //echo count($match2[0]).'/'.strlen($s2);
+    return count($match1[0]).'/'.strlen($s1);
+}
+
+/**
+ * each taken only once - coming from s1 or s2.
+ * #Examples:
+ *
+ */
+$a = "xyaabbbccccdefww";
+$b = "xxxxyyyyabklmopq";
+$a1 = "abcdefghijklmnopqrstuvwxyz";
+
+// return "abcdefklmopqwxy";
+// "abcdefghijklmnopqrstuvwxyz"
+
+
+
+
+echo longest($a,$b);
+
+$a = [2, 4, 0, 100, 4, 11, 2602, 36];
+//Should return: 11 (the only odd number)
+$b = [160, 3, 1719, 19, 11, 13, -21];
+//Should return: 160 (the only even number)
