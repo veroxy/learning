@@ -42,3 +42,7 @@ SELECT `email` FROM users WHERE `firstname`='inna';
 UPDATE users SET `email`='inna.saribekova@gmail.com' WHERE `id`=1;
 
 INSERT INTO users (`id`, `username`,`firstname`, `lastname`, `email`) VALUES (NULL, 'veroxy', 'vero', 'lafaverges', 'v.lafaverges@gmail.com');
+
+
+## error jdbc
+> Exception in thread "main" java.lang.ClassNotFoundException: com.mysql.jdbc.Driver

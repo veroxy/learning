@@ -21,4 +21,15 @@ Ne pas confondre le lien logiciel avec le celuis du GUI git bash sinon lorsque l
  pour l'importer il faut aller dans **file > Import Settings** puis choisir les les params
 
 
- ##
+## bashrc
+[install git bash](https://tutesfornewdevelopers.wordpress.com/2017/08/27/git-windows/)
+
+Create a .bashrc file under ~/.bashrc and away you go. Similarly for ~/.gitconfig.
+
+~ is usually your C:\Users\<your user name> folder. Typing echo ~ in the Git Bash terminal will tell you what that folder is.
+
+If you can't create the file (e.g. running Windows), run the below command:
+
+copy > ~/.bashrc
+
+The window will output an error message (command not found), but the file will be created and ready for you to edit.
