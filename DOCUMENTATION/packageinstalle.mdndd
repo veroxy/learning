@@ -1,0 +1,6 @@
+i  apache2 - Serveur HTTP Apache
+i A apache2-bin - Serveur HTTP Apache (modules et autres fichiers binaires)
+i A apache2-data - Serveur HTTP Apache (fichiers communs)
+i A apache2-utils - Serveur HTTP Apache - utilitaires pour serveurs web
+i  libapache2-mod-php - server-side, HTML-embedded scripting language (Apache 2 module) (default)
+i A libapache2-mod-php7.2 - server-side, HTML-embedded scripting language (Apache 2 module)

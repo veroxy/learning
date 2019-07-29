@@ -6,12 +6,12 @@ id (INT)  | username (VARCHAR) | title (VARCHAR) | description ()
 
 
 **PDO** > permet de créer une connexion à la BDD evite de faire:
-~~~shell
+```shell
   $ ./mysql -up root -p root (mysqlstart user:root passwor:root; dans le ternminal)
-~~~
+```
 
 1. le PDO est objet (comme en js):
-~~~php
+```php
 <?php
 try {
     $connexion = new PDO('mysql:host=localhost(ou port); dbnale=blog; charset=utf-8', 'root', 'root');
@@ -19,12 +19,12 @@ try {
   die('erreur': . $e->getMessage())
 }
 ?>
-~~~
+```
 TRY / CATCH / DIE permet de verifier les erreurs lors de la connexion et de les afficher selon ce que l'on désir.
 
 3. inserrer des données dans la BDD.<BR />
 il faut créer une condition pour vérifier le contenu rempli/ou non(ici formulaire).
-~~~php
+```php
   <?php
     if isset($_POST['username']) && isset($_POST['firstname']) && isset($_POST['lastname']) && isset($_POST['email'] && isset($_POST['email'] && isset($_POST['age'] && isset($_POST['datesuscribe']){
       $username = $_POST['username'];
@@ -37,12 +37,12 @@ il faut créer une condition pour vérifier le contenu rempli/ou non(ici formula
       $rq = $connexion->prepare;
     };
   ?>
-~~~
+```
 
 . je requete via dans ma bdd:
-~~~php
+```php
 <?php
   $requete = "SELECT * FROM users "
   $resultats = $connexion->query($requete);
 ?>
-~~~
+```

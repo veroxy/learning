@@ -7,9 +7,7 @@
   * [td 2 deuxième année](https://www.univ-orleans.fr/iut-orleans/informatique/intra/tuto/php/td/2A/2015/td1Web.pdf "td2")
 
 250 millions de sites environ sont réalisés à travers le monde en PHP
----
-~~~
-~~~
+--
 
 ### HISTOIRE : v1 & v2
   * d’abord Personal Home Pages puis HypertextPreProcessor.
@@ -18,9 +16,9 @@
   1994 pour analyser les connexions sur son site Web.
 
   * nous sommes maintenant à la version 7 depuis novembre 2015 sotant la [v6]
-  [v6]:https://www.phproundtable.com/episode/what-happened-to-php-6
+  [v6]()https://www.phproundtable.com/episode/what-happened-to-php-6)
 
-  >des dizaines de millions de sites Web l’utilisent à travers le monde…
+  > des dizaines de millions de sites Web l’utilisent à travers le monde…
   Comme Le Monde , Facebook ou Yahoo
 
 ### PHP7
@@ -54,9 +52,9 @@ De nombreux CMS (Content Management System) et Frameworks de développement Web 
 
 ### INSTALL
 avant nettoyer l'environnement (Ubuntu 16...) il rentre en conflit avec les composant d'installation voici comment les supprimer
-~~~
+```
 $ sudo apt-get purge mysql-server apache2 php (php7) php-mysql phpmyadmin
-~~~
+```
 |LAMP | INSTALLATION*|
 |----- |:--- |
 |Linux| Apache2|
@@ -66,12 +64,12 @@ $ sudo apt-get purge mysql-server apache2 php (php7) php-mysql phpmyadmin
 | |verifier php.ini|
 
 \*suivre les instruction sur la documention
-~~~
+```
 $ sudo apt-get install apache2 php mysql-server libapache2-mod-php php-mysql
 
 $ cat /opt/lampp/etc/php.ini
 
-~~~
+```
 ----
 ### SIMILARITÉ DES FONCTION EN C & PHP
 > **FUNCTION COUNT() vs SIZEOF** <br />

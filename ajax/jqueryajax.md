@@ -7,7 +7,7 @@ Alors de cette façon ok mais demandez aux 2/3 des entreprises qui emplois Jquer
 
 ### syntax
 Le bonnheur de Jquery Ajax c'est la syntax : pas d'instances de 3 lignes pour récupérer "UN TRUC". pour déclarer que le l'on fait du ajax il est parcontre nécessaire d'appeler la bbthèque jquery.js mais comme nous utilisons déjà jquery ça n'en fait qu'un
-~~~Javascript
+```Javascript
   $(window).ready(function(){
     // Selecteur sur la la balise <a> enfant de <div> qui contient lui-même les éléments à récupérer
     var link = $('.event a');
@@ -47,4 +47,4 @@ Le bonnheur de Jquery Ajax c'est la syntax : pas d'instances de 3 lignes pour r�
       return false;
     }
   });
-~~~
+```

@@ -1,32 +1,31 @@
 # FORK & MERGE
 
-FORK
----
+----
+### FORK
 
 fork url() > pull request sur un PROJET > "je fais des modifs"
 ==> le repos original n'est plsu à jour.
 
 
-1/ on fork le projet que l'on veut (celui d'un autre en principe) sur son github
+1. on fork le projet que l'on veut (celui d'un autre en principe) sur son github
 
-2/ on clone le dépot qui a été créé sur notre github
-~~~
+2. on clone le dépot qui a été créé sur notre github
+```
 ~git clone url(MON URL);
-~~~
+```
 
-3/ on se crée une branche à soit
-~~~
+3. on se crée une branche à soit
+```
 ~git checkout -b MABRANCH
 ~git branch
 * master origin MABRANCH
-~~~
-4/ on ajoute cette modif de notre git et on commit
-~~~
+```
+4. on ajoute cette modif de notre git et on commit
+```
 git add
 git commit -m 'new branch'
-~~~
-4/
-il faut tirer l'url du Projet de base
+```
+5. il faut tirer l'url du Projet de base
 
 > git remote add ProjetInitial git@githubm: lksdhfhksdhf.
 
@@ -36,11 +35,9 @@ l'on lui a donné.
 > git pull ProjetInitial master
 
 
-MERGE
----
-
-(LORSQUE que l'on a plusiseurs branches)
-~~~
+### MERGE
+- (LORSQUE que l'on a plusiseurs branches)
+```shell
 ~ master$ git branch
 * master NOMBRANCH DEV
 ~master$ git branch NOMBRANCHE
@@ -50,31 +47,29 @@ switched on branche NOMBRANCHE
 ~NOMBRANCHE(master)$git add *
 ~NOMBRANCHE(master)$git commit -m "tex"
 
-~~~
+```
 `git log --oneline` pour afficher les différent COMMIT
 `git branch -d NOMBRANCH` supprimer une branche
 
 
-renommer branch
-~~~
+- renommer branch
+```shee
 ~$ git branch -m ancienne_BRANCH NOUVEAU_NOM_BRANCH
-~~~
-il faut 'ADD'
-il faut toujours 'COMMIT'
-il faut push:
+```
+- il faut `ADD`
+- il faut toujours `COMMIT`
+- il faut `PUSH`:
 
-~~~
+-  **`/!\`** si c'est le premier push vers le repo sans README.md dans le repo distant
+```shell
 ~$ git push -u origin NOUVEAU_NOM_BRANCH
-~~~
+```
 
-Si renommé ou supprimé
-~~~
+- Si renommé ou supprimé
+```shell
 ~$ git push origin ancienne_BRANCH
-~~~
-
-
-
-supprimmer une branch(distante)
-~~~
+```
+- supprimmer une branch(distante)
+```
 git push origin: NOM_BRANCH_A_SUPP
-~~~
+```
