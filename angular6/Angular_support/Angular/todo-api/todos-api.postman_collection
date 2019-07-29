@@ -1,0 +1,90 @@
+{
+	"variables": [],
+	"info": {
+		"name": "todos-api",
+		"_postman_id": "0db28c40-13da-7c2f-eb4b-cb8fc2988c0a",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Todo by ID",
+			"request": {
+				"url": "http://localhost:3000/todos/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Todos",
+			"request": {
+				"url": "http://localhost:3000/todos",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\n    \"nom\": \"Module\",\n    \"description\": \"HTTP Module\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create Todos",
+			"request": {
+				"url": "http://localhost:3000/todos",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Aller boire une bière\",\n    \"isDone\": false\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Todo By ID",
+			"request": {
+				"url": "http://localhost:3000/todos/2",
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nom\": \"Module JavaScript\",\n    \"description\": \"ES6+\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update Todo By ID",
+			"request": {
+				"url": "http://localhost:3000/todos/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\n    \"title\": \"Faire le TP Angular HttpClient\",\n    \"isDone\": true\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

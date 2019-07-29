@@ -1,0 +1,1412 @@
+<!DOCTYPE html>
+<!-- saved from url=(0087)https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/les-generateurs-4 -->
+<html class="js supports no-touchevents cssfilters" lang="fr" prefix="og: http://ogp.me/ns#" style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Les générateurs - Programmez en orienté objet en PHP</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+<script type="text/javascript" async="" src="./Les générateurs - Programmez en orienté objet en PHP_files/insight.min.js"></script><script src="./Les générateurs - Programmez en orienté objet en PHP_files/rules-p-d1D4hSPec1QW4.js"></script><script type="text/javascript" async="" src="./Les générateurs - Programmez en orienté objet en PHP_files/linkid.js"></script><script type="text/javascript" async="" src="./Les générateurs - Programmez en orienté objet en PHP_files/quant.js"></script><script type="text/javascript" async="" src="./Les générateurs - Programmez en orienté objet en PHP_files/gtm.js"></script><script type="text/javascript" async="" src="./Les générateurs - Programmez en orienté objet en PHP_files/analytics.js"></script><script src="./Les générateurs - Programmez en orienté objet en PHP_files/identity.js" async=""></script><script src="./Les générateurs - Programmez en orienté objet en PHP_files/1570554156513134" async=""></script><script type="text/javascript" async="" src="./Les générateurs - Programmez en orienté objet en PHP_files/fbevents.js"></script><script type="text/javascript" async="" src="./Les générateurs - Programmez en orienté objet en PHP_files/track.js" id="cio-tracker" data-site-id="46e8e9c18365c4bba6c1"></script><script type="text/javascript" async="" src="./Les générateurs - Programmez en orienté objet en PHP_files/blueshift.js"></script><script type="text/javascript" async="" src="./Les générateurs - Programmez en orienté objet en PHP_files/bat.js"></script><script type="text/javascript" async="" src="./Les générateurs - Programmez en orienté objet en PHP_files/amplitude-3.4.0-min.gz.js"></script><script type="text/javascript" async="" src="./Les générateurs - Programmez en orienté objet en PHP_files/conversion_async.js"></script><script type="text/javascript" id="analytics-js" async="" src="./Les générateurs - Programmez en orienté objet en PHP_files/analytics.min.js"></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1039.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<meta name="application-name" content="OpenClassrooms">
+<meta name="msapplication-TileColor" content="#e95325">
+<meta name="msapplication-TileImage" content="/fav-icon.png?v=1">
+<meta name="theme-color" content="#E95325">
+<link rel="icon" sizes="144x144" href="https://openclassrooms.com/fav-icon.png?v=1">
+<link rel="apple-touch-icon" href="https://openclassrooms.com/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="https://openclassrooms.com/apple-touch-icon-iphone.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://openclassrooms.com/apple-touch-icon-ipad.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://openclassrooms.com/apple-touch-icon-iphone-retina-display.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://openclassrooms.com/apple-touch-icon-ipad-retina-display.png">
+<link rel="apple-touch-icon-precomposed" href="https://openclassrooms.com/apple-touch-icon-precomposed.png">
+<link rel="shortcut icon" href="https://openclassrooms.com/favicon.ico?a5494df">
+<link href="./Les générateurs - Programmez en orienté objet en PHP_files/master-c114407e.css" type="text/css" rel="stylesheet" media="all">
+<link href="./Les générateurs - Programmez en orienté objet en PHP_files/main-49192b3f.css" type="text/css" rel="stylesheet" media="all">
+<script>
+    /*! modernizr 3.3.1 (Custom Build) | MIT *
+    * https://modernizr.com/download/?-cssfilters-touchevents-setclasses !*/
+    !function(e,n,t){function o(e,n){return typeof e===n}function r(){var e,n,t,r,s,i,a;for(var l in C)if(C.hasOwnProperty(l)){if(e=[],n=C[l],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(t=0;t<n.options.aliases.length;t++)e.push(n.options.aliases[t].toLowerCase());for(r=o(n.fn,"function")?n.fn():n.fn,s=0;s<e.length;s++)i=e[s],a=i.split("."),1===a.length?Modernizr[a[0]]=r:(!Modernizr[a[0]]||Modernizr[a[0]]instanceof Boolean||(Modernizr[a[0]]=new Boolean(Modernizr[a[0]])),Modernizr[a[0]][a[1]]=r),g.push((r?"":"no-")+a.join("-"))}}function s(e){var n=w.className,t=Modernizr._config.classPrefix||"";if(x&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+t+"no-js(\\s|$)");n=n.replace(o,"$1"+t+"js$2")}Modernizr._config.enableClasses&&(n+=" "+t+e.join(" "+t),x?w.className.baseVal=n:w.className=n)}function i(){return"function"!=typeof n.createElement?n.createElement(arguments[0]):x?n.createElementNS.call(n,"http://www.w3.org/2000/svg",arguments[0]):n.createElement.apply(n,arguments)}function a(){var e=n.body;return e||(e=i(x?"svg":"body"),e.fake=!0),e}function l(e,t,o,r){var s,l,u,f,p="modernizr",c=i("div"),d=a();if(parseInt(o,10))for(;o--;)u=i("div"),u.id=r?r[o]:p+(o+1),c.appendChild(u);return s=i("style"),s.type="text/css",s.id="s"+p,(d.fake?d:c).appendChild(s),d.appendChild(c),s.styleSheet?s.styleSheet.cssText=e:s.appendChild(n.createTextNode(e)),c.id=p,d.fake&&(d.style.background="",d.style.overflow="hidden",f=w.style.overflow,w.style.overflow="hidden",w.appendChild(d)),l=t(c,e),d.fake?(d.parentNode.removeChild(d),w.style.overflow=f,w.offsetHeight):c.parentNode.removeChild(c),!!l}function u(e,n){return!!~(""+e).indexOf(n)}function f(e){return e.replace(/([a-z])-([a-z])/g,function(e,n,t){return n+t.toUpperCase()}).replace(/^-/,"")}function p(e,n){return function(){return e.apply(n,arguments)}}function c(e,n,t){var r;for(var s in e)if(e[s]in n)return t===!1?e[s]:(r=n[e[s]],o(r,"function")?p(r,t||n):r);return!1}function d(e){return e.replace(/([A-Z])/g,function(e,n){return"-"+n.toLowerCase()}).replace(/^ms-/,"-ms-")}function m(n,o){var r=n.length;if("CSS"in e&&"supports"in e.CSS){for(;r--;)if(e.CSS.supports(d(n[r]),o))return!0;return!1}if("CSSSupportsRule"in e){for(var s=[];r--;)s.push("("+d(n[r])+":"+o+")");return s=s.join(" or "),l("@supports ("+s+") { #modernizr { position: absolute; } }",function(e){return"absolute"==getComputedStyle(e,null).position})}return t}function h(e,n,r,s){function a(){p&&(delete k.style,delete k.modElem)}if(s=o(s,"undefined")?!1:s,!o(r,"undefined")){var l=m(e,r);if(!o(l,"undefined"))return l}for(var p,c,d,h,v,y=["modernizr","tspan","samp"];!k.style&&y.length;)p=!0,k.modElem=i(y.shift()),k.style=k.modElem.style;for(d=e.length,c=0;d>c;c++)if(h=e[c],v=k.style[h],u(h,"-")&&(h=f(h)),k.style[h]!==t){if(s||o(r,"undefined"))return a(),"pfx"==n?h:!0;try{k.style[h]=r}catch(g){}if(k.style[h]!=v)return a(),"pfx"==n?h:!0}return a(),!1}function v(e,n,t,r,s){var i=e.charAt(0).toUpperCase()+e.slice(1),a=(e+" "+j.join(i+" ")+i).split(" ");return o(n,"string")||o(n,"undefined")?h(a,n,r,s):(a=(e+" "+E.join(i+" ")+i).split(" "),c(a,n,t))}function y(e,n,o){return v(e,t,t,n,o)}var g=[],C=[],S={_version:"3.3.1",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var t=this;setTimeout(function(){n(t[e])},0)},addTest:function(e,n,t){C.push({name:e,fn:n,options:t})},addAsyncTest:function(e){C.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=S,Modernizr=new Modernizr;var w=n.documentElement,x="svg"===w.nodeName.toLowerCase(),_=S._config.usePrefixes?" -webkit- -moz- -o- -ms- ".split(" "):["",""];S._prefixes=_;var b="CSS"in e&&"supports"in e.CSS,T="supportsCSS"in e;Modernizr.addTest("supports",b||T);var z=S.testStyles=l;Modernizr.addTest("touchevents",function(){var t;if("ontouchstart"in e||e.DocumentTouch&&n instanceof DocumentTouch)t=!0;else{var o=["@media (",_.join("touch-enabled),("),"heartz",")","{#modernizr{top:9px;position:absolute}}"].join("");z(o,function(e){t=9===e.offsetTop})}return t});var P="Moz O ms Webkit",j=S._config.usePrefixes?P.split(" "):[];S._cssomPrefixes=j;var E=S._config.usePrefixes?P.toLowerCase().split(" "):[];S._domPrefixes=E;var N={elem:i("modernizr")};Modernizr._q.push(function(){delete N.elem});var k={style:N.elem.style};Modernizr._q.unshift(function(){delete k.style}),S.testAllProps=v,S.testAllProps=y,Modernizr.addTest("cssfilters",function(){if(Modernizr.supports)return y("filter","blur(2px)");var e=i("a");return e.style.cssText=_.join("filter:blur(2px); "),!!e.style.length&&(n.documentMode===t||n.documentMode>9)}),r(),s(g),delete S.addTest,delete S.addAsyncTest;for(var A=0;A<Modernizr._q.length;A++)Modernizr._q[A]();e.Modernizr=Modernizr}(window,document);
+    </script>
+<script type="text/javascript">
+    var App = {
+        startTime: (new Date()).getTime(),
+        pageGenerationDate: 1499163586000
+    };
+
+    App.user = {
+                    id: 6540350,
+            age: '',
+            createdAt: '2014\x2D02\x2D10T21\x3A35\x3A06\x2B01\x3A00',
+            gender: 'F',
+            premiumType: '',
+            locale: 'fr',
+            language: 'fr',
+            displayableName: 'Vero\x20Lafaverges',
+            email: 'v.lafaverges\x40gmail.com',
+            country: '',
+            phoneNumber: '',
+            avatar: '\x2Fbundles\x2Fcommon\x2Fimages\x2Favatar_defaut.png',
+            isPremium: false
+            };
+
+    App.preferences = {
+        debug: false,
+        assetVersion: 'a5494df',
+        contactMail: 'hello\x40openclassrooms.com',
+        adyenPublicKey: '10001\x7C889EBFD4D434B82683E21DCA26E77C3E20E0EE09A5ECE3830B0ED51F2FA721A2F7E9EC871C6AB9A1E12C4492F4717673047757E02C5256D8E265CD51E413E5EFCCFEAC41B39C662A424ADC13EE187C38C372A7FCCEC1EA5DF841989437D78B252A8EB51008E60BB55B1E55A7A80DE1A9D60D998C128A576BFAE1DDB97D514AF0A073AEDDE84CEE40D1F8F6ECE85D0FFA50C95C06DB274021C1371376C6EB16561FD65C5E2704B570A7504D617D0F3820F176A0609F6162BDF5890533289FDC3DA7DB03B50BB3BD60A613E1FF72060F22987627E8F1A29F0128A94EC4C8FF7CF6B7AB9558D8433BF86D7A388AB927641CD6C02689139CEE3AAC9ACBFFE83806CB',
+        cdnImage: true,
+        layer: {
+            appId: 'layer\x3A\x2F\x2F\x2Fapps\x2Fstaging\x2F7757c53a\x2Db2ba\x2D11e5\x2Db2a6\x2D2584730b1501',
+            identityProviderUrl: '\x2Fajax\x2Fconversations\x2Fget\x2Didentity\x2Dtoken'
+        },
+        algolia: {
+            appId: 'JGRXRFVQM0',
+            apiKey: 'dfbdea500cb0b5f46e449ad334916c44',
+            indexName: 'prod_v2_COURSES_fr'
+        },
+        routes: {
+            COURSE_EVENT: '/components/courses/:courseId',
+            COURSE_PART_EVENT: '/components/courses/:courseId/parts/:partId',
+
+            ACCEPT_COOKIE: '\x2Fcomponents\x2Fuser\x2Daccept\x2Dconsent\x2Dcookie'
+        },
+
+                    };
+
+    App.preferences.navigationPreference = {
+                                    consentCookieExpiredAt: 1519030697
+                        };
+
+    App.preferences.modules = {
+        'smiley': {
+            basePath: '/bundles/common/images/smiley/'
+        }
+    };
+
+    App.notifications = {};
+    App.scripts = [];
+</script>
+<script>    
+    App.preferences.modules['course/view/internalFolding'] = {
+        isBigCourse: true
+    };
+
+    App.data = App.data || {};
+App.data.currentCourse = {"partId":2650041,"partTitle":"Les g\u00e9n\u00e9rateurs","partSlug":"les-generateurs-4","courseId":1665806,"courseTitle":"Programmez en orient\u00e9 objet en PHP","courseSlug":"programmez-en-oriente-objet-en-php","courseLanguage":"fr","isIntroduction":false,"isCertifying":true};
+App.preferences.modules['view/currentCoursePage'] = App.data.currentCourse;
+
+</script>
+<meta property="og:locale" content="fr">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Les générateurs @OpenClassrooms">
+<meta property="og:url" content="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/les-generateurs-4">
+<meta property="og:site_name" content="OpenClassrooms">
+<meta property="og:image" content="https://static.oc-static.com/prod/courses/illustrations/illu_programmez-en-oriente-objet-en-php.png">
+<meta property="og:description" content="Vous connaissez les bases de PHP, mais savez-vous organiser votre code comme un professionnel ? La programmation orientée objet est une façon de programmer incontournable. Ce cours va vous aider à bien structurer votre code.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@OpenClassrooms">
+<meta name="twitter:title" content="Les générateurs @OpenClassrooms">
+<meta name="twitter:description" content="">
+<script async="" src="./Les générateurs - Programmez en orienté objet en PHP_files/satismeter.js"></script><style type="text/css">.nps-Survey{color:#333;font-family:sans-serif;font-weight:normal;font-size:14px;line-height:1.42857143;width:initial;margin:initial;padding:initial;background-color:initial;border-radius:initial}.nps-Survey *{width:initial;margin:initial;padding:initial;background-color:initial;border-radius:initial}.nps-Survey .nps-Survey-buttons{float:right;margin-top:14px}.nps-Survey .nps-Survey-bounding{position:relative;overflow:hidden}.nps-Survey .nps-Survey-content{position:relative;top:0}.nps-fade{opacity:1;-webkit-transition:opacity 500ms;transition:opacity 500ms}.nps-fade-enter,.nps-fade-leave{opacity:0}.nps-slide-enter,.nps-slide-leave{bottom:-600px !important}.nps-next{-webkit-transition:height 500ms;transition:height 500ms}.nps-next>div{-webkit-transition:top 500ms;transition:top 500ms}.nps-next>div>div{-webkit-transition:opacity 500ms;transition:opacity 500ms}.nps-expand{max-height:800px;overflow:hidden;-webkit-transition:max-height 500ms, opacity 500ms;transition:max-height 500ms, opacity 500ms}.nps-expand-enter,.nps-expand-leave{max-height:0px;opacity:0}.nps-Survey .nps-Bar{position:fixed;bottom:0;left:0;right:0;text-align:center;-webkit-transition:bottom 500ms;transition:bottom 500ms;z-index:2147483647;padding:0 20px;max-height:100vh;overflow:auto}.nps-Survey.nps-embed .nps-Bar{position:absolute;max-height:100%}.nps-Survey .nps-Bar .nps-PoweredBy{position:absolute;bottom:10px;right:20px}.nps-Survey.nps-embed .nps-Bar .nps-PoweredBy{display:none}@media (max-width: 900px){.nps-Survey .nps-Bar .nps-PoweredBy{display:none}}.nps-Survey .nps-Bar .nps-Scale{margin-left:auto;margin-right:auto}.nps-Survey .nps-Bar .nps-Survey-bounding{max-width:600px;margin:20px auto}.nps-Survey .nps-Bar .nps-Title{font-size:14px}.nps-Survey .nps-Dialog{background-color:white;border-width:2px;border-style:solid;margin:auto;padding:20px;position:fixed;width:417px;z-index:2147483647;-webkit-transition:all 500ms;transition:all 500ms;box-sizing:border-box}.nps-Survey.nps-embed .nps-Dialog{position:absolute}.nps-Survey .nps-Dialog--top{top:20px}.nps-Survey .nps-Dialog--middle{top:50%;-webkit-transform:translate(0, -50%);transform:translate(0, -50%)}.nps-Survey .nps-Dialog--bottom{bottom:20px}.nps-Survey .nps-Dialog--left{-webkit-transition:left 500ms;transition:left 500ms;left:20px}.nps-Survey .nps-Dialog--left.nps-show-enter,.nps-Survey .nps-Dialog--left.nps-show-leave{left:-500px}.nps-Survey .nps-Dialog--center{left:0;right:0}.nps-Survey .nps-Dialog--center.nps-Dialog--top.nps-show-enter,.nps-Survey .nps-Dialog--center.nps-Dialog--top.nps-show-leave{top:-500px}.nps-Survey .nps-Dialog--center.nps-Dialog--middle{-webkit-transform:translate(0, -50%) scale(1);transform:translate(0, -50%) scale(1)}.nps-Survey .nps-Dialog--center.nps-Dialog--middle.nps-show-enter,.nps-Survey .nps-Dialog--center.nps-Dialog--middle.nps-show-leave{-webkit-transform:translate(0, -50%) scale(0);transform:translate(0, -50%) scale(0)}.nps-Survey .nps-Dialog--center.nps-Dialog--bottom{bottom:20px}.nps-Survey .nps-Dialog--center.nps-Dialog--bottom.nps-show-enter,.nps-Survey .nps-Dialog--center.nps-Dialog--bottom.nps-show-leave{bottom:-500px}.nps-Survey .nps-Dialog--right{right:20px}.nps-Survey .nps-Dialog--right.nps-show-enter,.nps-Survey .nps-Dialog--right.nps-show-leave{right:-500px}.nps-Survey .nps-Dialog .nps-Title{margin-right:20px}.nps-Survey .nps-Dialog-close{float:right;font-weight:bold;padding:0;cursor:pointer;background:transparent;border:0;font-size:16px;width:30px;height:30px;color:white;position:absolute;right:0;top:0}.nps-Survey .nps-Dialog-close:focus{outline:0}.nps-Survey .nps-Dialog-FeedbackPoweredBy{position:absolute;bottom:0;line-height:30px;left:0}.nps-Survey .nps-Feedback{text-align:left}.nps-Survey .nps-Feedback-reason{margin-top:10px}.nps-Survey .nps-Feedback-reason label{display:block;font-weight:normal}.nps-Survey .nps-Feedback-reason input{margin-right:8px;margin-left:4px;position:relative;top:-2px}.nps-Survey .nps-Feedback-submit{margin-top:10px;float:right}.nps-Survey .nps-Panel{border-width:2px;border-style:solid;background-color:white}.nps-Survey .nps-Panel{font-size:16px;color:#333;max-width:600px;min-width:375px;margin:20px auto;padding:20px}@media (max-width: 480px){.nps-Survey .nps-Panel{border-width:0;min-width:initial;font-size:14px;box-shadow:none}}.nps-Survey .nps-Panel .nps-Survey--powered-by{line-height:38px}.nps-Survey .nps-Panel .nps-Title{font-size:18px}.nps-Survey .nps-Panel .nps-Rating{margin-bottom:20px}.nps-Survey .nps-PoweredBy{font-size:12px;margin-top:20px}.nps-Survey .nps-PoweredBy>a{text-decoration:none;font-weight:bold}.nps-Survey .nps-Title{font-size:16px}.nps-Survey .nps-cf:before,.nps-Survey .nps-cf:after{content:" ";display:table}.nps-Survey .nps-cf:after{clear:both}.nps-Survey .nps-left{text-align:left}.nps-Survey .nps-center{text-align:center}.nps-Survey .nps-margin-t20{margin-top:20px}.nps-Button{display:inline-block;zoom:1;line-height:normal;white-space:nowrap;vertical-align:baseline;text-align:center;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;font-family:inherit;font-size:100%;padding:0.5em 1em;text-decoration:none;border:0}.nps-Button::-moz-focus-inner{padding:0;border:0}.nps-Survey .nps-Button:focus{outline:0}.nps-Survey .nps-Button[disabled]{border:none;background-image:none;opacity:0.40;cursor:default;box-shadow:none}.nps-Survey .nps-Button--simple{border:0;cursor:pointer;padding:10px}.nps-Survey .nps-Button--icon{width:30px;height:30px;padding:0}.nps-Survey .nps-Button--simple:focus,.nps-Button--simple:hover{outline:none}.nps-Survey .nps-Link{padding:0.5em 1em;text-decoration:none}.nps-Survey .nps-Textarea{margin-top:14px;height:80px;border-width:2px;border-style:solid;font-size:14px;padding:7px 10px;width:100%;resize:vertical;box-sizing:border-box;-webkit-transition:border-color 300ms, background-color 300ms;transition:border-color 300ms, background-color 300ms}.nps-Survey .nps-Textarea:focus{outline:0}.nps-Survey .nps-Scale{margin-top:14px;display:inline-block}.nps-Survey .nps-Scale-values{margin-bottom:4px;text-align:center}.nps-Survey .nps-Scale-value{display:inline-block;padding-right:2px;vertical-align:middle;line-height:1;font-size:1.5em}.nps-Survey .nps-Scale-value:last-of-type{padding-right:0}.nps-Survey .nps-Scale-value:hover{cursor:pointer}.nps-Survey .nps-Scale-button{border-radius:50%;width:32px;height:32px;text-align:center;line-height:32px;font-size:12px}@media (max-width: 480px){.nps-Survey .nps-Scale-button{width:22px;height:22px;line-height:22px}}.nps-Survey.nps-small .nps-Scale-button{width:22px;height:22px;line-height:22px}.nps-Survey .nps-Scale-hint{font-size:12px;font-style:italic}.nps-Survey .nps-Scale-hint--unlikely{float:left;padding-right:10px}.nps-Survey .nps-Scale-hint--likely{float:right;padding-left:10px}.nps-Survey[dir="rtl"] .nps-Scale-hint--unlikely{float:right}.nps-Survey[dir="rtl"] .nps-Scale-hint--likely{float:left}</style></head>
+<body class="course oc-body is-connected">
+<div id="react_root"></div>
+<script id="_EVENTS-IDENTIFY" type="application/json">
+        {
+            "type": "identify",
+            "userId": "6540350",
+            "properties": {
+                "age": "",
+                "name": "Vero Lafaverges",
+                "createdAt": "2014-02-10T21:35:06+01:00",
+                "email": "v.lafaverges@gmail.com",
+                "gender": "F",
+                "premium": false,
+                "premiumType": "",
+                "locale": "fr",
+                "language": "fr"
+            },
+            "integrations": {
+                "HubSpot": false
+            }
+        }
+    </script>
+<script id="_EVENTS-PAGE" type="application/json">
+        {
+            "type": "page",
+            "integrations": {
+                "HubSpot": false
+            }
+        }
+    </script>
+<header id="oc-header" class="js-tabs-mobile mainHeader mainHeader--loggedUser ">
+<!--[if lt IE 10]>
+<div class="disclaimer  disclaimer-error">
+    Vous utilisez un navigateur obsolète, veuillez le <a href="https://browser-update.org/update.html">mettre à jour</a>.
+</div>
+<![endif]-->
+ 
+<div id="ie-ten-disclaimer" class="disclaimer disclaimer-error" style="display:none">
+Vous utilisez un navigateur obsolète, veuillez le <a href="https://browser-update.org/update.html">mettre à jour</a>.
+</div>
+<script>
+    if (document.documentMode === 10) {
+        document.getElementById('ie-ten-disclaimer').style.display = 'block';
+    }
+</script>
+ 
+<noscript>
+&lt;div class="disclaimer  disclaimer--error"&gt;
+Veuillez utiliser un &lt;a href="https://browser-update.org/update.html"&gt;navigateur internet moderne&lt;/a&gt; avec JavaScript activé pour naviguer sur OpenClassrooms.com
+&lt;/div&gt;
+</noscript>
+<div class="disclaimer  disclaimer--info hidden  js-cookie-disclaimer">
+<div class="disclaimer__wrapper">
+<span class="disclaimer__content">
+Bienvenue sur OpenClassrooms ! En poursuivant votre navigation, vous acceptez l'utilisation de cookies. <a href="https://openclassrooms.com/privacy-policy#personal-data-gathering">En savoir plus</a>
+</span>
+<span class="disclaimer__actions">
+<a href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/les-generateurs-4#" class="disclaimer__button  js-close-button">ok</a>
+</span>
+</div>
+</div>
+<div class="mainHeader__wrapper">
+<div class="mainHeader__inner">
+<a href="https://openclassrooms.com/" class="mainHeader__logo" title="OpenClassrooms.com">
+OpenClassrooms.com
+</a>
+<div class="mainHeader__content">
+<div id="tab-main" class="mainHeader__tabs">
+<div class="mainHeader__container mainHeader__container--mainMenu">
+<nav>
+<ul class="mainTopNav">
+<li class="mainTopNav__itemContainer">
+<a class="mainTopNav__item" href="https://openclassrooms.com/paths">Parcours</a>
+</li>
+<li class="mainTopNav__itemContainer">
+<a class="mainTopNav__item" href="https://openclassrooms.com/courses">Cours</a>
+</li>
+<li class="mainTopNav__itemContainer">
+<a class="mainTopNav__item" href="https://openclassrooms.com/forum/">Forums</a>
+</li>
+<li class="mainTopNav__itemContainer">
+<a class="mainTopNav__item" href="https://openclassrooms.com/premium">Premium</a>
+</li>
+<li class="mainTopNav__itemContainer">
+<a class="mainTopNav__item u--colorBusiness" href="https://openclassrooms.com/for-business">For Business</a>
+</li>
+</ul>
+</nav>
+</div>
+<div class="mainHeader__container  mainHeader__container--search">
+<div id="tab-search" class="mainHeader__search  js-header-searchContainer"><div class="js-courseSearch  topSearchBox">
+<form tabindex="0" class="js-courseSearch-form  oc-form" action="https://openclassrooms.com/courses" method="get">
+<div class="js-courseSearch-inputGroup oc-form__widget  inputGroup topSearchBox__inner u--block">
+<i class="topSearchBox__icon icon-search"></i>
+<input id="algolia-search-input" type="search" class="js-courseSearch-input oc-form__control inputGroup__input  topSearchBox__input" title="Rechercher" autocomplete="off" data-option_source="https://openclassrooms.com/components/courses/search?q=&lt;%= term %&gt;" placeholder="Rechercher" aria-label="Rechercher" name="q">
+</div>
+</form>
+</div>
+</div>
+</div>
+<div class="mainHeader__container mainHeader__container--avatar">
+<div class="popOut  popOut--rightAlign  popOut--noArrow js-popOut-header  " data-tabs-content="#tab-userMenu">
+<a class="js-popOut-button  popOut__button" href="https://openclassrooms.com/dashboard">
+<span class="roundImageNotification">
+<span class="popOut__notification js-notifications-main"></span>
+<span class="roundImageNotification__image  icoTabs__image  mainHeader__avatar" style="background-image:url(&#39;https://openclassrooms.com/bundles/common/images/avatar_defaut.png&#39;)">
+Vero Lafaverges
+</span>
+</span>
+</a>
+<div class="popOut__content">
+<div class="popOut__inner">
+<div id="tab-userMenu">
+<ul class="popOutList avatarPopout" xmlns="http://www.w3.org/1999/html">
+<li class="popOutList__item  avatarPopout__itemPremium">
+<a class="popOutList__link" href="https://openclassrooms.com/membres/veroxy">
+<i class="popOutList__itemIcon  icon-profil  "></i>
+<strong class="popOutList__linkMain">Vero Lafaverges</strong>
+<small class="popOutList__linkSub  avatarPopout__itemPremiumSub  ">
+</small>
+</a>
+</li>
+<li class="popOutList__item">
+<a class="popOutList__link" href="https://openclassrooms.com/dashboard">Tableau de bord</a>
+</li>
+<li class="popOutList__item">
+<a class="popOutList__link" href="https://openclassrooms.com/membres/veroxy/parametres">Mes paramètres</a>
+</li>
+<li class="popOutList__item">
+<a class="popOutList__link" href="https://openclassrooms.com/my-courses">Créer un cours</a>
+</li>
+<li class="popOutList__item js-notifications-menuPm"></li>
+<li class="popOutList__item">
+<a href="https://openclassrooms.com/mp/" class="popOutList__link  ">
+<i class="popOutList__itemIcon  icon-letter  "></i>
+Aucun message</a>
+<script>
+    App.notifications.oldPrivateMessages = 0;
+</script>
+</li>
+<li class="popOutList__item">
+<a href="https://openclassrooms.com/notifications" class="popOutList__link  ">
+<i class="popOutList__itemIcon  icon-alarm  "></i>
+Aucune notification</a>
+<script>
+    App.notifications.forumNotifications = 0;
+</script>
+</li>
+<li class="popOutList__item">
+<a class="popOutList__link" href="https://openclassrooms.com/logout?_csrf_token=3iYsITjMsYY78iX1jNgPF5Uia0je__pdx1a2AuF3B88">
+<i class="popOutList__itemIcon  icon-off"></i> <span>Déconnexion</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nav role="navigation" class="icoTabs  mainHeader__tabSet">
+<div class="mainHeader__mobileNav">
+<span class="icoTabs__tab  mainHeader__tabLogin">
+<a class="js-tabs-tab  icoTabs__tab" href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/les-generateurs-4#tab-userMenu">
+<span class="js-popOut-header  popOut  popOut--noArrow">
+<span class="js-popOut-button  popOut__button">
+<span class="roundImageNotification">
+<span class="popOut__notification js-notifications-main"></span>
+<span class="roundImageNotification__image  icoTabs__image  mainHeader__avatar" style="background-image:url(&#39;https://openclassrooms.com/bundles/common/images/avatar_defaut.png&#39;)">
+Vero Lafaverges
+</span>
+</span>
+</span>
+</span>
+</a>
+</span>
+<a class="js-tabs-tab  icoTabs__tab  mainHeader__tabSearch" href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/les-generateurs-4#tab-search">
+<span class="accessibility-hidden">Rechercher</span>
+<i class="icon-search  icoTabs__icon"></i>
+</a>
+<a class="js-tabs-tab  icoTabs__tab  mainHeader__tabCourseMenu  is-disabled" href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/les-generateurs-4#tab-courseMenu">
+<span class="accessibility-hidden">Cours</span>
+<i class="icon-plus  icoTabs__icon"></i>
+</a>
+<a class="js-tabs-tab  icoTabs__tab  is-disabled" href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/les-generateurs-4#tab-courseEditMenu">
+<span class="accessibility-hidden">Créer un cours</span>
+<i class="icon-plus  icoTabs__icon"></i>
+</a>
+<a class="js-tabs-tab  icoTabs__tab  is-disabled" data-tabs-default="true" href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/les-generateurs-4#tab-searchMenu">
+<span class="accessibility-hidden">Rechercher</span>
+<i class="icon-search  icoTabs__icon"></i>
+</a>
+<a class="js-tabs-tab  icoTabs__tab" href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/les-generateurs-4#tab-main">
+<span class="accessibility-hidden">Menu principal</span>
+<i class="icon-menu  icoTabs__icon"></i>
+</a>
+</div>
+</nav>
+<div class="js-tabs-content  mainHeader__content"></div>
+</div>
+</div>
+</header>
+<div class="centered">
+<div id="mainSearch" class="mainSearch"></div>
+</div>
+<div id="mainContentWithHeader">
+<div id="pre-main-part">
+<section class="inset no-padding">
+<div class="centered">
+<h6 class="accessibility-hidden">Fil d'Ariane</h6>
+<nav class="breadcrumb">
+<ul class="breadcrumb__trail">
+<li class="breadcrumb__item breadcrumb__item--home " itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+<a href="https://openclassrooms.com/" itemprop="url">
+<span itemprop="title">Accueil</span>
+</a>
+</li>
+<li class="breadcrumb__item  " itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+<a href="https://openclassrooms.com/courses" itemprop="url">
+<span itemprop="title">Cours</span>
+</a>
+</li>
+<li class="breadcrumb__item  " itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+<a href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php?status=published" itemprop="url">
+<span itemprop="title">Programmez en orienté objet en PHP</span>
+</a>
+</li>
+<li class="breadcrumb__item  breadcrumb__item--current" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+Les générateurs
+</li>
+</ul>
+</nav>
+</div>
+</section>
+</div>
+<div class="claire clearfix">
+<article itemscope="" itemtype="http://schema.org/Article">
+<header class="course-header" xmlns="http://www.w3.org/1999/html">
+<div class="centered"><div class="course-header__topPart"><div class="course-header__info"><a itemprop="url" href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php"><h1 data-course-title="Programmez en orienté objet en PHP">Programmez en orienté objet en PHP</h1></a><span class="course-header__updatedTime visible-l">Mis à jour le lundi 29 mai 2017</span></div></div></div><div class="course-header__details-container"><div class="centered"><div class="row"><div class="col12"><div class="course-header__details  iconBar"><div class="course-header__detailsGroup  course-header__detailsGroup--formats iconBar__group"><ul data-option_popinselector="#popin-formats-availables" class="course-types iconBar__list js-course-formats-bar"><li class="iconBar__item  course-types__item  js-tooltip" title="Ce cours est visible gratuitement en ligne."><a href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php"><i class="icon-desktop  course-types__icon"></i><span class="course-header__format-current"></span></a></li><li class="iconBar__item  course-types__item iconBar__item--dimmed js-tooltip" title="Ce cours n&#39;est pas encore en vidéo."><span><i class="icon-video course-types__icon"></i></span></li><li class="iconBar__item  course-types__item  js-tooltip" title="Ce cours existe en livre papier."><a href="http://www.eyrolles.com/Informatique/Livre/programmez-en-oriente-objet-en-php-9791090085855?societe=openclassrooms" target="_blank"><i class="icon-book  course-types__icon"></i></a></li><li class="iconBar__item  course-types__item  js-tooltip" title="Ce cours existe en eBook."><a href="https://openclassrooms.com/ebooks/programmez-en-oriente-objet-en-php"><i class="icon-ebook  course-types__icon"></i></a></li><li class="iconBar__item  course-types__item  js-tooltip" title="Vous pouvez obtenir un certificat de réussite à l&#39;issue de ce cours."><a href="https://openclassrooms.com/courses/1665806/certificate_example" target="_blank"><i class="icon-badge  course-types__icon"></i></a></li><li class="iconBar__item  course-types__item iconBar__item--dimmed js-tooltip" title="Ce cours n&#39;est pas encore diplômant et ne vous permet pas d&#39;obtenir des crédits universitaires européens (ECTS)."><span><i class="icon-hat  course-types__icon"></i></span></li></ul></div><div class="course-header__detailsGroup  course-header__detailsGroup--info  iconBar__group"><ul class="iconBar__list"><li class="iconBar__item"><i class="icon-duration iconBar__icon js-tooltip" title="Ce cours demande en moyenne 30 heures de travail pour être réussi."></i><span class="iconBar__label">30 heures</span></li><li class="iconBar__item"><i class="icon-level iconBar__icon"></i><span class="iconBar__label">
+Moyenne
+</span></li></ul></div><div class="course-header__detailsGroup course-header__detailsGroup--licences iconBar__group"><a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/2.0"><span class="iconBar__label">Licence</span><ul class="iconBar__list"><li class="iconBar__item"><i class="icon-cc iconBar__icon" title="CC"></i></li><li class="iconBar__item"><i class="icon-ccby iconBar__icon" title="BY"></i></li><li class="iconBar__item"><i class="icon-ccnc iconBar__icon" title="NC"></i></li><li class="iconBar__item"><i class="icon-ccsa iconBar__icon" title="SA"></i></li></ul></a></div></div></div></div></div></div>
+<div id="popin-formats-availables" class="popin popin--course-formats-availables">
+<i class="popin__close-button icon-close js-close-button"></i>
+<div class="course-types course-types--withSpace">
+<a class="course-types__item" href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php">
+<i class="icon-desktop course-types__icon"></i>
+</a>
+<a class="course-types__item" href="http://www.eyrolles.com/Informatique/Livre/programmez-en-oriente-objet-en-php-9791090085855?societe=openclassrooms">
+<i class="icon-book course-types__icon"></i>
+</a>
+<a class="course-types__item" href="https://openclassrooms.com/ebooks/programmez-en-oriente-objet-en-php">
+<i class="icon-ebook course-types__icon"></i>
+</a>
+<a class="course-types__item" href="https://openclassrooms.com/courses/1665806/certificate_example" target="_blank">
+<i class="icon-badge course-types__icon js-close-button"></i>
+</a>
+<a class="course-types__item" href="https://openclassrooms.com/premium#discover-premium-plus-offer">
+<i class="icon-mentor course-types__icon"></i>
+</a>
+</div>
+<p>Ce cours est visible <a href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php">gratuitement en ligne</a>.</p>
+<p>
+Ce cours existe en livre papier.
+</p>
+<p>Ce cours existe <a href="https://openclassrooms.com/ebooks/programmez-en-oriente-objet-en-php">en eBook</a>.</p>
+<p>
+Vous pouvez obtenir un certificat de réussite à l'issue de ce cours.
+</p>
+<p>
+Vous pouvez être <a href="https://openclassrooms.com/premium#discover-premium-plus-offer">accompagné et mentoré par un professeur particulier</a> par visioconférence sur ce cours.
+</p>
+<a class="button button--primary js-close-button" href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/les-generateurs-4#">J'ai tout compris !</a>
+</div>
+</header>
+<div class="centered">
+<div class="row">
+<div class="col12 col11-s">
+<nav class="timeline">
+<div class="timeline__inner">
+<span class="timeline__iconContainer">
+<a href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php" title="Retour sur le sommaire du cours" class="roundIcon timeline__roundIcon">
+<i class="icon-home roundIcon__icon"></i>
+</a>
+</span>
+<div class="timeline__steps">
+<span class="timeline__splitChapter"></span>
+<a href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/introduction-a-la-poo" class="timeline__step timeline__step--completed">
+<span class="timeline__stepName">
+Introduction à la POO
+</span>
+</a>
+<a href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/utiliser-la-classe" class="timeline__step timeline__step--completed">
+<span class="timeline__stepName">
+Utiliser la classe
+</span>
+</a>
+<a href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/l-operateur-de-resolution-de-portee" class="timeline__step timeline__step--completed">
+<span class="timeline__stepName">
+L'opérateur de résolution de portée
+</span>
+</a>
+<a href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/manipulation-de-donnees-stockees" class="timeline__step timeline__step--completed">
+<span class="timeline__stepName">
+Manipulation de données stockées
+</span>
+</a>
+<a href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/tp-mini-jeu-de-combat" class="timeline__step">
+<span class="timeline__stepName">
+TP : Mini-jeu de combat
+</span>
+</a>
+<a href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/l-heritage-3" class="timeline__step timeline__step--completed">
+<span class="timeline__stepName">
+L'héritage
+</span>
+</a>
+<a href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/tp-des-personnages-specialises" class="timeline__step">
+<span class="timeline__stepName">
+TP : Des personnages spécialisés
+</span>
+</a>
+<a href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/les-methodes-magiques-3" class="timeline__step">
+<span class="timeline__stepName">
+Les méthodes magiques
+</span>
+</a>
+<span class="timeline__splitChapter"></span>
+<a href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/les-objets-en-profondeur" class="timeline__step">
+<span class="timeline__stepName">
+Les objets en profondeur
+</span>
+</a>
+<a href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/les-interfaces-1" class="timeline__step">
+<span class="timeline__stepName">
+Les interfaces
+</span>
+</a>
+<a href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/les-exceptions-10" class="timeline__step">
+<span class="timeline__stepName">
+Les exceptions
+</span>
+</a>
+<a href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/les-traits-2" class="timeline__step">
+<span class="timeline__stepName">
+Les traits
+</span>
+</a>
+<a href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/l-api-de-reflexivite" class="timeline__step">
+<span class="timeline__stepName">
+L'API de réflexivité
+</span>
+</a>
+<a href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/uml-presentation-1-2" class="timeline__step">
+<span class="timeline__stepName">
+UML : présentation (1/2)
+</span>
+</a>
+<a href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/uml-modelisons-nos-classes-2-2" class="timeline__step">
+<span class="timeline__stepName">
+UML : modélisons nos classes (2/2)
+</span>
+</a>
+<a href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/les-design-patterns" class="timeline__step">
+<span class="timeline__stepName">
+Les design patterns
+</span>
+</a>
+<a href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/tp-un-systeme-de-news" class="timeline__step">
+<span class="timeline__stepName">
+TP : un système de news
+</span>
+</a>
+<a href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/les-generateurs-4" class="timeline__step">
+<span class="timeline__stepName">
+Les générateurs
+</span>
+<span class="timeline__progressMarker"></span>
+</a>
+<a href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/les-closures-2" class="timeline__step">
+<span class="timeline__stepName">
+Les closures
+</span>
+</a>
+<a href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/exercises/390" class="timeline__step">
+<span class="timeline__stepName">
+Quiz : Quiz 2
+</span>
+</a>
+<span class="timeline__splitChapter"></span>
+<a href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/description-de-l-application" class="timeline__step">
+<span class="timeline__stepName">
+Description de l'application
+</span>
+</a>
+<a href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/developpement-de-la-bibliotheque" class="timeline__step">
+<span class="timeline__stepName">
+Développement de la bibliothèque
+</span>
+</a>
+<a href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/le-frontend" class="timeline__step">
+<span class="timeline__stepName">
+Le frontend
+</span>
+</a>
+<a href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/le-backend" class="timeline__step">
+<span class="timeline__stepName">
+Le backend
+</span>
+</a>
+<a href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/gerer-les-formulaires" class="timeline__step">
+<span class="timeline__stepName">
+Gérer les formulaires
+</span>
+</a>
+<a href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/exercises/391" class="timeline__step">
+<span class="timeline__stepName">
+Activité : Créez un système de mise en cache
+</span>
+</a>
+<span class="timeline__splitChapter"></span>
+<a href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/l-operateur-instanceof" class="timeline__step">
+<span class="timeline__stepName">
+L'opérateur instanceof
+</span>
+</a>
+<span class="timeline__splitChapter"></span>
+</div>
+<span class="timeline__iconContainer">
+<a href="https://openclassrooms.com/courses/1665806/certificate_example" title="Certificat de réussite (voir un exemple)" class="roundIcon timeline__roundIcon">
+<i class="icon-trophy roundIcon__icon"></i>
+</a>
+</span>
+</div>
+</nav>
+</div>
+</div>
+</div>
+<div class="centered">
+<div class="contentWithSidebar  spacer  js-contentWithSidebar">
+<main class="contentWithSidebar__content">
+<div class="relative js-sidebar-container">
+<div class="static">
+<h2 itemprop="name" data-part-title="Les générateurs" class="part-title">Les générateurs</h2>
+<section class="row space-bottom js-desktop-sticky-container">
+<div class="col9 col11-s col__small-padding--right">
+<div itemprop="articleBody" data-page-indentifier="/courses/programmez-en-oriente-objet-en-php/les-generateurs-4" class="js-isRestrictablePage js-course-container js-smilize js-userCanWatchVideo">
+<div class="userContent js-userContent">
+<p id="r-2650046" data-claire-element-id="3396641">Les générateurs sont une façon simple et rapide d’implémenter des <em>itérateurs</em> (terme que nous avons vu au cours du chapitre sur les interfaces), permettant ainsi de résoudre des problèmes de performance ou de code à rallonge. Nous allons commencer doucement en découvrant les bases de cet outil, pour ensuite l’explorer plus profondément et découvrir toute sa puissance.</p><p id="r-2650047" data-claire-element-id="7646911">Afin de suivre au mieux ce chapitre, il est <strong>obligatoire</strong> d’avoir bien compris le chapitre portant sur <a href="https://openclassrooms.com/courses/courses/programmez-en-oriente-objet-en-php/les-interfaces-1">les interfaces</a>, et plus particulièrement d’être familier avec <a href="https://openclassrooms.com/courses/courses/programmez-en-oriente-objet-en-php/les-interfaces-1#r-1667173">l’interface<code data-claire-semantic="text">Iterator</code></a>&nbsp;(relisez la définition d’un itérateur si vous l’avez oubliée).</p><aside id="r-2650049" data-claire-element-id="3396644" data-claire-semantic="error"><p id="r-2650048" data-claire-element-id="3396643">Les générateurs ont été implémentés dans la version 5.5 de PHP. Assurez-vous donc d’avoir cette version !</p></aside><h3 id="r-2651014" data-claire-element-id="7944844">Notions de base</h3><h4 id="r-2650389" data-claire-element-id="7646915">Étude de cas</h4><p id="r-2650381" data-claire-element-id="3397361">Définissons ce qu’est un générateur par une étude de cas. Imaginons que vous vouliez parcourir les lignes d’un fichier pour faire une quelconque opération sur chacune d’entre elles. Pour ce faire, vous avez la fonction <a href="http://fr2.php.net/manual/fr/function.file.php">file</a> qui a pour rôle de lire le fichier puis de retourner un tableau dont chaque entrée est une ligne différente. Son utilisation est ainsi plutôt simple :</p><pre id="r-2650382" data-claire-element-id="3397431"><code data-claire-semantic="php">&lt;?php
+$lines = file('MonFichier');
+
+foreach ($lines as $line)
+{
+  // Effectuer une opération sur $line
+}</code></pre><p id="r-2650383" data-claire-element-id="3397363">Comme vous l’avez peut-être remarqué, cela devient vite embêtant si le fichier est gros. Imaginez qu’il fasse des milliers de lignes, chacune comportant des centaines de caractères, ça ne vous embêterait pas de stocker tout ça dans une variable ? Il y a de gros risques pour atteindre la limite de la mémoire allouée pour le script.</p><p id="r-2650384" data-claire-element-id="7646912">Ce qu’il faudrait donc faire, ce serait lire les lignes une par une, sans garder en mémoire la valeur de la précédente ligne. Si l’on veut garder la boucle<code data-claire-semantic="php">foreach</code>&nbsp;pour conserver cet aspect pratique d’utilisation, nous allons donc devoir utiliser un <strong>itérateur</strong>&nbsp;(on vient de voir que le tableau déjà rempli n’est pas la solution, il ne nous reste donc plus beaucoup d’options !). Voilà à quoi pourrait ressembler notre classe :</p><pre id="r-2650385" data-claire-element-id="7646913"><code data-claire-semantic="php">&lt;?php
+class FileReader implements Iterator
+{
+  protected $file;
+ 
+  protected $currentLine;
+  protected $currentKey;
+ 
+  public function __construct($file)
+  {
+    if (!$this-&gt;file = fopen($file, 'r'))
+    {
+      throw new RuntimeException('Impossible d\’ouvrir "' . $file . '"');
+    }
+  }
+ 
+  // Revient à la première ligne
+  public function rewind()
+  {
+    fseek($this-&gt;file, 0);
+    $this-&gt;currentLine = fgets($this-&gt;file);
+    $this-&gt;currentKey = 0;
+  }
+ 
+  // Vérifie que la ligne actuelle existe bien
+  public function valid()
+  {
+    return $this-&gt;currentLine !== false;
+  }
+ 
+  // Retourne la ligne actuelle
+  public function current()
+  {
+    return $this-&gt;currentLine;
+  }
+ 
+  // Retourne la clé actuelle
+  public function key()
+  {
+    return $this-&gt;currentKey;
+  }
+ 
+  // Déplace le curseur sur la ligne suivante
+  public function next()
+  {
+    if ($this-&gt;currentLine !== false)
+    {
+      $this-&gt;currentLine = fgets($this-&gt;file);
+      $this-&gt;currentKey++;
+    }
+  }
+}</code></pre><p id="r-2650386" data-claire-element-id="7646914">L’utilisation de cet itérateur est aussi simple qu’avec la fonction<code data-claire-semantic="php">file</code>&nbsp;:</p><pre id="r-2650387" data-claire-element-id="3397432"><code data-claire-semantic="php">&lt;?php
+$fileReader = new FileReader('MonFichier');
+
+foreach ($fileReader as $line)
+{
+  // Effectuer une opération sur $line
+}</code></pre><p id="r-2650388" data-claire-element-id="3397368">Comme vous le voyez, bien qu’on ait fait une grande optimisation au niveau de la mémoire utilisée, nous avons pourtant un code bien plus long : la création d’itérateur telle que vous la connaissez est longue, surtout pour ne faire qu’une petite opération comme c’est le cas ici. C’est exactement à cela que remédient les générateurs : ils optimisent l’utilisation de la mémoire tout en conservant un code clair et concis.</p><h4 id="r-2651013" data-claire-element-id="7944843">Les générateurs</h4><p id="r-2650390" data-claire-element-id="7646916">Entrons maintenant dans le vif du sujet. Un générateur, comme brièvement expliqué, permet la création d’itérateur de manière simple et efficace. Regardons de nouveau l’exemple de la classe précédemment créée. Si nous voulions résoudre ce problème de longueur, que ferions-nous ? La première idée serait de ne pas avoir à écrire de classe. En effet, si on s’attarde un peu sur le contenu des méthodes, seule la méthode<code data-claire-semantic="php">next</code>&nbsp;est vraiment spécifique à notre cas : c’est dans cette méthode qu’on <strong>construit le tableau à parcourir</strong>. Les autres méthodes (<code data-claire-semantic="php">rewind</code>&nbsp;,<code data-claire-semantic="php">valid</code>&nbsp;,<code data-claire-semantic="php">current</code>&nbsp;&nbsp;et<code data-claire-semantic="php">key</code>&nbsp;) ne sont pas spécifiques à ce qu’on fait. En effet, elles permettent juste de traiter le tableau qu’on a construit, mais on ne fait rien d’exceptionnel : il s’agit d’un tableau classique que <strong>PHP peut très bien parcourir tout seul</strong>.</p><p id="r-2650391" data-claire-element-id="3397371">C’est de cette idée que sont nés les générateurs : n’écrire qu’une fonction qui est chargée de construire le tableau, sans se soucier de toutes les autres fonctions permettant d’obtenir l’entrée courante du tableau ou de savoir si le tableau contient une autre entrée pour continuer son parcours par exemple.</p><p id="r-2650392" data-claire-element-id="7646917">Pour créer un générateur, nous n’allons ainsi écrire qu’une seule fonction. Dans cette fonction, on va parcourir les lignes du fichier et, pour chaque ligne, on va indiquer à PHP qu’il s’agit de la valeur de la prochaine entrée du tableau grâce au mot-clé<code data-claire-semantic="php">yield</code>&nbsp;&nbsp;(retenez-le bien, vous allez le voir pas mal de fois dans la suite de ce chapitre !). On va donc « construire » petit à petit notre tableau en lui ajoutant des entrées au fur et à mesure (nous verrons plus tard et plus en détails comment cela fonctionne).</p><pre id="r-2650416" data-claire-element-id="3397436"><code data-claire-semantic="php">&lt;?php
+function readLines($fileName)
+{
+  // Si le fichier est inexistant, on ne continue pas
+  if (!$file = fopen($fileName, 'r'))
+  {
+    return;
+  }
+ 
+  // Tant qu'il reste des lignes à parcourir
+  while (($line = fgets($file)) !== false)
+  {
+    // On dit à PHP que cette ligne du fichier fait office de « prochaine entrée du tableau »
+    yield $line;
+  }
+ 
+  fclose($file);
+}</code></pre><p id="r-2650417" data-claire-element-id="7646918">Cette fonction est un peu particulière (si vous ne la comprenez pas tout de suite - et ce serait normal -, continuez, vous comprendrez). Rappelez-vous ce que je vous ai dit plus haut : le but des générateurs est de créer facilement des <strong>itérateurs</strong>. Un générateur <strong>est</strong> un itérateur. Et qu’est-ce qu’un itérateur ? Un itérateur est une instance d’une classe implémentant<code data-claire-semantic="php">Iterator</code>&nbsp;. Donc… oui, un générateur est une instance d’une classe implémentant<code data-claire-semantic="php">Iterator</code>&nbsp;! Or notre fonction est un générateur car elle contient le mot-clé<code data-claire-semantic="php">yield</code>&nbsp;dedans (c’est automatique : toute fonction contenant ce mot-clé est considérée comme un générateur par PHP).</p><p id="r-2650418" data-claire-element-id="7646919">Vous ne comprenez peut-être pas où je veux en venir. Ce que je veux dire, c’est que cette fonction n’en est une qu’à première vue, mais ce que vous venez d’écrire est en fait une sorte de classe : cette fonction que vous avez écrite est « transformée » par PHP en une instance de la classe<code data-claire-semantic="php">Generator</code>. Besoin d’une preuve ? Essayez ceci :</p><pre id="r-2650419" data-claire-element-id="3397439"><code data-claire-semantic="php">&lt;?php
+var_dump(readLines('MonFichier'));</code></pre><p id="r-2650420" data-claire-element-id="7646920">Me croyez-vous maintenant ? Votre fonction n’en est ainsi pas vraiment une, il ne s’agit ni plus ni moins d’une <strong>fonction générateur</strong> qui, lorsque vous l’appelez, retourne une instance de<code data-claire-semantic="php">Generator</code>, instance que vous pourrez ainsi parcourir. Cette classe implémente l’interface<code data-claire-semantic="php">Iterator</code>&nbsp;et gère de base les méthodes s’occupant du parcours du « tableau ».</p><aside id="r-2650422" data-claire-element-id="3397442" data-claire-semantic="error"><p id="r-2650421" data-claire-element-id="3397441">Il est impossible de cloner un générateur.</p></aside><p id="r-2650423" data-claire-element-id="7646921">Si vous avez effectué le test précédent, vous avez pu voir que le fait d’avoir appelé notre fonction<code data-claire-semantic="php">readLines</code>&nbsp;n’a en rien lancé l’exécution de celle-ci. Il est impossible de l’invoquer : si vous l’appelez comme on l’a fait, vous obtiendrez juste l’instance de<code data-claire-semantic="php">Generator</code>&nbsp;associée à ce générateur.</p><p id="r-2650424" data-claire-element-id="3397444">Maintenant qu’on a un itérateur, nous n’avons qu’à le parcourir !</p><pre id="r-2650425" data-claire-element-id="3397445"><code data-claire-semantic="php">&lt;?php
+$generator = readLines('MonFichier');
+
+foreach ($generator as $line)
+{
+  // Effectuer une opération sur $line
+}</code></pre><p id="r-2650426" data-claire-element-id="3397446">Je crois percevoir en vous une légère perplexité. Plus précisément, il est possible que vous ne compreniez pas, <strong>étape par étape</strong>, ce qu’il se passe. Si je détaille le dernier script, voici ce que ça donne.</p><p id="r-2650666" data-claire-element-id="7646922">On commence par récupérer l’instance de<code data-claire-semantic="php">Generator</code>&nbsp;associée au générateur. La variable<code data-claire-semantic="php">$generator</code>&nbsp;est donc un itérateur. <strong>La fonction n’a pas encore été exécutée</strong>. Vient ensuite le parcours de l'itérateur grâce à la boucle<code data-claire-semantic="php">foreach</code>&nbsp;:</p><ol id="r-2650677" data-claire-element-id="7646931"><li id="r-2650668" data-claire-element-id="7646924"><p id="r-2650667" data-claire-element-id="7646923">Première itération : la fonction commence à s’exécuter. PHP continue l’exécution de la fonction jusqu’à ce qu’il rencontre un<code data-claire-semantic="php">yield</code>&nbsp;.</p></li><li id="r-2650670" data-claire-element-id="3398065"><p id="r-2650669" data-claire-element-id="3398064">PHP rencontre le yield&nbsp;suivi d’une chaine de caractères (il s’agit de la ligne actuelle du fichier). Il va donc dire à la boucle foreach&nbsp;&nbsp;: « tiens, la prochaine valeur est cette chaine de caractères ».</p></li><li id="r-2650672" data-claire-element-id="7646926"><p id="r-2650671" data-claire-element-id="7646925">PHP arrête l’exécution de la fonction (il ne va pas plus loin que le<code data-claire-semantic="php">yield</code>&nbsp;qu’il a rencontré).</p></li><li id="r-2650674" data-claire-element-id="7646928"><p id="r-2650673" data-claire-element-id="7646927">La boucle<code data-claire-semantic="php">foreach</code>&nbsp;peut donc commencer, et la valeur courante du tableau (ici représentée par la variable<code data-claire-semantic="php">$line</code>) n’est autre que la valeur spécifiée avec le<code data-claire-semantic="php">yield</code>&nbsp;dans la fonction.</p></li><li id="r-2650676" data-claire-element-id="7646930"><p id="r-2650675" data-claire-element-id="7646929">Une fois l’itération de la boucle<code data-claire-semantic="php">foreach</code>&nbsp;terminée, on recommence : PHP va continuer l’exécution de la fonction là où il s’était arrêté, puis s’arrêtera de nouveau lorsqu’il rencontrera un<code data-claire-semantic="php">yield</code>. On retourne ainsi à l’étape 2, et ainsi de suite jusqu’à ce que la fonction se termine.</p></li></ol><p id="r-2650678" data-claire-element-id="3398073">Besoin d’un schéma pour mieux visualiser ce qu’il se passe ?</p><figure id="r-2651012" data-claire-element-id="7944842"><img id="r-2650679" data-claire-element-id="3398074" src="./Les générateurs - Programmez en orienté objet en PHP_files/Screenshot - 26122014 - 14-59-49.png" alt="Fonctionnement du parcours d&#39;un générateur"><figcaption>Fonctionnement du parcours d'un générateur</figcaption></figure><p id="r-2650682" data-claire-element-id="7646934">Bien sûr, puisque<code data-claire-semantic="php">readLines('MonFichier')</code>&nbsp;&nbsp;renvoie un identifiant d’objet, nous n’avons pas besoin de passer par une variable : nous pouvons directement parcourir ce résultat avec<code data-claire-semantic="php">foreach</code>.</p><pre id="r-2650683" data-claire-element-id="3398078"><code data-claire-semantic="php">&lt;?php
+foreach (readLines('MonFichier') as $line)
+{
+  // Effectuer une opération sur $line
+}</code></pre><p id="r-2650684" data-claire-element-id="3398079">De cette façon, on a réglé le problème de la mémoire saturée (PHP ne garde en mémoire qu’une ligne à la fois ; quand il passe à la ligne suivante, il a oublié la précédente), ainsi que le problème du code à rallonge. Voici donc une première introduction aux générateurs !</p><h3 id="r-2651023" data-claire-element-id="7944854">Zoom sur les valeurs retournées</h3><h4 id="r-2651019" data-claire-element-id="7944849">Retourner des clés avec les valeurs</h4><p id="r-2650685" data-claire-element-id="7646937">Il y a différentes façons de retourner des valeurs avec<code data-claire-semantic="php">yield</code>. Dans l’exemple précédent, nous n’avions retourné qu’une simple valeur (il s’agissait d’une chaîne de caractères, mais vous pouvez retourner n’importe quoi). Or, comme vous le savez, dans une boucle<code data-claire-semantic="php">foreach</code>, il est possible de récupérer la clé associée à l’entrée actuellement parcourue du tableau. Par défaut, lorsque vous faites un<code data-claire-semantic="php">yield</code>, PHP va incrémenter son compteur de sorte à fournir des clés numériques, comme pour les tableaux (la première valeur est disponible à la clé 0, la deuxième à la clé 1, etc.). Essayez par vous-mêmes :</p><pre id="r-2650902" data-claire-element-id="3398656"><code data-claire-semantic="php">&lt;?php
+function generator()
+{
+  for ($i = 0; $i &lt; 10; $i++)
+  {
+    yield 'Itération n°'.$i;
+  }
+}
+
+foreach (generator() as $key =&gt; $val)
+{
+  echo $key, ' =&gt; ', $val, '&lt;br /&gt;';
+}</code></pre><p id="r-2650903" data-claire-element-id="3398657">Ce qui vous affichera :</p><figure id="r-2651016" data-claire-element-id="7944846"><img id="r-2650904" data-claire-element-id="3398658" src="./Les générateurs - Programmez en orienté objet en PHP_files/Screenshot - 26122014 - 15-10-34.png" alt="Résultat affiché par le script"><figcaption>Résultat affiché par le script</figcaption></figure><p id="r-2650907" data-claire-element-id="3398661">Sachez qu’il est possible de modifier la clé associée à la valeur que vous retournez. Pour cela, vous devez suivre cette syntaxe :</p><pre id="r-2650908" data-claire-element-id="3398662"><code data-claire-semantic="php">&lt;?php
+yield $key =&gt; $val;</code></pre><p id="r-2650909" data-claire-element-id="3398663">Voici un exemple simple mettant en application cette nouvelle syntaxe.</p><pre id="r-2650910" data-claire-element-id="3398664"><code data-claire-semantic="php">&lt;?php
+function generator()
+{
+  // On retourne ici des chaines de caractères assignées à des clés
+  yield 'a' =&gt; 'Itération 1';
+  yield 'b' =&gt; 'Itération 2';
+  yield 'c' =&gt; 'Itération 3';
+  yield 'd' =&gt; 'Itération 4';
+}
+
+foreach (generator() as $key =&gt; $val)
+{
+  echo $key, ' =&gt; ', $val, '&lt;br /&gt;';
+}</code></pre><p id="r-2650911" data-claire-element-id="3398665">Ce qui vous affichera le résultat suivant.</p><figure id="r-2651018" data-claire-element-id="7944848"><img id="r-2650912" data-claire-element-id="3398666" src="./Les générateurs - Programmez en orienté objet en PHP_files/Screenshot - 26122014 - 15-13-58.png" alt="Résultat affiché par le script"><figcaption>Résultat affiché par le script</figcaption></figure><p id="r-2650915" data-claire-element-id="7646942">Nous venons ainsi de voir une deuxième utilisation de<code data-claire-semantic="php">yield</code>. Il ne nous restera ainsi qu’une troisième façon que nous verrons dans la prochaine partie.</p><h4 id="r-2651022" data-claire-element-id="7944853">Retourner une référence</h4><aside id="r-2650925" data-claire-element-id="7944821" data-claire-semantic="information"><p id="r-2650924" data-claire-element-id="7944820">Si vous ne savez pas ce que sont les références en PHP, lisez <a href="https://openclassrooms.com/courses/allez-plus-loin-avec-les-variables">ce tutoriel</a>.</p></aside><p id="r-2650926" data-claire-element-id="3398702">Imaginez que vous ayez une classe contenant un tableau. Vous voulez pouvoir parcourir ce tableau depuis l’extérieur de la classe, tout en pouvant modifier ses valeurs. Pour ce faire, il faudra passer ces valeurs par <strong>référence</strong>. Commençons avec une classe simple qui donne la possibilité de parcourir le tableau qu’elle a en attribut (sans parler de référence).</p><pre id="r-2650927" data-claire-element-id="3398703"><code data-claire-semantic="php">&lt;?php
+class SomeClass
+{
+  protected $attr;
+
+  public function __construct()
+  {
+    $this-&gt;attr = ['Un', 'Deux', 'Trois', 'Quatre'];
+  }
+
+  public function generator()
+  {
+    foreach ($this-&gt;attr as $val)
+    {
+      yield $val;
+    }
+  }
+}</code></pre><p id="r-2650928" data-claire-element-id="7646946">Je vous laisse le soin d’écrire la boucle<code data-claire-semantic="php">foreach</code>&nbsp;sur notre générateur. Un petit coup de pouce si vous êtes coincé :</p><pre id="r-2650929" data-claire-element-id="3398705"><code data-claire-semantic="php">&lt;?php
+$obj = new SomeClass;
+
+foreach ($obj-&gt;generator() as $val)
+{
+  var_dump($val);
+}</code></pre><p id="r-2650930" data-claire-element-id="7944850">Le but de la manoeuvre est de faire en sorte que l’on puisse modifier<code data-claire-semantic="php">$val</code>&nbsp;&nbsp;dans notre boucle<code data-claire-semantic="php">foreach</code>. Pour ce faire, nous allons dire à notre fonction qu’elle doit renvoyer des références. Comme vous le savez, pour qu’une fonction renvoie une référence, on doit placer un <strong>&amp;</strong> devant son nom (si vous ne le saviez pas, allez relire <a href="https://openclassrooms.com/courses/allez-plus-loin-avec-les-variables#r-535472">ce tutoriel</a>). Pour les générateurs, on fait pareil : lorsqu’on ajoute un <strong>&amp;</strong> devant son nom, cela voudra dire que toutes les variables retournées par<code data-claire-semantic="php">yield</code>&nbsp;seront retournées par référence. C’est cette étape la plus importante, et c’est celle-là qu’il faut retenir.</p><p id="r-2650931" data-claire-element-id="7646948">Si l’on revient à notre exemple, cela ne suffira pas. En effet, dans la boucle<code data-claire-semantic="php">foreach</code>&nbsp;de notre générateur, il faut récupérer les variables du tableau par référence aussi. Bien sûr, il en va de même pour la boucle<code data-claire-semantic="php">foreach</code>&nbsp;parcourant notre générateur. On obtiendrait donc un code ressemblant à celui-ci.</p><pre id="r-2650932" data-claire-element-id="3398750"><code data-claire-semantic="php">&lt;?php
+class SomeClass
+{
+  protected $attr;
+
+  public function __construct()
+  {
+    $this-&gt;attr = ['Un', 'Deux', 'Trois', 'Quatre'];
+  }
+
+  // Le &amp; avant le nom du générateur indique que les valeurs retournées sont des références
+  public function &amp;generator()
+  {
+    // On cherche ici à obtenir les références des valeurs du tableau pour les retourner
+    foreach ($this-&gt;attr as &amp;$val)
+    {
+      yield $val;
+    }
+  }
+
+  public function attr()
+  {
+    return $this-&gt;attr;
+  }
+}
+
+$obj = new SomeClass;
+
+// On parcourt notre générateur en récupérant les entrées par référence
+foreach ($obj-&gt;generator() as &amp;$val)
+{
+  // On effectue une opération quelconque sur notre valeur
+  $val = strrev($val);
+}
+
+echo '&lt;pre&gt;';
+var_dump($obj-&gt;attr());
+echo '&lt;/pre&gt;';</code></pre><p id="r-2650933" data-claire-element-id="3398709">Le résultat affiché devrait être celui-ci.</p><figure id="r-2651021" data-claire-element-id="7944852"><img id="r-2650939" data-claire-element-id="3398730" src="./Les générateurs - Programmez en orienté objet en PHP_files/Screenshot - 26122014 - 15-24-48.png" alt="Résultat affiché par le script"><figcaption>Résultat affiché par le script</figcaption></figure><p id="r-2650942" data-claire-element-id="3398733">Ce qui prouve bien que le tableau a été modifié en dehors de la classe, mettant ainsi en avant l’utilisation des références.</p><h3 id="r-2651026" data-claire-element-id="7944865">Les coroutines</h3><p id="r-2650955" data-claire-element-id="7646953">Si vous jetez un œil à la classe <a href="http://fr2.php.net/generator">Generator</a> qui est, je vous le rappelle, la classe dont chaque générateur est une instance, vous pouvez vous apercevoir qu’elle dispose de 3 méthodes de plus que <a href="http://fr2.php.net/manual/fr/class.iterator.php">Iterator</a> :<code data-claire-semantic="php">send</code>,<code data-claire-semantic="php">throw</code>&nbsp;&nbsp;et<code data-claire-semantic="php">__wakeup</code>. Nous allons ici étudier les deux premières qui méritent notre attention.</p><h4 id="r-2651025" data-claire-element-id="7944857">La méthode « send »</h4><p id="r-2650956" data-claire-element-id="3398775">Commençons par cette méthode très intéressante (et sans doute un peu difficile à cerner au début).</p><p id="r-2650957" data-claire-element-id="3398776">Imaginons un système « inversé ». Actuellement, le générateur <strong>fournit</strong> des données. Et bien sachez qu’il est possible de faire l’inverse, c’est-à-dire <strong>envoyer</strong> des données au générateur (nous verrons un intérêt plus tard).</p><p id="r-2650958" data-claire-element-id="3398777">Pour ce faire, je vais vous montrer un exemple tout simple.</p><pre id="r-2650959" data-claire-element-id="3398778"><code data-claire-semantic="php">&lt;?php
+function generator()
+{
+  echo yield;
+}
+
+$gen = generator();
+$gen-&gt;send('Hello world !');</code></pre><p id="r-2650960" data-claire-element-id="3398779">Si vous testez ce code, vous verrez que la phrase <em>Hello world !</em> s’affichera sur votre écran. Alors, que s’est-il passé ?</p><p id="r-2650961" data-claire-element-id="7646954">Nous commençons par simplement récupérer le générateur dans notre variable<code data-claire-semantic="php">$gen</code>&nbsp;. Ensuite, nous invoquons la méthode<code data-claire-semantic="php">send</code>&nbsp;&nbsp;en lui envoyant <em>Hello world !</em> en argument. Lorsque vous invoquez<code data-claire-semantic="php">send</code>&nbsp;pour la première fois, PHP va commencer l’exécution de la fonction jusqu’au prochain<code data-claire-semantic="php">yield</code>&nbsp;qu’il rencontre. Lorsqu’il en rencontre un (peu importe si vous avez spécifié une valeur à retourner ou non), PHP « remplacera » ce<code data-claire-semantic="php">yield</code>&nbsp;par la valeur spécifiée dans la méthode<code data-claire-semantic="php">send</code>. Une fois fait, la fonction <strong>continue son exécution jusqu’au prochain<code data-claire-semantic="php">yield</code></strong>, puis PHP la met en pause <strong>juste avant</strong> le prochain<code data-claire-semantic="php">yield</code>. S’il ne s’agit pas du premier appel à la méthode<code data-claire-semantic="php">send</code>, PHP reprendra l’exécution de la fonction là où il s’était arrêté, puis refera la même opération que précédemment, etc.</p><p id="r-2650962" data-claire-element-id="7646955">Avant d’aller plus loin, je voudrais faire une petite parenthèse sur la syntaxe à respecter. En effet, vous êtes maintenant au courant qu’il y a 2 cas d’utilisation du mot-clé<code data-claire-semantic="php">yield</code>&nbsp;: soit il est utilisé dans une expression, c’est-à-dire qu’on s’intéresse au résultat qu’il retournera (comme on vient juste de le faire avec le<code data-claire-semantic="php">echo yield</code>&nbsp;), soit il est utilisé seul et constitue à lui-même une instruction (comme on faisait avant, c’est-à-dire en faisant un<code data-claire-semantic="php">yield $data;</code>&nbsp;par exemple).</p><p id="r-2650963" data-claire-element-id="7646956">Dans le cas où le<code data-claire-semantic="php">yield</code>&nbsp;est utilisé dans le contexte d’une expression, des parenthèses sont requises autour de lui, sauf si<code data-claire-semantic="php">yield</code>&nbsp;est utilisé seul. Dans l’autre cas, les parenthèses ne sont pas nécessaires.</p><p id="r-2650964" data-claire-element-id="3398783">Voici un petit exemple mettant en oeuvre les 3 cas différents à distinguer :</p><pre id="r-2650970" data-claire-element-id="3398807"><code data-claire-semantic="php">&lt;?php
+// Le yield n'est pas utilisé dans une expression : pas de parenthèses
+yield 'Hello world !';
+
+// Le yield est ici utilisé dans une expression, mais il est utilisé seul : pas de parenthèses
+$data = yield;
+
+// Le yield est ici utilisé dans une expression : les parenthèses sont requises
+$data = (yield 'Hello world !');</code></pre><p id="r-2650971" data-claire-element-id="3398808">N’hésitez pas à faire plusieurs tests pour vous faire la main ! En voici déjà un qui met en avant quelques situations.</p><pre id="r-2650972" data-claire-element-id="3398809"><code data-claire-semantic="php">&lt;?php
+function generator()
+{
+  echo (yield 'Hello world !');
+  echo yield;
+}
+
+$gen = generator();
+
+ // On envoie « Message 1 »
+// PHP va donc l'afficher grâce au premier echo du générateur
+$gen-&gt;send('Message 1');
+
+// On envoie « Message 2 »
+// PHP reprend l'exécution du générateur et affiche le message grâce au 2ème echo
+$gen-&gt;send('Message 2');
+
+// On envoie « Message 3 »
+// La fonction générateur s’était déjà terminée, donc rien ne se passe
+$gen-&gt;send('Message 3');</code></pre><aside id="r-2650974" data-claire-element-id="7646958" data-claire-semantic="information"><p id="r-2650973" data-claire-element-id="7646957">Si vous parcourez votre générateur et qu’il fait face à un<code data-claire-semantic="php">yield;</code>&nbsp;(l’instruction qu’on vient juste de voir), alors la valeur retournée sera<code data-claire-semantic="php">NULL</code>&nbsp;.</p></aside><p id="r-2650975" data-claire-element-id="3398812">Lorsque l’on utilise les générateurs de cette façon (c’est-à-dire qu’on les utilise pour prendre des valeurs et non en retourner), on parle de <strong>générateur inverse</strong> ou encore de <strong>coroutine</strong>.</p><p id="r-2650976" data-claire-element-id="3398844">Voyons maintenant un exemple d’utilisation. Je préfère vous prévenir à l’avance : il s’agit de quelque chose de plutôt difficile à cerner (surtout si vous avez commencé ce chapitre dans les 20 dernières minutes). Il est donc <strong>normal</strong> que vous ne compreniez pas tout ce qui suit du premier coup : si vous bloquez, passez à la suite, puis revenez-y dans quelques jours !</p><p id="r-2650977" data-claire-element-id="3398845">Nous allons ici voir comment on pourrait faire un système <strong>multitâche</strong>. Concrètement, on va faire en sorte de pouvoir exécuter des fonctions « en parallèle », c’est-à-dire des fonctions qui se mettent en pause chacun leur tour afin qu’une autre puise poursuivre son exécution.</p><p id="r-2650978" data-claire-element-id="3398846">On va donc créer une classe dont le rôle sera de gérer ces tâches, c’est-à-dire qu’elle possédera une liste de tâches et sera capable de les exécuter en parallèle. Pour des raisons pratiques, cette liste sera sous la forme d’une instance de <a href="http://fr2.php.net/manual/fr/class.splqueue.php">SplQueue</a>. Cette classe nous permettra de gérer facilement notre liste de tâches grâce aux méthodes <a href="http://fr2.php.net/manual/fr/splqueue.enqueue.php">enqueue</a>, <a href="http://fr2.php.net/manual/fr/splqueue.dequeue.php">dequeue</a> et <a href="http://fr2.php.net/manual/fr/spldoublylinkedlist.isempty.php">isEmpty</a>, permettant respectivement d’ajouter un élément en fin de liste, de supprimer le premier élément de la liste et de savoir si la liste est vide.</p><p id="r-2650979" data-claire-element-id="7646959">Commençons par écrire la base de notre classe<code data-claire-semantic="php">TaskRunner</code>&nbsp;dont on vient de parler.</p><pre id="r-2650985" data-claire-element-id="3398848"><code data-claire-semantic="php">&lt;?php
+class TaskRunner
+{
+  protected $tasks;
+
+  public function __construct()
+  {
+    // On initialise la liste des tâches
+    $this-&gt;tasks = new SplQueue;
+  }
+
+  public function addTask(Generator $task)
+  {
+    // On ajoute la tâche à la fin de la liste
+    $this-&gt;tasks-&gt;enqueue($task);
+  }
+  
+  public function run()
+  {
+    // On verra ici ce qu’on mettra
+  }
+}</code></pre><p id="r-2650052" data-claire-element-id="7646960">&nbsp;</p><p id="r-2651050" data-claire-element-id="7646961">Vous devez sans doute vous demander comment il peut être possible d’exécuter deux fonctions (ou plus) en parallèle. L’astuce ici se fera bien entendu à l’aide de<code data-claire-semantic="text">yield</code>&nbsp;dans les fonctions représentant les tâches, afin de les mettre en pause régulièrement. Le principe sera donc le suivant.</p><p id="r-2651051" data-claire-element-id="7646962">On a une liste de tâches qu’on parcourt tant qu’elle n’est pas vide (on a la méthode <a href="http://fr2.php.net/manual/fr/spldoublylinkedlist.isempty.php">isEmpty</a> à notre disposition). À chaque nouvelle tâche, on va invoquer<code data-claire-semantic="text">send</code>&nbsp;sur cette tâche en lui envoyant les données dont elle a besoin (dans notre cas, on va se contenter d’envoyer <em>« Hello world ! »</em> pour garder quelque chose de simple). Ensuite, il faut enlever cette tâche du haut de la liste grâce à <a href="http://fr2.php.net/manual/fr/splqueue.dequeue.php">dequeue</a> (cette méthode renvoie la valeur de l’élément supprimé, donc on va d’abord l’appeler afin de récupérer la tâche actuelle puis ensuite appeler<code data-claire-semantic="text">send</code>). Enfin, on va voir si la tâche est finie. Si elle n’est pas finie, il nous suffit de rajouter la tâche à la fin de la liste grâce à <a href="http://fr2.php.net/manual/fr/splqueue.enqueue.php">enqueue</a>. Pour cela, n’oubliez pas ce que sont nos tâches : ce sont des <strong>générateurs</strong>, donc des <strong>itérateurs</strong>. Par conséquent, vous avez à votre disposition la méthode<code data-claire-semantic="text">valid</code>&nbsp;permettant de vérifier s’il y a une prochaine valeur (dans notre cas, cela revient à vérifier s’il y a un prochain<code data-claire-semantic="text">yield</code>, donc de vérifier si la tâche a encore quelque chose à faire).</p><p id="r-2651052" data-claire-element-id="7646963">On est donc dans la capacité d’écrire notre méthode<code data-claire-semantic="php">run</code>&nbsp;:</p><pre id="r-2651053" data-claire-element-id="3398997"><code data-claire-semantic="php">&lt;?php
+class TaskRunner
+{
+  protected $tasks;
+
+  public function __construct()
+  {
+    // On initialise la liste des tâches
+    $this-&gt;tasks = new SplQueue;
+  }
+
+  public function addTask(Generator $task)
+  {
+    // On ajoute la tâche à la fin de la liste
+    $this-&gt;tasks-&gt;enqueue($task);
+  }
+
+  public function run()
+  {
+    // Tant qu’il y a toujours au moins une tâche à exécuter
+    while (!$this-&gt;tasks-&gt;isEmpty())
+    {
+      // On enlève la première tâche et on la récupère au passage
+      $task = $this-&gt;tasks-&gt;dequeue();
+
+      // On exécute la prochaine étape de la tâche
+      $task-&gt;send('Hello world !');
+
+      // Si la tâche n’est pas finie, on la replace en fin de liste
+      if ($task-&gt;valid())
+      {
+        $this-&gt;addTask($task);
+      }
+    }
+  }
+}</code></pre><p id="r-2651054" data-claire-element-id="3398998">Vous pouvez essayer ce code avec des tâches simples comme celles-ci.</p><pre id="r-2651055" data-claire-element-id="3398999"><code data-claire-semantic="php">&lt;?php
+$taskRunner = new TaskRunner;
+
+function task1()
+{
+  for ($i = 1; $i &lt;= 2; $i++)
+  {
+    $data = yield;
+    echo 'Tâche 1, itération ', $i, ', valeur envoyée : ', $data, '&lt;br /&gt;';
+  }
+}
+
+function task2()
+{
+  for ($i = 1; $i &lt;= 6; $i++)
+  {
+    $data = yield;
+    echo 'Tâche 2, itération ', $i, ', valeur envoyée : ', $data, '&lt;br /&gt;';
+  }
+}
+
+function task3()
+{
+  for ($i = 1; $i &lt;= 4; $i++)
+  {
+    $data = yield;
+    echo 'Tâche 3, itération ', $i, ', valeur envoyée : ', $data, '&lt;br /&gt;';
+  }
+}
+
+$taskRunner-&gt;addTask(task1());
+$taskRunner-&gt;addTask(task2());
+$taskRunner-&gt;addTask(task3());
+
+$taskRunner-&gt;run();</code></pre><p id="r-2651056" data-claire-element-id="3399000">Vous devriez donc voir que chaque tâche s’est exécuté en parallèle en analysant le résultat affiché :</p><figure id="r-2651067" data-claire-element-id="7944856"><img id="r-2651065" data-claire-element-id="3399024" src="./Les générateurs - Programmez en orienté objet en PHP_files/Screenshot - 26122014 - 16-33-28.png" alt="Résultat affiché par le script"><figcaption>Résultat affiché par le script</figcaption></figure><p id="r-2651068" data-claire-element-id="3399027">Voilà donc cet exemple terminé. N’hésitez pas à le relire pour bien cerner le principe ! Une fois que vous avez bien compris ce qui se passait, je vous encourage à vous appuyer sur cet exemple pour faire un système plus poussé (envoyer des données spécifiques aux tâches, définir un ordre de priorité, etc.)</p><h4 id="r-2651069" data-claire-element-id="7944864">La méthode « throw »</h4><p id="r-2651131" data-claire-element-id="7646967">La méthode<code data-claire-semantic="php">throw</code>&nbsp;permet de lancer une exception à l’emplacement du<code data-claire-semantic="php">yield</code>&nbsp;dans le générateur. L’idée est la même que pour<code data-claire-semantic="php">send</code>&nbsp;: lorsque<code data-claire-semantic="php">throw</code>&nbsp;&nbsp;est appelée, PHP démarre (ou continue) l’exécution du générateur jusqu’au prochain<code data-claire-semantic="php">yield</code>, et lancera une exception à cet endroit précis. Cette méthode accepte un seul et unique argument : l’exception à lancer (donc une instance de<code data-claire-semantic="php">Exception</code>&nbsp; ou une instance d'une classe héritant de<code data-claire-semantic="php">Exception</code>&nbsp;).</p><p id="r-2651132" data-claire-element-id="3399158">Voyez vous-mêmes par cet exemple :</p><pre id="r-2651133" data-claire-element-id="3399159"><code data-claire-semantic="php">&lt;?php
+function generator()
+{
+  echo "Début\n";
+  yield;
+  echo "Fin";
+}
+
+$gen = generator();
+$gen-&gt;throw(new Exception('Test'));</code></pre><p id="r-2651134" data-claire-element-id="3399160">À votre écran doit donc s’afficher quelque chose comme ça.</p><figure id="r-2651137" data-claire-element-id="7944859"><img id="r-2651135" data-claire-element-id="3399161" src="./Les générateurs - Programmez en orienté objet en PHP_files/Screenshot - 26122014 - 16-41-30.png" alt="Résultat affiché par le script"><figcaption>Résultat affiché par le script</figcaption></figure><p id="r-2651138" data-claire-element-id="7646970">Cela montre que notre fonction s’est bien exécutée jusqu’au premier<code data-claire-semantic="php">yield</code>, et dès que PHP y est arrivé, il a lancé l’exception. Pour l’attraper, vous savez déjà faire ! Ici, aux yeux de PHP, c’est le<code data-claire-semantic="php">yield</code>&nbsp;qui va causer le lancement de l’exception. Par conséquent, c’est le<code data-claire-semantic="php">yield</code>&nbsp;qui va devoir être entouré du bloc<code data-claire-semantic="php">try</code>.</p><p id="r-2651139" data-claire-element-id="3399165">Pour vous familiariser un peu avec ce concept, voici un petit exemple qui devrait vous aider à comprendre.</p><pre id="r-2651140" data-claire-element-id="3399166"><code data-claire-semantic="php">&lt;?php
+function generator()
+{
+  // On fait une boucle de 5 yield pour garder quelque chose de simple
+  for ($i = 0; $i &lt; 5; ++$i)
+  {
+    // On indique qu’on vient de rentrer dans la ième itération
+    echo "Début $i&lt;br /&gt;";
+    
+    // On essaye « d’attraper » la valeur qu’on nous a donnée
+    try
+    {
+      yield;
+    }
+    catch (Exception $e)
+    {
+      // Si une exception a été levée, on indique son numéro
+      echo "Exception $i&lt;br /&gt;";
+    }
+    
+    // Enfin, on indique qu’on vient de finir la ième itération
+    echo "Fin $i&lt;br /&gt;";
+  }
+}
+
+$gen = generator();
+
+foreach ($gen as $i =&gt; $val)
+{
+  // On décide de lancer une exception pour l’itération n°3
+  if ($i == 3)
+  {
+    $gen-&gt;throw(new Exception('Petit test'));
+  }
+}</code></pre><p id="r-2651141" data-claire-element-id="3399167">Vous devriez obtenir un résultat comme celui-ci.</p><figure id="r-2651144" data-claire-element-id="7944861"><img id="r-2651142" data-claire-element-id="3399168" src="./Les générateurs - Programmez en orienté objet en PHP_files/Screenshot - 26122014 - 16-47-10.png" alt="Résultat affiché par le script"><figcaption>Résultat affiché par le script</figcaption></figure><p id="r-2651145" data-claire-element-id="7646973">Vous voyez donc qu’un seul<code data-claire-semantic="php">yield</code>&nbsp;(celui de la 3ème itération) a mené à une exception, qui d’ailleurs a été attrapée sans souci avec les fameux bloc<code data-claire-semantic="php">try/catch</code>.</p><p id="r-2651146" data-claire-element-id="7646974">Comme vous pouvez vous en douter, lancer une exception sans aucune raison comme on vient de le faire a très peu d’intérêt. En fait, cette méthode<code data-claire-semantic="php">throw</code>&nbsp;va de paire avec<code data-claire-semantic="php">send</code>. Lorsque vous avez un système de coroutine comme on vient de le voir, c’est à vous de fournir les données au générateur. Si quelque chose ne va pas, vous pouvez lancer une exception pour le prochain<code data-claire-semantic="php">yield</code>&nbsp;au lieu de lui envoyer des données avec<code data-claire-semantic="php">send</code>.</p><p id="r-2651147" data-claire-element-id="3399173">Pour reprendre notre système multitâche précédent, on pourrait ajouter la possibilité de tuer une tâche en cours d’exécution. Pour ce faire, il nous suffirait d’envoyer une exception à notre tâche pour lui indiquer qu’il faut qu’elle se termine.</p><p id="r-2651148" data-claire-element-id="3399174">Voici le code que je vous propose (je décide de tuer la tâche n°2 lors de la deuxième itération de manière totalement arbitraire, c’est juste pour l’exemple).</p><pre id="r-2651149" data-claire-element-id="3399175"><code data-claire-semantic="php">&lt;?php
+class TaskRunner
+{
+  protected $tasks;
+
+  public function __construct()
+  {
+    // On initialise la liste des tâches
+    $this-&gt;tasks = new SplQueue;
+  }
+
+  public function addTask(Generator $task)
+  {
+    // On ajoute la tâche à la fin de la liste
+    $this-&gt;tasks-&gt;enqueue($task);
+  }
+
+  public function run()
+  {
+    $i = 1;
+
+    // Tant qu’il y a toujours au moins une tâche à exécuter
+    while (!$this-&gt;tasks-&gt;isEmpty())
+    {
+      // On enlève la première tâche et on la récupère au passage
+      $task = $this-&gt;tasks-&gt;dequeue();
+
+      // Pour l'exemple, on va arrêter la tâche n°2 lors de son 2ème appel
+      if ($i == 5)
+      {
+        $task-&gt;throw(new Exception('Tâche interrompue'));
+      }
+
+      // On exécute la prochaine étape de la tâche
+      $task-&gt;send('Hello world !');
+
+      // Si la tâche n’est pas finie, on la replace en fin de liste
+      if ($task-&gt;valid())
+      {
+        $this-&gt;addTask($task);
+      }
+
+      $i++;
+    }
+  }
+}
+
+$taskRunner = new TaskRunner;
+
+function task1()
+{
+  for ($i = 1; $i &lt;= 2; $i++)
+  {
+    try {
+      $data = yield;
+      echo 'Tâche 1, itération ', $i, ', valeur envoyée : ', $data, '&lt;br /&gt;';
+    } catch(Exception $e) {
+      echo 'Erreur tâche 1 : ', $e-&gt;getMessage(), '&lt;br /&gt;';
+      return;
+    }
+  }
+}
+
+function task2()
+{
+  for ($i = 1; $i &lt;= 6; $i++)
+  {
+    try {
+      $data = yield;
+      echo 'Tâche 2, itération ', $i, ', valeur envoyée : ', $data, '&lt;br /&gt;';
+    } catch(Exception $e) {
+      echo 'Erreur tâche 2 : ', $e-&gt;getMessage(), '&lt;br /&gt;';
+      return;
+    }
+  }
+}
+
+function task3()
+{
+  for ($i = 1; $i &lt;= 4; $i++)
+  {
+    try {
+      $data = yield;
+      echo 'Tâche 3, itération ', $i, ', valeur envoyée : ', $data, '&lt;br /&gt;';
+    } catch(Exception $e) {
+      echo 'Erreur tâche 3 : ', $e-&gt;getMessage(), '&lt;br /&gt;';
+      return;
+    }
+  }
+}
+
+$taskRunner-&gt;addTask(task1());
+$taskRunner-&gt;addTask(task2());
+$taskRunner-&gt;addTask(task3());
+
+$taskRunner-&gt;run();</code></pre><p id="r-2651150" data-claire-element-id="3399176">En exécutant ce code, vous devriez vous apercevoir que la tâche n°2 a bien été arrêtée :</p><figure id="r-2651153" data-claire-element-id="7944863"><img id="r-2651151" data-claire-element-id="3399177" src="./Les générateurs - Programmez en orienté objet en PHP_files/Screenshot - 26122014 - 16-56-43.png" alt="Résultat affiché par le script"><figcaption>Résultat affiché par le script</figcaption></figure><h4 id="r-2651154" data-claire-element-id="7646985">En résumé</h4><ul id="r-2651174" data-claire-element-id="7646984"><li id="r-2651165" data-claire-element-id="3467405"><p id="r-2651164" data-claire-element-id="3467404">Les <strong>générateurs</strong> sont une façon simple de créer des <strong>itérateurs</strong>.</p></li><li id="r-2651167" data-claire-element-id="7646979"><p id="r-2651166" data-claire-element-id="7646978">Toute fonction contenant le mot-clé<code data-claire-semantic="php">yield</code>&nbsp;est automatiquement considéré comme un générateur.</p></li><li id="r-2651169" data-claire-element-id="3399219"><p id="r-2651168" data-claire-element-id="3399218">Un générateur peut renvoyer une valeur simple mais aussi une clé qui lui sera associée.</p></li><li id="r-2651171" data-claire-element-id="7646981"><p id="r-2651170" data-claire-element-id="7646980">Pour renvoyer une référence <em>via</em> un<code data-claire-semantic="php">yield</code>, il faut placer un&nbsp;<code data-claire-semantic="php">&amp;</code>&nbsp;avant le nom du générateur.</p></li><li id="r-2651173" data-claire-element-id="7646983"><p id="r-2651172" data-claire-element-id="7646982">La méthode<code data-claire-semantic="php">send</code>&nbsp;permet de créer des <strong>coroutines</strong>, ce qui consiste à <strong>consommer</strong> des valeurs et non à en <strong>retourner</strong>.</p></li></ul>
+</div>
+<div class="js-courseSelementActions sideActions">
+<ul class="sideActions__container">
+<li>
+<a class="sideActions__item  js-courseElementActions-copyUrl  js-tooltip" href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/les-generateurs-4#" data-tooltip="Copier le lien" data-tooltip-done="Lien copié !">
+#
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="text-center space-top">
+<form name="form" method="post" action="https://openclassrooms.com/courses/1665806/parts/2650041/mark-as-complete" class=" oc-form">
+<button type="submit" id="form_submit" name="form[submit]" class="button button--primary button"><i class="icon-to_do"></i> J'ai terminé ce chapitre et je passe au suivant</button>
+<input type="hidden" id="form__token" name="form[_token]" class=" textInput textInput--hidden" value="BTNxZ_edrEWPUmp-yFDvUpjibEJqT663s_V14fCZcIM"></form>
+</div>
+<nav class="course-pagination    clearfix">
+<a href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/tp-un-systeme-de-news" class="button course-pagination__btn course-pagination__btn--previous">
+<i class="icon-previous"></i>
+<span>TP : un système de news</span>
+</a>
+<span class="course-pagination__separator"></span>
+<a href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/les-closures-2" class="button course-pagination__btn course-pagination__btn--next">
+<span>Les closures</span>
+<i class="icon-next"></i>
+</a>
+</nav>
+<aside tabindex="-1" role="dialog" aria-labelledby="popin-view-restriction_popin_title" class="popin popin--illustrated  js-popin" id="popin-view-restriction">
+<i class="popin__close-button icon-close js-close-button"></i>
+<div class="popin__inner">
+<div class="popin__illustrationWrapper">
+<div class="popin__illustration illustration--balloon"></div>
+</div>
+<div class="popin__mainContainer">
+<h3 id="popin-view-restriction_popin_title" class="popin__title  js-popin-title">Waouh&nbsp;!</h3>
+<div class="popin__content  js-popin-content">
+<div class="popin__contentWrapper">
+<p>
+Très heureux de voir que nos cours vous plaisent, déjà 5 pages lues aujourd'hui ! Vous pouvez continuer la lecture de nos cours en devenant un membre de la communauté d'OpenClassrooms. C'est gratuit !
+</p>
+<p>
+Vous pourrez aussi suivre votre avancement dans le cours, faire les exercices et discuter avec les autres membres.
+</p>
+</div>
+</div>
+<div class="popin__actions  js-popin-actions">
+<span class="u--inlineBlock">
+<a class="button button--primary " href="https://openclassrooms.com/register">S'inscrire</a>
+</span>
+<span class="u--inlineBlock">
+<a class="button button " href="https://openclassrooms.com/login">Se connecter</a>
+</span>
+</div>
+</div>
+</div>
+</aside>
+</div>
+</section>
+</div>
+</div>
+<div id="popin-not-certifying-yet_502959" class="popin" data-popin-title="Vous ne pouvez pas encore obtenir de certificat de réussite à l&#39;issue de ce cours.
+                            &lt;a href=&#39;/premium&#39;&gt;&lt;i class=&#39;icon-star&#39;&gt;&lt;/i&gt; Devenez Premium&lt;/a&gt;
+                    ">
+<img alt="Exemple de certificat de réussite" src="./Les générateurs - Programmez en orienté objet en PHP_files/certif.jpg">
+</div>
+<div id="popin-not-certifying-yet_728923" class="popin" data-popin-title="Vous ne pouvez pas encore obtenir de certificat de réussite à l&#39;issue de ce cours.
+                            &lt;a href=&#39;/premium&#39;&gt;&lt;i class=&#39;icon-star&#39;&gt;&lt;/i&gt; Devenez Premium&lt;/a&gt;
+                    ">
+<img alt="Exemple de certificat de réussite" src="./Les générateurs - Programmez en orienté objet en PHP_files/certif.jpg">
+</div>
+</main>
+<aside class="contentWithSidebar__sidebar  js-contentWithSidebar-slidingElement">
+<nav class="col-nav">
+<div id="tab-courseMenu" class="col-nav__inner js-sidebar-inner">
+<div class="col-nav__block  col-nav__block--summary">
+<div class="side-paginate">
+<a href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/tp-un-systeme-de-news" class="side-paginate__previous">
+<i class="icon-previous"></i>
+</a>
+<span class="side-paginate__separator"></span>
+<h6 class="side-paginate__title">
+[Théorie] Techniques avancées
+</h6>
+<span class="side-paginate__separator"></span>
+<a href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/les-closures-2" class="side-paginate__next">
+<i class="icon-next"></i>
+</a>
+</div>
+<div class="col-nav__block--summary-list">
+<ol class="col-nav__chapters">
+<li class="">
+<a class="col-nav__chapterTitle" href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/les-objets-en-profondeur">Les objets en profondeur</a>
+</li>
+<li class="">
+<a class="col-nav__chapterTitle" href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/les-interfaces-1">Les interfaces</a>
+</li>
+<li class="">
+<a class="col-nav__chapterTitle" href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/les-exceptions-10">Les exceptions</a>
+</li>
+<li class="">
+<a class="col-nav__chapterTitle" href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/les-traits-2">Les traits</a>
+</li>
+<li class="">
+<a class="col-nav__chapterTitle" href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/l-api-de-reflexivite">L'API de réflexivité</a>
+</li>
+<li class="">
+<a class="col-nav__chapterTitle" href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/uml-presentation-1-2">UML : présentation (1/2)</a>
+</li>
+<li class="">
+<a class="col-nav__chapterTitle" href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/uml-modelisons-nos-classes-2-2">UML : modélisons nos classes (2/2)</a>
+</li>
+<li class="">
+<a class="col-nav__chapterTitle" href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/les-design-patterns">Les design patterns</a>
+</li>
+<li class="">
+<a class="col-nav__chapterTitle" href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/tp-un-systeme-de-news">TP : un système de news</a>
+</li>
+<li class="selected">
+<span class="col-nav__chapterTitle">Les générateurs</span>
+</li>
+<li class="">
+<a class="col-nav__chapterTitle" href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/les-closures-2">Les closures</a>
+</li>
+</ol>
+<div class="tocExercise"><ul class="tocExercise__list"><li class="tocExercise__item "><a class="tocExercise__link " href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/exercises/390"><i class="tocExercise__icon icon-test"></i><span class="tocExercise__text">Quiz : Quiz 2</span></a></li></ul></div> </div>
+</div>
+<div class="col-nav__block col-nav__block--button">
+<a href="https://openclassrooms.com/forum/categorie/php" class="button">
+Accéder au forum
+</a>
+</div>
+<div class="col-nav__block col-nav__block--institution">
+<h2>Avec le soutien de</h2>
+<a href="https://oc.cm/1IdW0jc" target="_blank">
+<span data-image-cdn-attr-src="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/partners/50/14480105597389_3w-academy-logo.png" data-image-cdn-attr-alt="logo 3W Academy" data-image-cdn-attr-class="col-nav__institutionLogo"></span>
+<p class="col-nav__block--institutionDescription">
+Découvrir la formation développeur en 3 mois, HTML, CSS, Php, MySQL, Javascript.
+</p>
+</a>
+</div>
+<div class="socialNetwork col-nav__block">
+<ul class="socialButtons  js-socialButtons" data-options="
+                title: &#39;Les générateurs @OpenClassrooms&#39;,
+        mailTitle: &#39;Cours &quot;Les générateurs&quot; sur OpenClassrooms&#39;,
+        mailContent: &#39;Découvrez le cours &quot;Les générateurs&quot; sur OpenClassrooms.&#39;">
+<li>
+<a class="roundIcon  roundIcon--twitter addthis_button_twitter  js-socialButtons-btn" data-tooltip="Partagez sur Twitter">
+<i class="roundIcon__icon  icon-twitter"></i>
+</a>
+</li>
+<li>
+<a class="roundIcon  roundIcon--facebook  addthis_button_facebook  js-socialButtons-btn" data-tooltip="Partagez sur Facebook">
+<i class="roundIcon__icon  icon-facebook"></i>
+</a>
+</li>
+<li>
+<a class="roundIcon  roundIcon--googlePlus  addthis_button_google_plusone_share  js-socialButtons-btn" data-tooltip="Partagez sur Google+">
+<i class="roundIcon__icon  icon-google"></i>
+</a>
+</li>
+<li>
+<a class="roundIcon  addthis_button_email  js-socialButtons-btn  js-socialButtons-email" data-tooltip="Partagez par e-mail">
+<i class="roundIcon__icon  icon-letter"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</aside>
+</div>
+</div>
+<footer class="alt-section">
+<div class="centered">
+<div class="row">
+<div class="col4 course-bottom__category">
+<h2 class="highlighted">
+Le professeur
+</h2>
+<div>
+<a itemprop="author" itemscope="" itemtype="http://schema.org/Person" href="https://openclassrooms.com/membres/vyk12-68874" class="no-underlined">
+<div class="course-bottom__text-illustrated">
+<span data-author="Victor Thuillier" data-image-cdn-background-image="//sdz-upload.s3.amazonaws.com/prod/users/avatars/Light%20Blue1.png"></span>
+<h4 itemprop="name">Victor Thuillier</h4>
+<p itemprop="description">
+Auteur du livre sur la POO en PHP ainsi que de 4 autres tutoriels
+</p>
+</div>
+</a>
+</div>
+</div>
+<div class="col8 course-bottom__category">
+<h2 class="highlighted">Découvrez aussi ce cours en...</h2>
+<ul class="course-bottom__format">
+<li>
+<a href="https://openclassrooms.com/ebooks/programmez-en-oriente-objet-en-php" class="text-decoration-none">
+<div class="circle circle--x-small">
+<span class="circle__content"></span>
+<i class="icon-ebook"></i>
+<div class="ribbon ribbon--orange">
+<div class="ribbon__content">
+<span>Premium</span>
+</div>
+</div>
+</div>
+<div class="course-bottom__format-entitled">eBook</div>
+</a>
+</li>
+<li>
+<a href="http://www.eyrolles.com/Informatique/Livre/programmez-en-oriente-objet-en-php-9791090085855?societe=openclassrooms" target="_blank" class="text-decoration-none">
+<div class="circle circle--x-small">
+<span class="circle__content"></span>
+<i class="icon-book"></i>
+</div>
+<div class="course-bottom__format-entitled">Livre papier</div>
+</a>
+</li>
+<li>
+<a href="https://openclassrooms.com/old-courses-pdf" class="text-decoration-none">
+<div class="circle circle--x-small">
+<span class="circle__content"></span>
+<i class="icon-pdf"></i>
+</div>
+<div class="course-bottom__format-entitled">PDF</div>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
+</article>
+</div>
+</div>
+<footer class="footer">
+<div class="centered">
+<div class="row">
+<div class="col3 col6-s  footer__item  linksList  foldable  js-foldable" data-options="mobileOnly: true, disableOnLargeScreen: true, initialState: &#39;closed&#39;">
+<h3 class="linksList__title footer__title foldable__button  js-foldable-button">
+OpenClassrooms
+<i class="icon-next  foldable__icon"></i>
+</h3>
+<ul class="linksList__content foldable__content">
+<li>
+<a href="https://openclassrooms.com/about-us" class="footer__link">Qui sommes-nous ?</a>
+</li>
+<li>
+<a href="https://openclassrooms.com/how-does-it-work" class="footer__link">Fonctionnement de nos cours</a>
+</li>
+<li>
+<a href="http://jobs.openclassrooms.com/" target="_blank" class="footer__link">Recrutement</a>
+</li>
+<li>
+<a href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/les-generateurs-4#" class="js-zendesk-show footer__link">Nous contacter</a>
+</li>
+</ul>
+</div>
+<div class="col3 col6-s  footer__item  linksList  foldable  js-foldable" data-options="mobileOnly: true, disableOnLargeScreen: true, initialState: &#39;closed&#39;">
+<h3 class="linksList__title footer__title foldable__button  js-foldable-button">
+Professionnels
+<i class="icon-next  foldable__icon"></i>
+</h3>
+<ul class="linksList__content foldable__content">
+<li>
+<a href="https://openclassrooms.com/affiliation" class="footer__link">
+Affiliation
+</a>
+</li>
+<li>
+<a href="https://openclassrooms.com/partners" class="footer__link">Partenaires</a>
+</li>
+<li>
+<a href="https://openclassrooms.com/for-business" class="footer__link">For Business</a>
+</li>
+</ul>
+</div>
+<div class="col3 col6-s  footer__item  linksList  foldable  js-foldable" data-options="mobileOnly: true, disableOnLargeScreen: true, initialState: &#39;closed&#39;">
+<h3 class="linksList__title footer__title foldable__button  js-foldable-button">
+En plus
+<i class="icon-next  foldable__icon"></i>
+</h3>
+<ul class="linksList__content foldable__content">
+<li>
+<a href="https://openclassrooms.com/new-teachers" class="footer__link">Créer un cours</a>
+</li>
+<li>
+<a href="https://openclassrooms.com/courses/courselab" class="footer__link">CourseLab</a>
+</li>
+<li>
+<strong>
+<a href="https://openclassrooms.com/terms-conditions" class="footer__link">
+Conditions Générales d'Utilisation
+</a>
+</strong>
+</li>
+</ul>
+</div>
+<div class="col3 col6-s  footer__item  linksList  foldable  js-foldable" data-options="mobileOnly: true, disableOnLargeScreen: true, initialState: &#39;closed&#39;">
+<h3 class="linksList__title footer__title foldable__button  js-foldable-button">
+Suivez-nous
+<i class="icon-next  foldable__icon"></i>
+</h3>
+<ul class="linksList__content foldable__content">
+<li>
+<a href="http://blog.openclassrooms.com/" class="footer__link">Le blog OpenClassrooms</a>
+</li>
+<li>
+<ul class="footer__socialNetwork">
+<li>
+<a href="https://www.facebook.com/openclassrooms" title="Facebook" target="_blank" class="roundIcon roundIcon--facebook footer__socialButtons">
+<span class="hidden">Facebook</span>
+<i class="icon-facebook roundIcon__icon"></i>
+</a>
+</li>
+<li>
+<a href="https://twitter.com/openclassrooms" title="Twitter" target="_blank" class="roundIcon roundIcon--twitter footer__socialButtons">
+<span class="hidden">Twitter</span>
+<i class="icon-twitter roundIcon__icon"></i>
+</a>
+</li>
+<li>
+<a href="https://plus.google.com/+OpenClassrooms/posts" title="Google Plus" target="_blank" class="roundIcon roundIcon--youtube footer__socialButtons">
+<span class="hidden">Google Plus</span>
+<i class="icon-google roundIcon__icon"></i>
+</a>
+</li>
+<li>
+<a href="https://instagram.com/openclassrooms" title="Instagram" target="_blank" class="roundIcon roundIcon--instagram footer__socialButtons">
+<span class="hidden">Instagram</span>
+<i class="icon-instagram roundIcon__icon"></i>
+</a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/TheOpenClassrooms" title="Youtube" target="_blank" class="roundIcon roundIcon--googlePlus footer__socialButtons">
+<span class="hidden">Youtube</span>
+<i class="icon-youtube roundIcon__icon"></i>
+</a>
+</li>
+<li>
+<a href="https://www.linkedin.com/company/openclassrooms" title="Linkedin" target="_blank" class="roundIcon roundIcon--linkedin footer__socialButtons">
+<span class="hidden">Linkedin</span>
+<i class="icon-linkedin roundIcon__icon"></i>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="text-right u--positionRelative">
+<hr>
+<div class="footer__onlineStatus" id="react_conversation_onlineStatus"></div>
+<ul class="no-decoration inline">
+<li>
+<form data-need-token="" class="footer__langForm" action="https://openclassrooms.com/change-locale/en" method="POST">
+<button class="button button--link  footer__link">English</button>
+<input type="hidden" name="_token" value="">
+</form>
+</li>
+<li>
+<form data-need-token="" class="footer__langForm" action="https://openclassrooms.com/change-locale/es" method="POST">
+<button class="button button--link  footer__link">Español</button>
+<input type="hidden" name="_token" value="">
+</form>
+</li>
+</ul>
+</div>
+</div>
+</footer>
+<script type="text/javascript">
+    window.analytics=window.analytics||[],window.analytics.methods=["identify","group","track","page","pageview","alias","ready","on","once","off","trackLink","trackForm","trackClick","trackSubmit"],window.analytics.factory=function(t){return function(){var a=Array.prototype.slice.call(arguments);return a.unshift(t),window.analytics.push(a),window.analytics}};for(var i=0;i<window.analytics.methods.length;i++){var key=window.analytics.methods[i];window.analytics[key]=window.analytics.factory(key)}window.analytics.load=function(t){if(!document.getElementById("analytics-js")){var a=document.createElement("script");a.type="text/javascript",a.id="analytics-js",a.async=!0,a.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.io/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n)}},window.analytics.SNIPPET_VERSION="2.0.9",
+    window.analytics.load('mou95e6tdn');
+</script>
+<script>App.scripts.push("https://cdn.polyfill.io/v2/polyfill.min.js?features=default,Array.prototype.includes,Intl.~locale.fr");</script>
+<script>App.scripts.push("/js/oc/packages/vendors-e2845da7.js");</script>
+<script>App.scripts.push("/js/oc/packages/common-d30654ea.js");</script>
+ 
+<script>App.scripts.push("/js/oc/packages/courseView-b88c9938.js");</script>
+ 
+<script>
+    (function () {
+        function loadScripts(cb) {
+            App.scripts.forEach(function (src, index) {
+                var script = document.createElement('script');
+                script.src = src;
+                script.async = false;
+                document.body.appendChild(script);
+
+                if (cb && index === App.scripts.length - 1) {
+                    script.onload = cb;
+                }
+            });
+        }
+
+        function boot() {
+            loadScripts(function () {
+                if (App.modules) {
+                    App.modules.startAll();
+                }
+            });
+        }
+
+        if (window.addEventListener) {
+            window.addEventListener('load', boot, false);
+        } else if (window.attachEvent) {
+            window.attachEvent('onload', boot);
+        } else {
+            window.onload = boot;
+        }
+    }());
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"90dc06697a","applicationID":"20302107","transactionName":"NANaYkJXC0ICAhdYVw1Je0NDQgpcTA4AblsPB1FEVWkGXhYTEFRnEwdKQm9GBEMXPhVYXRQ=","queueTime":0,"applicationTime":200,"atts":"GERZFApNGEw=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+<script type="text/javascript" id="">(function(){window.satismeter=window.satismeter||function(){(window.satismeter.q=window.satismeter.q||[]).push(arguments)};window.satismeter.l=1*new Date;var a=document.createElement("script"),b=document.getElementsByTagName("script")[0].parentNode;a.async=1;a.src="https://app.satismeter.com/satismeter.js";b.appendChild(a)})();
+satismeter({writeKey:"0j5PPJ3AwSuMNsix",userId:"6540350",language:"fr",traits:{email:"v.lafaverges@gmail.com",name:"Vero Lafaverges",createdAt:"2014-02-10T21:35:06+01:00",country:"",gender:"F",premiumType:"",premium:"false",typeNPS:"course",language:"fr",locale:"fr",title:"Programmez en orienté objet en PHP",isCertifying:"true"}});</script><script type="text/javascript" id="">_linkedin_data_partner_id="50013";</script><script type="text/javascript" id="">(function(){var b=document.getElementsByTagName("script")[0],a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src="https://snap.licdn.com/li.lms-analytics/insight.min.js";b.parentNode.insertBefore(a,b)})();</script>
+<noscript>
+&lt;img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=50013&amp;amp;fmt=gif"&gt;
+</noscript></body></html>
