@@ -59,7 +59,7 @@ tcp        0      0 0.0.0.0:ssh             0.0.0.0:*               LISTEN      
 tcp        0      0 localhost.localdo:mysql 0.0.0.0:*               LISTEN      mysql      44084      22248/mysqld
 tcp        0      0 0.0.0.0:http            0.0.0.0:*               LISTEN      root       46772      23267/nginx: master
 tcp        0    356 hoc.CCI-Auvergne-Rh:ssh reverse.completel:57575 ESTABLISHED root       25046      9413/sshd: root@pts
-tcp        0      0 10.85.217.202:34874     10.0.77.54:http         TIME_WAIT   root       0          -
+tcp        0      0 13.***.***.**:34874     10.0.77.54:http         TIME_WAIT   root       0          -
 tcp6       0      0 [::]:ssh                [::]:*                  LISTEN      root       14545      1209/sshd
 tcp6       0      0 [::]:http               [::]:*                  LISTEN      root       46773      23267/nginx: master
 ```
@@ -70,7 +70,7 @@ tcp6       0      0 [::]:http               [::]:*                  LISTEN      
    - all :
    - program :
    - u
-   - 
+  
 ```
 root@hoc:~# ip a
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1
@@ -81,18 +81,18 @@ root@hoc:~# ip a
        valid_lft forever preferred_lft forever
 2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
     link/ether 06:2f:79:6e:e5:ae brd ff:ff:ff:ff:ff:ff
-    inet 10.85.217.202/26 brd 10.85.217.255 scope global eth0
+    inet ***.***.***.\*\*/26 brd 10.85.217.255 scope global eth0
        valid_lft forever preferred_lft forever
     inet6 fe80::42f:79ff:fe6e:e5ae/64 scope link
        valid_lft forever preferred_lft forever
 3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
     link/ether 06:50:26:63:89:87 brd ff:ff:ff:ff:ff:ff
-    inet 158.177.99.180/28 brd 158.177.99.191 scope global eth1
-    inet 158.177.99.180/28 brd 158.177.99.191 scope global eth1
+    inet ***.***.***.\*\*/28 brd ***.***.***.\*\* scope global eth1
+    inet ***.***.***.\*\*/28 brd ***.***.***.\*\*1 scope global eth1
        valid_lft forever preferred_lft forever
     inet6 fe80::450:26ff:fe63:8987/64 scope link
        valid_lft forever preferred_lft forever
-```~
+```
 
 
 - On creer un nouveau repertoir soit dans **/srv/mon_dossier_enligne** soit dans **/var/www/mon_dossier_enligne**
@@ -104,7 +104,7 @@ root@hoc:~# ip a
 ```
 root@hoc:/var/www/public# cat /etc/nginx/conf.d/public_html.conf
 server{
-        listen 158.177.99.180:80;
+        listen 158.***.**.***:80;
 
         server_name my.amazing-website.com;
         root /var/www/public;
@@ -124,7 +124,7 @@ server{
 }
 ```
 
-    - `server_name` > est le vers lquel va pointer l'adresse
-    - `root` de poiinter vers le dossier local où se trouve la racine du site
+- `server_name` > est le vers lquel va pointer l'adresse
+- `root` de poiinter vers le dossier local où se trouve la racine du site
    
 

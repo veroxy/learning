@@ -14,4 +14,3 @@ Cet article vous fournit 4 grandes actions à mener sur les formulaires de vos l
    4. Sécuriser le transfert des données personnelles
 
 
-###

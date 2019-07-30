@@ -117,7 +117,7 @@ porté globale
 
 ## [Node JS](https://nodejs.org/fr/)
 >Node.js® est un environnement d’exécution JavaScript construit sur le moteur JavaScript V8 de Chrome.
-basé sur l'aynchrone **event-driven, non blocking I/O**
+basé sur l'asynchrone **event-driven, non blocking I/O**
 pouvoir faire autre chose / exécuté plusieurs choses même si l'une des actions n'est pas finie
 
 
@@ -167,3 +167,5 @@ promise.then(successCallback, failureCallback);
 //ou
 faireQqc().then(successCallback, failureCallback);
 ```
+
+ES5 && ES6
