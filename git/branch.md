@@ -20,4 +20,7 @@ vim .git/config
         fetch = +refs/heads/*:refs/remotes/gh/*
         url = git@bitbucket.org:NomUtilisateur/NomRepoDistant_bitbucket.git
 ```
-4. il n'y a plus qu'à ADD/COMMIT/PUSHE
+4. il n'y a plus qu'à ADD/COMMIT/PUSH
+
+5. PULL/request
+

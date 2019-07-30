@@ -1,4 +1,6 @@
 # vim config
+[meilleur config](https://gist.github.com/millermedeiros/1262085)
+
 ```
   " VIM VUNDLE VOIRE SUR GITHUB LE README "
   set nocompatible  " be iMproved, required

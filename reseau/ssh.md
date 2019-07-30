@@ -14,13 +14,13 @@ ssh-keygen -t rsa -b 4096 -C"HOC-key-veroxy"
     Your identification has been saved in /home/veroxy/.ssh/id_rsa.
     Your public key has been saved in /home/veroxy/.ssh/id_rsa.pub.
     The key fingerprint is:
-    SHA256:/EptpozTdvZKQNutSln+mMX8VsYj65qqdMb1NLOb/uo HOC-key-veroxy
+    SHA256:/MptpPzTdvZxKQNutSln+mAAMX8VsYj65dqdMb1NLOb/uo HOC-key-veroxy
     The key's randomart image is:
-    +---[RSA 4096]----+
+    +---[RSA 4098]----+
     |                 |
     |                 |
-    |        .        |
-    |       o o .     |
+    |        .E .     |
+    |       o o..     |
     |        S o..+ . |
     |        .B.+o.+.+|
     |       o++O +ooo.|
@@ -30,17 +30,17 @@ ssh-keygen -t rsa -b 4096 -C"HOC-key-veroxy"
 
 On copie le fichier de la public_key sur le serveur dans le répertoire `/root/` pour la stocker
  ```shell
- scp id_rsa.pub root@131.105.80.170:/root/
+ scp id_rsa.pub root@131.***.***.**:/root/
  ```
  
-    The authenticity of host '131.105.80.170 (131.105.80.170)' can't be established.
+    The authenticity of host '131.***.***.**(131.***.***.**)' can't be established.
     ECDSA key fingerprint is SHA256:oV2aEtkoFbmVZjhK81KiqzORJlobcNy7OQcFQtjKLyk.
     Are you sure you want to continue connecting (yes/no)? y
     Please type 'yes' or 'no': yes
-    Warning: Permanently added '131.105.80.170' (ECDSA) to the list of known hosts.
-    root@131.105.80.170's password:
+    Warning: Permanently added '131.***.***.**' (ECDSA) to the list of known hosts.
+    root@131.***.***.**'s password:
     Permission denied, please try again.
-    root@131.105.80.170's password:
+    root@131.***.***.**'s password:
     id_rsa.pub                                                                            100%  740    33.7KB/s   00:00
 
 
@@ -58,7 +58,7 @@ veroxy@99MFO-HOC00005:/mnt/c/wamp/www/vagrant/httpdoc/ansible$
 ```
 dans celui ci on un fichier **hosts** dans un dossier **inventory/** dans lequel on echo 
 ```shell
-echo "server-hoc ansible_ssh_host=131.105.80.170" > hosts
+echo "server-hoc ansible_ssh_host=131.***.***.**" > hosts
 ```
 
 on lance ensuite une commande ansible pour récupérer le `setup` de la machine

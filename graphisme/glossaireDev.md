@@ -24,7 +24,10 @@ REF blog du moderateur
 * **CLI** : 
     - "Command Line Interface"
     - SQL CLI : "SQL Call Level Interface" est une API dont la fonction est de permettre à un programme(s) d'effectuer des requêtes SQL de façon dynamique.  
-            
+
+* **Client lourd** :  est une application que l'on installe pour pouvoir l'utiliser (usage)
+
+* **CLR** (Common Language Runtime): est le nom choisi par Microsoft pour le composant de machine virtuelle du framework .NET. Il s'agit de l'implémentation par Microsoft du standard Common Language Infrastructure (CLI) qui définit l'environnement d'exécution des codes de programmes. Le CLR fait tourner une sorte de bytecode nommé Common Intermediate Language (CIL). Le compilateur à la volée transforme le code CIL en code natif spécifique au système d'exploitation. Le CLR fonctionne sur des systèmes d'exploitation Microsoft Windows.
 
 * **CMS** : [cms wp]()
 
@@ -38,7 +41,8 @@ REF blog du moderateur
     - en **php -  REGEX** peut est mis dans en slash **/REGEX-CODE/** 
     - en **SQL** on indique en début de code quel sera le délimitateur utilisé, c'est bien souvent des **$$** > `DELIMITATER $$`
 
-* **Développer** : réaliser une application ou un site web.
+* **Développeur** : réaliser une application ou un site web.
+* **DLL** (Dynamic Link Library): est l'extension utilisée par des morceaux de programmes ou plus exactement par des groupes de fonctions) utilisés par plusieurs programmes exécutables sous Windows.
 
 * **Feature** : Fonctionnalité d’une application ou d’un site web en développement.
 
@@ -49,6 +53,8 @@ REF blog du moderateur
 Gamification: est l'utilisation de la manière de penser et de concevoir un jeu afin que le produit final soit amusant mais puisse aussi devenir une connaissance acquise.
 
 * **[IDE](../editorIde/ide_phpstorm.md~HEAD)** : Logiciel de développement utilisé pour réaliser le code source, compiler, lancer des tests… C’est l’outil principal qu’utilise tous les jours un développeur.
+
+* **Immuable(imutable)** : Un objet immuable, en programmation orientée objet et fonctionnelle, est un objet dont l'état ne peut pas être modifié après sa création
 
 * **Intégration** : consiste à réunir au sein d’un même système d’information, des parties développées de façon séparées. L’intégration peut également consister à la tâche effectuée par le développeur Front-End (aussi appelé intégrateur).
 
