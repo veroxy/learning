@@ -1,12 +1,5 @@
-<<<<<<< HEAD
-.idea/modules.xml
-.idea/workspace.xml
-.idea/*
+.idea
 ./node_modules
 ./_book
 ./treecmd.md
-.env*
-=======
 _book
-.idea
->>>>>>> 6eb849f51a64f5d4c777363c5b1d579037ae28d7
