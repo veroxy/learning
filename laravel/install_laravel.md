@@ -9,7 +9,7 @@
 
 on peut maintenant créer un nouveau projet composer Laravel
 ```shell
-~$ composer create-project laravel/laravel nom_project "5.4.*"
+~$ composer create-project laravel/laravel nom_project ["5.4.*"]
 ```
 > Problem 1
   laravel/framework v5.4.9 requires ext-mbstring * -> the requested PHP extension mbstring is missing from your system.
