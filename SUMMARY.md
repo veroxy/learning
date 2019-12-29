@@ -77,6 +77,7 @@
 * SYSTEM RESEAU
     * [IBM CLOUD](reseau/ibm.md)
     * [Install Env Debian Server](reseau/installEnvDebianServer.md)
+    * [Mysql On Remote](reseau/mysqlOnRemote.md)
     * [installation Env Ubuntu](reseau/installationEnvUbuntu.md)
     * [security](reseau/security.md)
     * [ssh](reseau/ssh.md)
