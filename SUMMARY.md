@@ -26,12 +26,10 @@
     * [phpMyAdmin](bdd/phpMyAdmin.md)
     * [password, securité & chiffrage](bdd/chiffragemp.md)
 * IDE & EDITEUR DE TEXTE
-    * [terminal](editorIde/terminal.md)
-        * [Paramètres Terminal](bash_script/param_terminal.md)
-        * [ZSH](bash_script/param_zshrc.md)
-        * [virmc](bash_script/vimrc_config.md)
+    * [Paramètres Terminal](bash_script/param_terminal.md)
+    * [ZSH](bash_script/param_zshrc.md)
+    * [virmc](bash_script/vimrc_config.md)
     * [phpstorm IDE](editorIde/ide_phpstorm.md)
-    
 * SCRIPT SHELL
     * [Man commande](bash_script/commande.md)
     * [ln - lien symbolique](bash_script/ln_liensymbolique.md)
@@ -78,7 +76,8 @@
 
 * SYSTEM RESEAU
     * [IBM CLOUD](reseau/ibm.md)
-    * [install environement *UBUNTU](reseau/installationEnvUbuntu.md)
+    * [Install Env Debian Server](reseau/installEnvDebianServer.md)
+    * [installation Env Ubuntu](reseau/installationEnvUbuntu.md)
     * [security](reseau/security.md)
     * [ssh](reseau/ssh.md)
 ## OUTILS / Framework
