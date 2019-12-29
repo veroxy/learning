@@ -1,8 +1,5 @@
 # laravel install
 
-
-
-
 ## ENVIRONNMENT INSTALLATION
    1. [COMPOSER.exe](https://getcomposer.org/Composer-Setup.exe)  ===> ref [nodeJs](pkgnodejs/composerlaravel.md)
 
