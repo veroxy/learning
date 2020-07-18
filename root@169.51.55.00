@@ -8,7 +8,7 @@
 # TELECHARGER .vimrc
 # To copy from the remote machine the "-p" flag preserved the file modification and access times.
 # du remote vers le local {REMOTE > LOCAL}
-# scp root@5.135.152.20:.vimrc ~/
+# scp root@5.135.150.00:.vimrc ~/
 scp -p remotemachine:/myfiles/myfile.txt x
 
 # To copy to the remote machine: 
