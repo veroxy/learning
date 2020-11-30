@@ -5,10 +5,6 @@ Constitution de l'équipe
 - referenceur (naturel)
 - lead dev (fonctionnalité)
 
-Veille
-- permet de si'nspirer, de se tenir au courant
-
-
 Brainstormig
 - faire sortir les pb (concurant) autour du client
 
@@ -66,7 +62,6 @@ COMPETENCES
 - être creatif
 
 OUTILS
-
 - carnet stylo
 - photoshop / illustartor/indesign/ xd (protoypage simplifié)
 - invision (maquettage dynamique / prototype)/ basamique (wireframe/zonning)
@@ -74,8 +69,8 @@ OUTILS
 VEILLE
 - avoir de la bonne culture générale/graphique
 - avoir des outils de veille (pinterest,..)
+- permet de s'inspirer, de se tenir au courant
 
 SPECIFICITES
-
 - savoir travailler et aimer
 - la typo / la couleur / la lumière / la composition / l'ergonomie

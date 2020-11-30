@@ -44,6 +44,7 @@
     * [ergonomie](graphisme/ergonomie.md)
     * [métier du graphiste](graphisme/metierGraphiste.md)
     * [glossaire du dev](graphisme/glossaireDev.md)
+    * [méthodes de gestion de projet](graphisme/gestionProjet.md)
 * HTLM5
     * [balises & sémantiques](html5/balises.md)
     * [les attributs utiles](html5/attributes.md)
@@ -81,6 +82,7 @@
     * [installation Env Ubuntu](reseau/installationEnvUbuntu.md)
     * [security](reseau/security.md)
     * [ssh](reseau/ssh.md)
+
 ## OUTILS / Framework
 * ANGULAR
     * [angularjs](angularjs/angularjs.md)
@@ -94,3 +96,4 @@
 * WORDPRESS
     * [créer un thème perso wp](wordpress-createwptheme/create_wptheme.md)
 
+## API
