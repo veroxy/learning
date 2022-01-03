@@ -41,7 +41,8 @@ REF blog du moderateur
     - en **php -  REGEX** peut est mis dans en slash **/REGEX-CODE/** 
     - en **SQL** on indique en début de code quel sera le délimitateur utilisé, c'est bien souvent des **$$** > `DELIMITATER $$`
 
-* **Développeur** : réaliser une application ou un site web.
+* **Développeur** :  ou analyste programmeur est un informaticien qui réalise des logiciels et les met en œuvre à l'aide de langages de programmation.
+
 * **DLL** (Dynamic Link Library): est l'extension utilisée par des morceaux de programmes ou plus exactement par des groupes de fonctions) utilisés par plusieurs programmes exécutables sous Windows.
 
 * **Feature** : Fonctionnalité d’une application ou d’un site web en développement.
@@ -50,7 +51,7 @@ REF blog du moderateur
 
 * **Full-Stack** : se dit d’un développeur qui travaille sur toutes les strates de développement.
 
-Gamification: est l'utilisation de la manière de penser et de concevoir un jeu afin que le produit final soit amusant mais puisse aussi devenir une connaissance acquise.
+* **Gamification** : est l'utilisation de la manière de penser et de concevoir une produit sous la forme d'un jeu afin que le produit final soit amusant mais puisse aussi devenir une connaissance acquise. On donne une dimension ludique aux propos.
 
 * **[IDE](../editorIde/ide_phpstorm.md~HEAD)** : Logiciel de développement utilisé pour réaliser le code source, compiler, lancer des tests… C’est l’outil principal qu’utilise tous les jours un développeur.
 

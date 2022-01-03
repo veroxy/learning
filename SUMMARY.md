@@ -43,8 +43,10 @@
 * GRAPHISME
     * [ergonomie](graphisme/ergonomie.md)
     * [métier du graphiste](graphisme/metierGraphiste.md)
+    * [étapes dans design web](graphisme/etapes_design_web.md)
     * [glossaire du dev](graphisme/glossaireDev.md)
     * [méthodes de gestion de projet](graphisme/gestionProjet.md)
+    * [photoshop prise en main rapide](grapisme/prisenmain)
 * HTLM5
     * [balises & sémantiques](html5/balises.md)
     * [les attributs utiles](html5/attributes.md)
@@ -93,6 +95,11 @@
     * [laravel MAC OSX / XAMP / LAMP](laravel/install_laravel_OSX.md)
     * [laravel - création de projet](laravel/procedureCreationProjet.md)
     * [NODEJS sass  ](laravel/compilation.md)
+* LARAVEL AVANCE
+    * introduction
+    * mindmapping, conceptualiser, se projetter/scérariser, maquetter/modelisation
+    * 
+    * se projetter/scénariser : 
 * WORDPRESS
     * [créer un thème perso wp](wordpress-createwptheme/create_wptheme.md)
 

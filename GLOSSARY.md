@@ -52,10 +52,12 @@ REF blog du moderateur
     - en ## php -  REGEX** peut est mis dans en slash ## /REGEX-CODE/** 
     - en ## SQL** on indique en début de code quel sera le délimitateur utilisé, c'est bien souvent des ## $$** > `DELIMITATER $$`
 
-* ## Développer : 
-    réaliser une application ou un site web.
+* ## Développeur :
+    ou analyste programmeur est un informaticien qui réalise des logiciels et les met en œuvre à l'aide de langages de programmation.
 
-* ## Feature : 
+* ## DLL (Dynamic Link Library): est l'extension utilisée par des morceaux de programmes ou plus exactement par des groupes de fonctions) utilisés par plusieurs programmes exécutables sous Windows.
+
+* ## Feature :
     Fonctionnalité d’une application ou d’un site web en développement.
 
 * ## Framework : 
@@ -68,6 +70,9 @@ Gamification: est l'utilisation de la manière de penser et de concevoir un jeu 
 
 * ## [IDE](../editorIde/ide_phpstorm.md~HEAD) : 
     Logiciel de développement utilisé pour réaliser le code source, compiler, lancer des tests… C’est l’outil principal qu’utilise tous les jours un développeur.
+
+* ## Immuable(imutable) :
+    Un objet immuable, en programmation orientée objet et fonctionnelle, est un objet dont l'état ne peut pas être modifié après sa création
 
 * ## Intégration : 
     consiste à réunir au sein d’un même système d’information, des parties développées de façon séparées. L’intégration peut également consister à la tâche effectuée par le développeur Front-End (aussi appelé intégrateur).
@@ -86,6 +91,10 @@ Gamification: est l'utilisation de la manière de penser et de concevoir un jeu 
 
 * ## Product Owner (ou « PO ») : 
     rôle au sein de l’organisation d’une équipe Agile utilisant la méthodologie SCRUM. Le PO a pour mission principale de définir et conceptualiser un produit qui saura apporter le maximum de valeur aux utilisateurs, dans le temps et le budget impartis au projet.
+
+* ## Mobile-first:
+  Le concept mobile first consiste à **concevoir un site en concevant en priorité la version mobile** et en adaptant progressivement celui-ci pour les écrans plus large. Cette façon de procédé est contraire à la manière ordinaire qui consiste à dégrader progressivement un site web pour l'adapter à un affichage sur des écrans plus petit.
+  Cette approche peut être utile pour les sites web et applications web qui sont principalement utilisées sur mobile. Elle a l'avantage **d'ajouter des effets/fonctionnalités** pour les grands écran au lieu d'en supprimer pour les petits. Toutefois il y a aussi des contraintes et des complications à adopter une telle façon de procéder (version grand écran potentiellement limité).
 
 * ## Prototype : 
     est une ébauche contenant les fonctionnalités (à tester) d'une app ou page web. il est composée d'une image statique avec des zone cliquables.
