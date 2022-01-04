@@ -40,6 +40,8 @@
     * [Branche](git/branch.md)
     * [Fork & Merge](git/fork_merge.md)
     * [gitbook](gitbookDoc/gitbook.md)
+    
+    * errors
 * GRAPHISME
     * [ergonomie](graphisme/ergonomie.md)
     * [métier du graphiste](graphisme/metierGraphiste.md)
