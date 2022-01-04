@@ -39,3 +39,7 @@ dans `profil > settings > Ajouter une clef "new ssh key" ` > [ssh key](https://g
 
 voilà c'est tout le reste c'est comme d'hab:
 `add/commit/push`
+
+
+## DOUBLE REMOTE github vers bitbucket
+ 
