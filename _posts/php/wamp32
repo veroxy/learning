@@ -1,5 +1,0 @@
-# wamp 32 & MAJ de php
-- wamp 32 (x84)
-- download sur php.net la version désirée : > - php7.2.14
-> (C:\wamp32\scriptsconfig.inc.php) il faut ajouter la génération des fichier dll `/dll to create symbolic links from php to apache/bin` (l138)(qui sont dans C:\wamp32\bin\php\php7.2.14)la valeur de "icudt', 'icuin', 'icuio', 'icule'"
-> (C:\wamp32\scripts) dans 
