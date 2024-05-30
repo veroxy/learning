@@ -1,0 +1,13 @@
+//DATABASE slw JSON
+
+
+
+id (INT)  | username (VARCHAR) | title (VARCHAR) | description ()
+
+
+PDO > permet de créer une connexion à la BDD evite de faire:
+  $ ./mysql -up root -p root (mysqlstart user:root passwor:root; dans le ternminal)
+
+
+le PDO est objet (comme en js):
+$connexionbdd = new PDO('mysql:host=localhost; dbnale=blog; charset="utf-8", 'root', 'root';)

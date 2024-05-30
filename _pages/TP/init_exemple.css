@@ -1,0 +1,159 @@
+/* RESET STYLE */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+    position: relative;
+    min-height: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+head {
+    display: none;
+}
+
+body {
+    display: block;
+    padding-bottom: 100px;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100%;
+    text-align: left;
+    font-family: sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: sans-serif;
+    margin: 0;
+    display: inline-block;
+    color: #484848;
+    font-weight: 500;
+}
+
+a, p, ul, li {
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #484848;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+/* ORDINATEUR */
+/* PARTIE SUPPERIEUR */
+header {
+    display: block;
+    position: relative;
+    clear: both;
+    width: 100%;
+    min-height: 48vh;
+    background: red;
+}
+
+section {
+    padding: 10px;
+    display: block;
+}
+
+footer {
+    height: 100px;
+    display: inline-block;
+    width: 100%;
+}
+
+figure {
+    margin: 0;
+}
+
+/** BODY **/
+.c1 {
+    width: 8.33%;
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+
+.c2 {
+    width: 16.66%;
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+
+.c3 {
+    width: 25%;
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+
+.c4 {
+    width: 33.33%;
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+
+.c5 {
+    width: 41.99%;
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+
+.c6 {
+    width: 50%;
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+
+.c7 {
+    width: 58.33%;
+    position: relative;
+    display: inline-block;
+    position: relative;
+    float: left;
+}
+
+.c8 {
+    width: 66.66%;
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+
+.c9 {
+    width: 75%;
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+
+.c10 {
+    width: 83.33%;
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+
+.c11 {
+    width: 91.66%;
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+
+.c12 {
+    width: 100%;
+}
