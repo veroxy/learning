@@ -1,9 +1,0 @@
-{
-  "todos": [
-    {
-      "id": 1,
-      "title": "Faire le TP Angular HttpClient",
-      "isDone": true
-    }
-  ]
-}
