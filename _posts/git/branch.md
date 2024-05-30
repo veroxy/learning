@@ -34,13 +34,22 @@ vim .git/config
 dans la la partie gauche où s'affiche le menu déroulant de branches selectionner "*view all branches*" et dans le menu "**...**" de la brancheà changer de nom choisr "*rename*"
    The default branch has been renamed!
 Il faut maintenant mettre à jour le nom de la branche en local
-````
-master is now named main
+````shell
+#master is now named main
 
-If you have a local clone, you can update it by running the following commands.
+#If you have a local clone, you can update it by running the following commands.
 
 git branch -m master main
 git fetch origin
 git branch -u origin/main main
 git remote set-head origin -a
+````
+2. renommer une branch en locale
+````shell
+git branch -m gh_page jkl_learning # renommer la MAUVAISE_BRANCHE NOUVEL_BRANCHE
+git branch -u origin/gh_page jkl_learning # Remplace localement l branch 
+git branch 
+git push --set-upstream origin jkl_learning # on renplace aussi à distance
+git branch --all # il faut lister
+git push origin --delete gh_page # et supprimer la branch à distance
 ````
