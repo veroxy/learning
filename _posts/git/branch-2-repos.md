@@ -1,6 +1,6 @@
 ---
 layout: page
-title: branch
+title: branch - 2 repos
 parent: git
 ---
 # Utiliser Bitbucket & Github pour un même projet == 2 repos
@@ -53,3 +53,4 @@ git push --set-upstream origin jkl_learning # on renplace aussi à distance
 git branch --all # il faut lister
 git push origin --delete gh_page # et supprimer la branch à distance
 ````
+

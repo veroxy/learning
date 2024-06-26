@@ -1,6 +1,6 @@
 ---
 layout: page
-title: double repos
+title: SSH pour Git sur Github && Bitbucket
 parent: git
 ---
 # SSH pour Git sur Github && Bitbucket
