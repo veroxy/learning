@@ -13,7 +13,7 @@
 
 ## ENVIRONNEMENT
 * [Ruby](DOCUMENTATION/install_ruby.md) & [koala préprocesseur sass](DOCUMENTATION/install_koala.md)
-* [nodeJs - Composer - intro laravel](pkgnodejs/composerlaravel.md)
+* [nodeJs - Composer - intro laravel](js/pkgnodejs/composerlaravel.md)
 * [lamp](DOCUMENTATION/install_lamp.md)
 * [LAMP - XAMP - WAMP - MAMP](DOCUMENTATION/lampWampXamp.md)
 
@@ -63,11 +63,11 @@
     * [js les bases](js/javascript.md)
 * JQUERY
 * JSON
-    * [json & API](json/json.md)
-    * [manipuler json avec php](json/jsonfile.md)
+    * [json & API](js/json/json.md)
+    * [manipuler json avec php](js/json/jsonfile.md)
 * AJAX
-    * [ajax](ajax/ajax.md)
-    * [ajax Jquery](ajax/jqueryajax.md)
+    * [ajax](js/ajax/ajax.md)
+    * [ajax Jquery](js/ajax/jqueryajax.md)
 * MOBILE
     * [API:Soap/rest](mobile/mobile_base.md)
     * [React Native les bases](mobile/react_native.md)
@@ -89,20 +89,20 @@
 
 ## OUTILS / Framework
 * ANGULAR
-    * [angularjs](angularjs/angularjs.md)
-    * [Angular + Google](angular6/angular6.md)
+    * [angularjs](js/angularjs/angularjs.md)
+    * [Angular + Google](js/angular6/angular6.md)
     * []()
 * LARAVEL
-    * [laravel WAMP](laravel/install_laravel.md)
-    * [laravel MAC OSX / XAMP / LAMP](laravel/install_laravel_OSX.md)
-    * [laravel - création de projet](laravel/procedureCreationProjet.md)
-    * [NODEJS sass  ](laravel/compilation.md)
+    * [laravel WAMP](php/laravel/install_laravel.md)
+    * [laravel MAC OSX / XAMP / LAMP](php/laravel/install_laravel_OSX.md)
+    * [laravel - création de projet](php/laravel/procedureCreationProjet.md)
+    * [NODEJS sass  ](php/laravel/compilation.md)
 * LARAVEL AVANCE
     * introduction
     * mindmapping, conceptualiser, se projetter/scérariser, maquetter/modelisation
     * 
     * se projetter/scénariser : 
 * WORDPRESS
-    * [créer un thème perso wp](wordpress-createwptheme/create_wptheme.md)
+    * [créer un thème perso wp](php/wordpress-createwptheme/create_wptheme.md)
 
 ## API
